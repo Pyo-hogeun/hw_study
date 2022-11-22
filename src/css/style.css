@@ -34,7 +34,7 @@ tbody td.new::after{
     margin-left: 5px;
     font-size: 12px;
 }
-.pagination{
+.board-pagination{
     justify-content: center;
 }
 .article{
