@@ -21,10 +21,10 @@
 .board-table thead{
     background-color: grey;
 }
-.tbody tr.new{
+.board-table tbody tr.new{
     text-decoration: none;
 }
-tbody td.new::after{
+.board-table tbody td.new::after{
     content: "new";
     border: 1px solid red;
     padding: 1px 5px;
