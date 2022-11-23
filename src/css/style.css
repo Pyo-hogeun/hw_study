@@ -1,7 +1,4 @@
-.content-wrap {
-    width: 900px;
-    margin: auto;
-}
+/*board 시작--------------------------------------*/
 .gnb {
     display: block;
     position: fixed;
@@ -37,9 +34,59 @@
 .board-pagination{
     justify-content: center;
 }
-.article{
-    text-align: center;
-    width: 100%;
+
+ul.pagination{
+    justify-content: center;
+}
+/* board 끝-------------------------------------*/
+/* content 시작---------------------------------*/
+.content-wrap {
+    width: 900px;
     margin: auto;
 }
+.content-backtolist{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.content-backtolist > a{
+    text-decoration: none;
+}
+.content-outline{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.content-header{
+    margin-bottom: 10px;
+}
 
+.content-header div .label{
+    display: inline-block;
+    width:200px;
+    background-color: blue;
+}
+.content-header div .data{
+    display: inline-block;
+    width:200px;
+    background-color: red;
+}
+.content-header .bold{
+    font-weight: 700;
+}
+.content-img{
+    display: inline;
+}
+.content-profile{
+    float: right;
+}
+.content-body{
+    width: 500px;
+}
+.content-footer div a{
+    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+}
+/* content 끝---------------------------------*/
