@@ -3,6 +3,7 @@
     display: block;
     position: fixed;
     height:70px;
+    top: 0px;
     left:0; 
     right: 0;
 }
@@ -54,6 +55,7 @@ ul.pagination{
 .content-outline{
     border: 1px solid black;
     margin-bottom: 10px;
+    margin-top:80px;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 10px;
@@ -126,3 +128,49 @@ ul.pagination{
     width: 100%;
 }
 /* content 끝---------------------------------*/
+/* signIn 시작--------------------------------*/
+
+.signin-welcome{
+    margin-bottom: 30px;
+}
+ul li{
+    list-style: none;
+}
+
+input[type=text]{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+input[type=password]{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+span.warning {
+    color: red;
+}
+ul {
+    padding-inline-start: 0;
+}
+label{
+    width:100px
+}
+.phoneinput{
+    width:90px
+}
+.signin-list li{
+    margin: 10px;
+}
+.input-group{
+    width: 70%;
+}
+#id {
+    display: inline;
+}
+.form-select{
+    display: inline;
+}
+.col-small{
+    display: inline-block;
+    width: 200px;
+}
+/* signIn 끝--------------------------------*/
