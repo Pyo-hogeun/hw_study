@@ -14,35 +14,47 @@
 }
 .board-table{
     width: 100%;
-    margin-top: 90px;
     border:1px solid black;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 80px;
     text-align: center;
 }
 .board-table thead{
     background-color: grey;
 }
+.tbody td a{
+    text-decoration: none;
+}
 .board-table tbody tr.new{
     text-decoration: none;
 }
-.board-table tbody td.new::after{
+.thead tr th{
+    padding: 10px;
+}
+.tbody tr td{
+    padding: 10px;
+}
+.board-table tbody td.new a::after{
     content: "new";
     border: 1px solid red;
     padding: 1px 5px;
     background-color: sandybrown;
     color: red;
     border-radius: 10px;
-    margin-left: 5px;
     font-size: 12px;
 }
 .board-pagination{
     justify-content: center;
 }
-
 ul.pagination{
     justify-content: center;
+}
+.thead tr th:nth-child(2){
+    text-align: left;
+}
+.tbody td a {
+    display: block;
+    text-align: left;
 }
 /* board 끝-------------------------------------*/
 /* content 시작---------------------------------*/
@@ -117,11 +129,16 @@ ul.pagination{
     화면밖으로 잘려나가지않게 100%를 맞춤*/
 }
 .content-body{
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%
 }
+.content-footer div{
+    display: inline-block;
+}
 .content-footer div a{
+    display: inline-block;
     text-decoration: none;
-    float: left;
     margin-right: 10px;
 }
 .content-banner a img{
@@ -148,6 +165,13 @@ input[type=text]{
 input[type=password]{
     background-color: gainsboro;
     border-radius: 10px;
+}
+input[type=number]{
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.form-select{
+    background-color: gainsboro;
 }
 span.warning {
     color: red;
@@ -191,6 +215,10 @@ label{
     text-align: right;
     margin-bottom: 20px;
     margin-right: 195px;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 /* signIn 끝--------------------------------*/
 /* QnA 시작*/
