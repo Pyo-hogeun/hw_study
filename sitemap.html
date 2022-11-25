@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트맵</title>
+    <style>
+        .viewer{
+            position: fixed;
+            left: 300px;
+            right: 0;
+            top:0;
+            bottom: 0;
+            width: calc(100% - 300px);
+            height: 100vh;
+            border:0;
+            border-left: 2px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="./board.html" target="viewer">board.html</a>
+        </li>
+        <li>
+            <a href="./content.html" target="viewer">content.html</a>
+        </li>
+        <li>
+            <a href="./signIn.html" target="viewer">signIn.html</a>
+        </li>
+        <li>
+            <a href="./qna.html" target="viewer">qna.html</a>
+        </li>
+    </ul>
+    <iframe name="viewer" class="viewer"></iframe>
+</body>
+</html>
