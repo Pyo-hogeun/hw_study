@@ -129,14 +129,15 @@ ul.pagination{
     화면밖으로 잘려나가지않게 100%를 맞춤*/
 }
 .content-body{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 450px;
 }
+
 .content-footer div{
-    display: inline-block;
+    margin-bottom: 10px ;
 }
-.content-footer div a{
+.content-footer p{
     display: inline-block;
     text-decoration: none;
     margin-right: 10px;
@@ -145,6 +146,9 @@ ul.pagination{
     width: 100%;
 }
 /* content 끝---------------------------------*/
+/* content-reply 시작------------------*/
+
+/* content-reply 끝---------------------*/
 /* signIn 시작--------------------------------*/
 
 .signin-welcome{
