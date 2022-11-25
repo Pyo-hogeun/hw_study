@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./lib/bootstrap-5.2.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Document</title>
+    <title>signin</title>
 </head>
 <body>
-    
     <div class="signin content-wrap">
         <nav class="gnb navbar navbar-expand-lg bg-light" >
             <div class="container-fluid">
@@ -53,24 +52,22 @@
                     환영합니다.<br>
                     회원가입하려면 어쩌구저쩌구
                 </div>
-                <input type="checkbox" class="checkbox">
+                <input type="checkbox" class="agree-checkbox">
                 <span>
                     동의합니다
                 </span>
             </div>
             <ul class="signin-list">
                 <li>
-                    <div class="input-group">
-                        <span class="input-group-text">First and last name</span>
-                        <input type="text" aria-label="First name" class="form-control">
-                        <input type="text" aria-label="Last name" class="form-control">
-                    </div>
-                </li>
+                    <label for="id">이름</label>
+                    <div class="col-small">
+                        <input type="text" class="form-control" aria-label="City">
+                    </div> 
                 <li>
                     <label for="id">아이디</label>
                     <div class="col-small">
-                        <input type="text" class="form-control" placeholder="아이디" aria-label="City">
-                    </div>                        
+                        <input type="text" class="form-control" aria-label="City">
+                    </div> 
                     <button type="button" class="btn btn-primary">중복확인</button>
                     <span class="warning">이미 사용중인 아이디 입니다.</span>
                 </li>
@@ -84,59 +81,55 @@
                     </div>
                 </li>
                 <li>
-                    <label for="password">비밀번호</label>
-                    <input id="password" type="password">
-                </li>
-                <li>
                     <label for="password2">비밀번호확인</label>
-                    <input id="password2" type="password">
+                    <div class="col-small">
+                        <input type="password" class="form-control" aria-label="password">
+                    </div> 
                     <span class="warning">비밀번호가 일치하지 않습니다.</span>
                 </li>
-                <li>
+                <li class="phone-number">
                     <label>휴대폰</label>
-                    <input class="phoneinput" type="text">
-                    <input class="phoneinput" type="text">
-                    <input class="phoneinput" type="text">
+                    <div class="col-extrasmall">
+                        <input type="text" class="form-control" aria-label="phonenumber">
+                    </div> 
+                    <div class="col-extrasmall">
+                        <input type="text" class="form-control" aria-label="phonenumber">
+                    </div> 
+                    <div class="col-extrasmall">
+                        <input type="text" class="form-control" aria-label="phonenumber">
+                    </div> 
                 </li>
                 <li>
                     <label>주소</label>
-                    <input type ="text" >
+                    <div class="col-medium">
+                        <input type="text" class="form-control" aria-label="address">
+                    </div> 
                 </li>
                 <li>
                     <label></label>
-                    <input type ="text" value="상세주소">
+                    <div class="col-medium">
+                        <input type="text" class="form-control" aria-label="address" placeholder="상세주소">
+                    </div> 
                 </li>
-                <li>
-                    <label></label>
-                    <div class="row g-3">
-                        <div class="col-small">
-                            <input type="text" class="form-control" placeholder="City" aria-label="City">
-                        </div>
-                        <div class="col-small">
-                            <input type="text" class="form-control" placeholder="State" aria-label="State">
-                        </div>
-                        <div class="col-small">
-                            <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
-                        </div>                            
-                    </div>
-                </li>                    
                 <li>
                     <label for="email">이메일</label>
-                    <input id="email" type="text">
+                    <div class="col-small">
+                        <input type="text" class="form-control" aria-label="email-address">
+                    </div>                            
                     <span>@</span>
-                    <select class="signin-select">
-                        <option>gmail.com</option>
-                        <option>naver.com</option>
-                        <option>daum.net</option>
-                    </select>
+                    <span class="emailaddress">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>이메일주소</option>
+                            <option value="1">naver.com</option>
+                            <option value="2">gamil.com</option>
+                            <option value="3">daum.net</option>
+                        </select>
+                    </span>
                 </li>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">gmail.com</option>
-                    <option value="2">naver.com</option>
-                    <option value="3">daum.net</option>
-                  </select>
             </ul>
+            <div class="last-button">
+                <button type="button" class="btn btn-primary">가입하기</button>
+            </div>
         </div>
     </div>
 

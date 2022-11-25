@@ -1,4 +1,9 @@
 /*board 시작--------------------------------------*/
+@import url("./reset.css");
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    }
 .gnb {
     display: block;
     position: fixed;
@@ -93,20 +98,15 @@ ul.pagination{
 .content-header .writer.data{
     position: relative;
 }
-.content-header .content-profile{
+.content-header .dropdown{
     top: 0;
     left: 50px;
-    display: none;
-    border: 1px solid black;
     padding: 10px;
     margin-top: 5px;
     position: absolute;
-    background-color: green;
+
 }
-.content-header .writer.data.open .content-profile{
-    display:block;
-}
-.content-profile > div a{
+.dropdown-menu > div a{
     text-decoration: none;
 }
 .content-img img{
@@ -133,20 +133,25 @@ ul.pagination{
 .signin-welcome{
     margin-bottom: 30px;
 }
+.agree-checkbox{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
 ul li{
     list-style: none;
 }
 
 input[type=text]{
-    background-color: whitesmoke;
+    background-color: gainsboro;
     border-radius: 10px;
 }
 input[type=password]{
-    background-color: whitesmoke;
+    background-color: gainsboro;
     border-radius: 10px;
 }
 span.warning {
     color: red;
+    font-size: 12px;
 }
 ul {
     padding-inline-start: 0;
@@ -166,11 +171,30 @@ label{
 #id {
     display: inline;
 }
-.form-select{
-    display: inline;
-}
 .col-small{
     display: inline-block;
     width: 200px;
 }
+.col-extrasmall{
+    display: inline-block;
+    width: 98px;
+}
+.col-medium{
+    display: inline-block;
+    width: 305px;
+}
+.form-select{
+    display: inline-block;
+    width: 300px;
+}
+.last-button{
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 195px;
+}
 /* signIn 끝--------------------------------*/
+/* QnA 시작*/
+
+
+
+/* QnA 끝*/
