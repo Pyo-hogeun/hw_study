@@ -66,7 +66,7 @@ ul.pagination{
 /* board 끝-------------------------------------*/
 /* content 시작---------------------------------*/
 .content-wrap {
-    width: 900px;
+    width: 95%;
     margin: auto;
 }
 .content-backtolist{
@@ -83,6 +83,7 @@ ul.pagination{
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 10px;
+    width: 100%;
 }
 .content-header{
     width: calc(100% + 60px) ;
@@ -154,30 +155,44 @@ ul.pagination{
 /* content 끝---------------------------------*/
 /* content-reply 시작------------------*/
 .content-scroll{
-    overflow: scroll;
+    overflow: auto;
     height: 500px;
-    
+    width: 100%;
+}
+.content-scroll::-webkit-scrollbar{
+    width: 10px;
+}
+.content-scroll::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.content-scroll::-webkit-scrollbar-track{
+    background-color: lightgray;
+}
+.user{
+    width: 100%;
 }
 .reply-photo{
     display: inline-block;
     border-radius: 100px;
     overflow: hidden;
+    background-color: aquamarine;
     width: 100px;
     height: 100px;
-    background-color: aquamarine;
 }
 .reply-section{
+    padding: 20px;
     display: inline-block;
     vertical-align: top;
-    width: 65%;
+    width: calc(100% - 110px);
     background-color: bisque;
 }
 .content-replywrite{
     margin-left: 15px;
+    width: 100%;
 }
 .content-replywrite input[type=text]{
     display: inline-block;
-    width: 75%;
+    width: 80%;
     height: 100px;
     border-radius: 0;
 }
