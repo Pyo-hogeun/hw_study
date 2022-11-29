@@ -2,170 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lib/bootstrap-5.2.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./src/css/style.css">
     <title>content</title>
+    <!-- noto sans 폰트링크-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <!--style css 링크-->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- 부트스트랩 링크 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="content-wrap">
-        <nav class="gnb navbar navbar-expand-lg bg-light" >
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <br><br><br>
-        <div class ="content-backtolist"><a href="#">목록으로</a></div>
-        <div class="content-outline">
-            <div class="content-header">
-                <div>
-                    <div class="bold label">번호</div>
-                    <div class="data">123</div>
-                    <div class="bold label">날짜</div>
-                    <div class="data">2022-11-20</div>
-                </div>
-                <div>
-                    <div class="bold label">글제목</div>
-                    <div class="data">
-                        <a href="#">글제목글제목글제목글제목글제목글제목글제목글제목</a>
+    <div id = "gnb">
+        <a href="#"><img src="https://picsum.photos/50/50"></a>
+        <div>gnb</div>
+    </div>
+    <div class="content-backtolist"><a href="#">목록으로</a></div>
+    <div id ="wrap">
+        <div class="content-box">
+            <ul>
+                <li>번호</li>
+                <li>123</li>
+                <li>날짜</li>
+                <li>2022-11-20</li>
+            </ul>   
+            <ul>
+                <li>글제목</li>
+                <li><a href="#">글제목글제목글제목글제목글제목글제목글제목글제목글제목글제목</a></li>
+                <li>글쓴이</li>
+                <li>
+                    <a href="#">홍길동</a>
+                    <div class="content-profile">
+                        프로필<br>
+                        소속<br>
+                        커리어
                     </div>
-                    <div class="bold label">글쓴이</div>
-                    <div class="writer data open">
-                        <a href="#">홍길동</a>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              프로필
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">홍길동</a></li>
-                              <li><a class="dropdown-item" href="#">개인정보</a></li>
-                              <li><a class="dropdown-item" href="#">가나다라마바사</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> <!--content-header-->
-            <div class="content-img">
-                <img src="https://picsum.photos/seed/picsum/450/150">
+                </li>
+            </ul>
+            <div class="content-image">
+                <img src="https://picsum.photos/400/150" >
             </div>
-            
-            <div class="content-body">
-                <p>글본문글본문글본문글본문글본문글본문글본문
-                    글본문글본문글본문글본문글본문글본문글본문
-                    글본문글본문글본문글본문글본문글본문글본문
-                    글본문글본문글본문글본문글본문글본문글본문
-                    글본문글본문글본문글본문글본문글본문글본문
-                    글본문글본문글본문글본문글본문글sdsdaaaaa본문글본문
-                </p>
+            <div class="content-content">
+                본문글본문글본문글본문글본문글본문글본문글본문글
+                본문글본문글본문글본문글본문글본문글본문글본문글
+                본문글본문글본문글본문글본문글본문글본문글본문글
+                본문글본문글본문글본문글본문글본문글본문글본문글
+                본문글본문글본문글본문글본문글본문글본문글본문글
+                본문글본문글본문글본문글본문글본문글본문글본문글
+                본문글본문글본문글본문글본문글본문글본문글본문글
             </div>
             <div class="content-footer">
-                <div>
-                    <a href="#">이전글</a>
-                    <p>이전글글제목이전글글제목이전글글제목</p>
-                </div>
-                <div>
-                    <a href="#">다음글</a>
-                    <p>다음글글제목다음글글제목다음글글제목</p>
-                </div>
+                <ul>
+                    <li>이전글</li>
+                    <li>글제목글제목글제목글제목글제목글제목</li>
+                </ul>
+                <ul>
+                    <li>다음글</li>
+                    <li>글제목글제목글제목글제목글제목글제목</li>
+                </ul>
             </div>
-        </div> <!--content-outline-->
+        </div><!--content-box-->
         <div class="content-banner">
-            <a href="#"><img src="https://picsum.photos/seed/picsum/900/80"></a>
+            <a href="#"><img src="https://picsum.photos/500/40"></a>
         </div>
-        <!--content-reply-->
-        <div class="content-outline">
-            <div class="user">
-                <div class="reply-photo">
-                    <a href="#"><img src="https://picsum.photos/100/100?random=1"></a>
-                </div>
-                <div class="reply-section">
-                    2022-11-25 12:05:22<br><br>
-                    리플내용리플내용리플내용리플내용리플내용
-                </div>
-            </div>
-            <hr>
-            <div class="user">
-                <div class="reply-photo">
-                    <a href="#"><img src="https://picsum.photos/100/100?random=2"></a>
-                </div>
-                <div class="reply-section">
-                    2022-11-25 12:05:22<br><br>
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                </div>
-            </div>
-            <hr>
-            <div class="user">
-                <div class="reply-photo">
-                    <a href="#"><img src="https://picsum.photos/100/100?random=3"></a>
-                </div>
-                <div class="reply-section">
-                    2022-11-25 12:05:22<br><br>
-                    리플내용리플내용리플내용리플내용리플내용
-                </div>
-            </div>
-            <hr>
-            <div class="user">
-                <div class="reply-photo">
-                    <a href="#"><img src="https://picsum.photos/100/200?random=4"></a>
-                </div>
-                <div class="reply-section">
-                    2022-11-25 12:05:22<br><br>
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                    리플내용리플내용리플내용리플내용리플내용
-                </div>
-            </div>
-            <hr>
-            <div class="user">
-                <div class="reply-photo">
-                    <a href="#"><img src="https://picsum.photos/300/100?random=5"></a>
-                </div>
-                <div class="reply-section">
-                    2022-11-25 12:05:22<br><br>
-                    리플내용리플내용리플내용리플내용리플내용
-                </div>
-            </div>
-            <hr>
-
-        </div>
-
-    </div><!--content-wrap-->
+    </div> <!--wrap-->
+    
 </body>
 </html>

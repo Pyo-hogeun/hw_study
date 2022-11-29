@@ -1,130 +1,62 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lib/bootstrap-5.2.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>11.21과제</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board</title>
+  <!-- noto sans 폰트링크-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+  <!--style css 링크-->
+  <link rel="stylesheet" href="./src/css/style.css">
+  <!-- 부트스트랩 링크 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="content-wrap">
-    <nav class="gnb navbar navbar-expand-lg bg-light" >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <br>
+  <div id = "gnb">
+    <a href="#"><img src="https://picsum.photos/50/50"></a>
+    <div>gnb</div>
+  </div>
+  <div id = "board-section">
     <table class="board-table">
-      <thead class="thead">
-        <tr>
-          <th scope="col">번호</th>
-          <th scope="col">글제목</th>
-          <th scope="col">글쓴이</th>
-          <th scope="col">날짜</th>
-        </tr>
-      </thead>
-      <tbody class="tbody">
-        <tr>
-          <th scope="row">1</th>
-          <td class="new"><a href="#">글제목1</a></td>
-          <td>홍길동</td>
-          <td>2022-11-22</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td ><a href="#">글제목2</a></td>
-          <td>이순신</td>
-          <td>2022-11-30</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td><a href="#">글제목3</a></td>
-          <td>세종대왕</td>
-          <td>2022-11-12</td>
-        </tr>
-      </tbody>
+      <caption>테이블</caption>
+      <tr>
+        <td>번호</td>
+        <td>글제목</td>
+        <td>글쓴이</td>
+        <td>날짜</td>
+      </tr>
+      <tr>
+        <td>123</td>
+        <td><a href="#">글제목11111</a></td>
+        <td>홍길동</td>
+        <td>2022-11-20</td>
+      </tr>
+      <tr>
+        <td>123</td>
+        <td><a href="#">글제목22222</a></td>
+        <td>이순신</td>
+        <td>2022-11-20</td>
+      </tr>
+      <tr>
+        <td>123</td>
+        <td><a href="#">글제목33333</a></td>
+        <td>세종대왕</td>
+        <td>2022-11-20</td>
+      </tr>
     </table>
-    <br>
-    <div class="board-pagination">
-      <p>스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-      </p>
-      <p>스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-        스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용스크롤할수있게 내용
-      </p>
-    </div>
-    <br>
-
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#"><< </a></li>
-        <li class="page-item"><a class="page-link" href="#">< </a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">></a></li>
-        <li class="page-item"><a class="page-link" href="#">>></a></li>
-      </ul>
-    </nav>
+  </div>
+  <div id = "board-footer">
+    <div><a href="#"> << </a></div>
+    <div><a href="#"> < </a></div>
+    <div><a href="#"> 1 </a></div>
+    <div><a href="#"> 2 </a></div>
+    <div><a href="#"> 3 </a></div>
+    <div><a href="#"> 4 </a></div>
+    <div><a href="#"> 5</a></div>
+    <div><a href="#"> > </a></div>
+    <div><a href="#"> >> </a></div>
   </div>
 </body>
 </html>

@@ -1,248 +1,264 @@
-/*board 시작--------------------------------------*/
-@import url("./reset.css");
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-* {
-    font-family: 'Noto Sans KR', sans-serif;
-    }
-.gnb {
-    display: block;
+/* reset css 적용*/
+@import "reset.css";
+
+/* 폰트 적용*/
+*{ font-family: 'Noto Sans KR', sans-serif;}
+
+/* board.html 적용*/
+#gnb{
+    border: 1px solid black;
+    background-color: lightgrey;
     position: fixed;
-    height:70px;
-    top: 0px;
-    left:0; 
-    right: 0;
+    width: 100%;
+    height: 50px;
+    box-sizing: content-box;
+    z-index: 9999;
+}
+#gnb > div{
+    position: absolute;
+    display: inline-block;
+    right: 50%;
+    font-weight: bold;
+    font-size:30px;
+}
+#wrap{
+    position: relative;
+    top: 80px;
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+}
+
+/* board 시작----------------------------------------------*/
+#board-section{
+    margin: auto;
+    position: relative;
+    top: 80px;
 }
 .board-table{
-    width: 100%;
-    border:1px solid black;
     margin: auto;
-    margin-top: 80px;
+    width: 95%;
+}
+.board-table tr:first-child{
+    background-color: lightgray;
+}
+.board-table tr{
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 10px;
+}
+.board-table td{
+    display: inline-block;
+    width: calc(95%/4);
+    padding: 15px;
     text-align: center;
 }
-.board-table thead{
-    background-color: grey;
-}
-.tbody td a{
-    text-decoration: none;
-}
-.board-table tbody tr.new{
-    text-decoration: none;
-}
-.thead tr th{
-    padding: 10px;
-}
-.tbody tr td{
-    padding: 10px;
-}
-.board-table tbody td.new a::after{
+.board-table tr:nth-child(2) td:nth-child(2) a::after{
     content: "new";
     border: 1px solid red;
-    padding: 1px 5px;
-    background-color: sandybrown;
     color: red;
-    border-radius: 10px;
-    font-size: 12px;
+    padding: 0 10px;
+    position: absolute;
+    background-color: rgb(241, 218, 188);
 }
-.board-pagination{
-    justify-content: center;
+#board-footer{
+    text-align: center;
+    margin-top: 100px;
 }
-ul.pagination{
-    justify-content: center;
+#board-footer div{
+    display: inline-block;
+    padding: 5px;
 }
-.thead tr th:nth-child(2){
-    text-align: left;
+#board-footer a{
+    color: black;
 }
-.tbody td a {
-    display: block;
-    text-align: left;
+#board-footer a:hover{
+    color: red;
 }
 /* board 끝-------------------------------------*/
-/* content 시작---------------------------------*/
-.content-wrap {
-    width: 900px;
-    margin: auto;
-}
+/* content 시작-----------------------------------*/
 .content-backtolist{
-    text-align: right;
-    margin-bottom: 10px;
-}
-.content-backtolist > a{
-    text-decoration: none;
-}
-.content-outline{
-    border: 1px solid black;
-    margin-bottom: 10px;
-    margin-top:80px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
-}
-.content-header{
-    margin-bottom: 10px;
-    width: calc(100% + 60px) ;
-    margin-left: -30px;
-    padding:30px;
-    display: flex;
-    flex-direction: column;
-}
-.content-header > div{
-    display: flex;
-    width: 100%;
-}
-.content-header > div .data,
-.content-header > div .label{
-    flex: 0 0 25%;
-}
-.content-header div .label{
-    display: inline-block;
-    background-color: red;
-    margin:0;
-}
-.content-header div .data{
-    display: inline-block;
-    background-color: blue;
-    margin:0;
-    vertical-align: top;
-}
-.content-header .bold{
-    font-weight: 700;
-}
-.content-header .writer.data{
-    position: relative;
-}
-.content-header .dropdown{
-    top: 0;
-    left: 50px;
-    padding: 10px;
-    margin-top: 5px;
     position: absolute;
-
+    top: 60px;
+    right: 5%;
+    font-weight: bold;
 }
-.dropdown-menu > div a{
-    text-decoration: none;
-}
-.content-img img{
-    width: 100%;
-    max-width: 450px;
-    /* 해상도가커지면 사진이 깨지기때문에
-    최대너비를 제한하고, 축소할경우에는
-    화면밖으로 잘려나가지않게 100%를 맞춤*/
-}
-.content-body{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 450px;
-}
-
-.content-footer div{
-    margin-bottom: 10px ;
-}
-.content-footer p{
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 10px;
-}
-.content-banner a img{
-    width: 100%;
-}
-/* content 끝---------------------------------*/
-/* content-reply 시작------------------*/
-.user{
-    
-}
-.reply-photo{
-    display: inline-block;
-    border-radius: 100px;
-    overflow: hidden;
-    width: 25%;
-    background-color: aquamarine;
-}
-.reply-section{
-    display: inline-block;
-    vertical-align: top;
-    width: 65%;
-    background-color: bisque;
-
-}
-/* content-reply 끝---------------------*/
-/* signIn 시작--------------------------------*/
-
-.signin-welcome{
-    margin-bottom: 30px;
-}
-.agree-checkbox{
+.content-box{
+    margin: auto;
+    width: 90%;
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
-ul li{
-    list-style: none;
+.content-box ul{
+    display: block;
 }
-
-input[type=text]{
-    background-color: gainsboro;
-    border-radius: 10px;
+.content-box ul li{
+    display: inline-block;
+    width: calc(90%/4);
+    vertical-align: top;
 }
-input[type=password]{
-    background-color: gainsboro;
-    border-radius: 10px;
+.content-box ul li:nth-child(1){
+    width: 10%;
+    font-weight: bold;
+}
+.content-box ul li:nth-child(3){
+    width: 10%;
+    font-weight: bold;
+}
+.content-box ul li:nth-child(2){
+    width: 35%;
+}
+.content-box ul li:nth-child(4){
+    width: 35%;
+}
+.content-box ul:nth-child(2) li:last-child .content-profile{
+    visibility: hidden;
+    border: 1px solid black;
+    padding: 15px;
+    margin-left: 30px;
+    width: 100px;
+    background-color: lightgray;
+    position: absolute;
+}
+.content-box ul:nth-child(2) li:last-child a:active+.content-profile{
+    visibility: visible;
+}
+.content-image{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+}
+.content-image img{
+    width: 100%;
+}
+.content-content{
+    width: 100%;
+}
+.content-footer{
+    margin-top: 20px;
+}
+.content-banner{
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+}
+.content-banner img{
+    width: 100%;
+}
+/* content 끝-----------------------------------*/
+/* sign_in 시작-----------------------------------*/
+.signin-welcome .signin-agree{
+    margin-right: 5px;
+}
+.signin-info div{
+    margin-top: 10px;
+}
+.signin-info div div{
+    width: 100px;
+    display: inline-block;
+}
+.signin-info input{
+    padding: 3px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin-right: 3px;
+}
+.signin-address div:first-child{
+    vertical-align: top;
+}
+.signin-address input[type=text]:last-child{
+    display: block;
+    margin-top: 3px;
+}
+.signin-info select{
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.signin-info > input[type=button]{
+    margin-left: 500px;    
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 0;
 }
 input[type=number]{
-    background-color: gainsboro;
-    border-radius: 10px;
+    width: 100px;
 }
-.form-select{
-    background-color: gainsboro;
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none;
 }
-span.warning {
+.signin-info .signin-id{
+    position: absolute;   
+    width: 600px; 
+    font-size: small;
     color: red;
-    font-size: 12px;
+    margin-left: 3px;
 }
-ul {
-    padding-inline-start: 0;
+.signin-info .signin-password{
+    position: absolute;   
+    width: 600px; 
+    font-size: small;
+    color: red;
+    margin-left: 3px;
 }
-label{
-    width:100px
+
+/* sign_in 끝-----------------------------------*/
+/* reply 시작-----------------------------------*/
+
+.reply-scroll{
+    overflow: scroll;
+    height: 500px;
 }
-.phoneinput{
-    width:90px
+
+.reply-reply img{
+    width: 15%;
+    border-radius: 100px;
+    border: 1px solid black;
+    vertical-align: top;
 }
-.signin-list li{
-    margin: 10px;
+.reply-reply div{
+    margin-left: 10px;
+    display: inline-block;
+    width: 80%;
 }
-.input-group{
+.reply-replyinput{
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+}
+.reply-replyinput input[type=text]{
     width: 70%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: lightgray;
 }
-#id {
-    display: inline;
+.reply-replyinput input[type=button]{
+    margin-left: 10px;
+    width: 15%; 
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
-.col-small{
-    display: inline-block;
-    width: 200px;
+
+/* reply 끝-----------------------------------*/
+/* qna 시작-----------------------------------*/
+.qna-question{
+    margin:20px 20px;
 }
-.col-extrasmall{
-    display: inline-block;
-    width: 98px;
+.qna-answer{
+    padding-left: 40px;
+    height: 0;
+    visibility: hidden;
 }
-.col-medium{
-    display: inline-block;
-    width: 305px;
+.qna-question:active+.qna-answer{
+    visibility: visible;
+    height: 120px;
+    background-color: lightgray;
+    border-top: 1px solid black;
 }
-.form-select{
-    display: inline-block;
-    width: 300px;
-}
-.last-button{
-    text-align: right;
-    margin-bottom: 20px;
-    margin-right: 195px;
-}
-input[type="number"]::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-}
-/* signIn 끝--------------------------------*/
-/* QnA 시작*/
 
 
 
-/* QnA 끝*/
+/* qna 끝-----------------------------------*/
