@@ -13,26 +13,33 @@
     right: 0;
 }
 .board-table{
-    width: 100%;
-    border:1px solid black;
+    width: 95%;
     margin: auto;
     margin-top: 80px;
     text-align: center;
 }
-.board-table thead{
+.board-table thead tr{
     background-color: grey;
 }
 .tbody td a{
     text-decoration: none;
 }
+.board-table tr{
+    border: 1px solid black;
+    display: block;
+    margin-bottom: 5px;
+}
 .board-table tbody tr.new{
     text-decoration: none;
 }
-.thead tr th{
-    padding: 10px;
+.board-table tr th{
+    width: 200px;
+    padding: 15px;
 }
-.tbody tr td{
-    padding: 10px;
+.board-table tr td{
+    width: 200px;
+    padding: 15px;
+    left: 3px;
 }
 .board-table tbody td.new a::after{
     content: "new";
@@ -78,7 +85,6 @@ ul.pagination{
     padding-top: 10px;
 }
 .content-header{
-    margin-bottom: 10px;
     width: calc(100% + 60px) ;
     margin-left: -30px;
     padding:30px;
@@ -95,14 +101,15 @@ ul.pagination{
 }
 .content-header div .label{
     display: inline-block;
-    background-color: red;
     margin:0;
+    padding: 5px;
 }
 .content-header div .data{
     display: inline-block;
-    background-color: blue;
     margin:0;
     vertical-align: top;
+    padding: 5px;
+
 }
 .content-header .bold{
     font-weight: 700;
@@ -116,9 +123,8 @@ ul.pagination{
     padding: 10px;
     margin-top: 5px;
     position: absolute;
-
 }
-.dropdown-menu > div a{
+.dropdown-menu a{
     text-decoration: none;
 }
 .content-img img{
@@ -147,14 +153,17 @@ ul.pagination{
 }
 /* content 끝---------------------------------*/
 /* content-reply 시작------------------*/
-.user{
+.content-scroll{
+    overflow: scroll;
+    height: 500px;
     
 }
 .reply-photo{
     display: inline-block;
     border-radius: 100px;
     overflow: hidden;
-    width: 25%;
+    width: 100px;
+    height: 100px;
     background-color: aquamarine;
 }
 .reply-section{
@@ -162,7 +171,21 @@ ul.pagination{
     vertical-align: top;
     width: 65%;
     background-color: bisque;
-
+}
+.content-replywrite{
+    margin-left: 15px;
+}
+.content-replywrite input[type=text]{
+    display: inline-block;
+    width: 75%;
+    height: 100px;
+    border-radius: 0;
+}
+.content-replywrite input[type=button]{
+    display: inline-block;
+    width: 15%;
+    height: 100px;
+    border-radius: 10px;
 }
 /* content-reply 끝---------------------*/
 /* signIn 시작--------------------------------*/
