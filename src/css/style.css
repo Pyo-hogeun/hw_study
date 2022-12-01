@@ -279,6 +279,22 @@ input[type="number"]::-webkit-inner-spin-button{
     margin: 0;
 }
 /* signIn 끝--------------------------------*/
+/* qna 시작-----------------------------------*/
+.qna-question{
+    margin:20px 20px;
+}
+.qna-answer{
+    padding-left: 40px;
+    height: 0;
+    visibility: hidden;
+}
+.qna-question:active+.qna-answer{
+    visibility: visible;
+    height: 120px;
+    background-color: lightgray;
+    border-top: 1px solid black;
+}
+/* qna 끝-----------------------------------*/
 /* product 시작*/
 .product-container{
     margin: auto;
@@ -323,10 +339,16 @@ input[type="number"]::-webkit-inner-spin-button{
 .product-container .product-price{
     color: gray;
     text-align: right;
+    width: 85px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 210px;
 }
+
 .product-container .product-name a{
     text-decoration: none;
 }
+
 
 
 /* product 끝*/
