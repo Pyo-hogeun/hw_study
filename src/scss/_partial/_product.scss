@@ -1,0 +1,55 @@
+
+/* product 시작*/
+.product-container{
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 50px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.product-item{
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.product-container .product-buttons{
+    text-align: left;
+    display: block;
+    padding: 0;
+}
+.product-container .buttons .heart{
+    margin: 0;
+    padding: 0;
+}
+.product-container .buttons .cross{
+    margin: 0;
+    padding: 0;
+}
+.product-container .product-img{
+    margin-right: 0 15px;
+}
+.product-container .review-like{
+    padding: 5px;
+    font-weight: 300;
+}
+.product-container .product-name{
+    height: 40px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 700;
+}
+.product-container .product-price-1{
+    color: gray;
+    text-align: right;
+    width: 85px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 210px;
+}
+
+.product-container .product-name a{
+    text-decoration: none;
+}
+/* product 끝-------------------------------------------------*/

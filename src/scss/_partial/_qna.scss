@@ -1,0 +1,17 @@
+
+/* qna 시작-----------------------------------*/
+.qna-question{
+    margin:20px 20px;
+}
+.qna-answer{
+    padding-left: 40px;
+    height: 0;
+    visibility: hidden;
+}
+.qna-question:active+.qna-answer{
+    visibility: visible;
+    height: 120px;
+    background-color: lightgray;
+    border-top: 1px solid black;
+}
+/* qna 끝-----------------------------------*/

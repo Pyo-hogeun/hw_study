@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+.gnb {
+    display: block;
+    position: fixed;
+    height:70px;
+    top: 0px;
+    left:0; 
+    right: 0;
+}
+.board-table{
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+.board-table thead tr{
+    background-color: grey;
+}
+.tbody td a{
+    text-decoration: none;
+}
+.board-table tr{
+    border: 1px solid black;
+    display: block;
+    margin-bottom: 5px;
+}
+.board-table tbody tr.new{
+    text-decoration: none;
+}
+.board-table tr th{
+    width: 200px;
+    padding: 15px;
+}
+.board-table tr td{
+    width: 200px;
+    padding: 15px;
+    left: 3px;
+}
+.board-table tbody td.new a::after{
+    content: "new";
+    border: 1px solid red;
+    padding: 1px 5px;
+    background-color: sandybrown;
+    color: red;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.board-pagination{
+    justify-content: center;
+}
+ul.pagination{
+    justify-content: center;
+}
+.thead tr th:nth-child(2){
+    text-align: left;
+}
+.tbody td a {
+    display: block;
+    text-align: left;
+}
+/* board 끝-------------------------------------*/
