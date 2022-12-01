@@ -40,8 +40,10 @@ label{
 .phoneinput{
     width:90px
 }
-.signin-list li{
+.signin-list{
+    li{
     margin: 10px;
+    }
 }
 .input-group{
     width: 70%;
@@ -70,8 +72,5 @@ label{
     margin-bottom: 20px;
     margin-right: 195px;
 }
-input[type="number"]::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-}
+
 /* signIn 끝--------------------------------*/

@@ -6,9 +6,9 @@
 .content-backtolist{
     text-align: right;
     margin-bottom: 10px;
-}
-.content-backtolist > a{
-    text-decoration: none;
+    > a{
+        text-decoration: none;
+    }
 }
 .content-outline{
     border: 1px solid black;
@@ -25,49 +25,53 @@
     padding:30px;
     display: flex;
     flex-direction: column;
+    > div{
+        .data, .label{
+            flex: 0 0 25%;
+        }
+        display: flex;
+        width: 100%;
+    }
+    div{
+        .label{
+        display: inline-block;
+        margin:0;
+        padding: 5px;
+        }
+        .data{
+            display: inline-block;
+            margin:0;
+            vertical-align: top;
+            padding: 5px;
+        }
+    }
+    .bold{
+        font-weight: 700;
+    }
+    .writer.data{
+        position: relative;
+    }
+    .dropdown{
+        top: 0;
+        left: 50px;
+        padding: 10px;
+        margin-top: 5px;
+        position: absolute;
+    }
 }
-.content-header > div{
-    display: flex;
-    width: 100%;
+.dropdown-menu{
+    a{
+        text-decoration: none;
+    }
 }
-.content-header > div .data,
-.content-header > div .label{
-    flex: 0 0 25%;
-}
-.content-header div .label{
-    display: inline-block;
-    margin:0;
-    padding: 5px;
-}
-.content-header div .data{
-    display: inline-block;
-    margin:0;
-    vertical-align: top;
-    padding: 5px;
-
-}
-.content-header .bold{
-    font-weight: 700;
-}
-.content-header .writer.data{
-    position: relative;
-}
-.content-header .dropdown{
-    top: 0;
-    left: 50px;
-    padding: 10px;
-    margin-top: 5px;
-    position: absolute;
-}
-.dropdown-menu a{
-    text-decoration: none;
-}
-.content-img img{
-    width: 100%;
-    max-width: 450px;
-    /* 해상도가커지면 사진이 깨지기때문에
-    최대너비를 제한하고, 축소할경우에는
-    화면밖으로 잘려나가지않게 100%를 맞춤*/
+.content-img{ 
+    img{
+        width: 100%;
+        max-width: 450px;
+        /* 해상도가커지면 사진이 깨지기때문에
+        최대너비를 제한하고, 축소할경우에는
+        화면밖으로 잘려나가지않게 100%를 맞춤*/
+    }
 }
 .content-body{
     margin-top: 20px;
@@ -75,13 +79,15 @@
     width: 450px;
 }
 
-.content-footer div{
-    margin-bottom: 10px ;
-}
-.content-footer p{
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 10px;
+.content-footer{
+    div{
+        margin-bottom: 10px ;
+    }
+    p{
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 10px;
+    }
 }
 .content-banner a img{
     width: 100%;

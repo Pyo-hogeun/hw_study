@@ -6,47 +6,47 @@
 }
 .emart-header{
     margin: 30px;
-}
-.emart-header .emart-mall{
-    display: block;
-    margin: 15px auto;
+    .emart-mall{
+        display: block;
+        margin: 15px auto;
+    }
 }
 .emart-content{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-}
-.emart-content img{
-    width: 256px;
-    height: 256px;
-    margin: 10px;
-    border-radius: 10px;
-}
-.emart-content .emart-product-1{
-    margin: 10px;
-    border-radius: 10px;
-    height: 600px;
-    background-color: rgb(240, 167, 72);
-}
-.emart-content .emart-product-1 .emart-welcome-package{
-    padding: 40px;
-    color: white;
-}
-.emart-content .emart-product-1 .emart-welcome-package li:first-child{
-    font-weight: 800;
-    font-size: 24px;
-    margin-bottom: 10px;
-    line-height: 30px;
-}
-.emart-content .emart-product-1 .go-to-exhibition{
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 200px;
-    margin: 50px auto;
-}
-.emart-content .emart-product-1 .go-to-exhibition li{
-    color: white;
-    font-size: 20px;
-    padding: 10px;
+    img{
+        width: 256px;
+        height: 256px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .emart-product-1{
+        margin: 10px;
+        border-radius: 10px;
+        height: 600px;
+        background-color: rgb(240, 167, 72);
+        .emart-welcome-package{
+            padding: 40px;
+            color: white;
+            li:first-child{
+                font-weight: 800;
+                font-size: 24px;
+                margin-bottom: 10px;
+                line-height: 30px;
+            }
+        }
+        .go-to-exhibition{
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 200px;
+            margin: 50px auto;
+            li{
+                color: white;
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
 }
 /* emart 끝------------------------------------------ */
