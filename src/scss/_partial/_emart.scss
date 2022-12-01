@@ -16,15 +16,15 @@
     flex-wrap: wrap;
     justify-content:space-between;
     img{
-        width: 256px;
-        height: 256px;
+        width: 250px;
+        height: 250px;
         margin: 10px;
         border-radius: 10px;
     }
     .emart-product-1{
         margin: 10px;
         border-radius: 10px;
-        height: 600px;
+        height: 550px;
         background-color: rgb(240, 167, 72);
         .emart-welcome-package{
             padding: 40px;
@@ -38,14 +38,19 @@
         }
         .go-to-exhibition{
             border: 1px solid white;
-            border-radius: 10px;
+            border-radius: 20px;
             width: 200px;
-            margin: 50px auto;
+            margin: 20px auto;
             li{
                 color: white;
                 font-size: 20px;
                 padding: 10px;
             }
+        }
+    }
+    .emart-product-2{
+        .milk{
+            li
         }
     }
 }
