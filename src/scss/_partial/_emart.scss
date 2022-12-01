@@ -20,13 +20,18 @@
         width: 250px;
         height: 250px;
         border-radius: 10px;
+        &:hover{
+            border: 5px solid yellowgreen;
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
     }
     .emart-product-1{
         width: 250px;
         margin: 10px 10px 40px 10px;
         border-radius: 10px;
         height: 550px;
-        background-color: rgb(240, 167, 72);
+        background: linear-gradient(rgb(255, 153, 0) 0%,rgb(255, 245, 230) 50%,rgb(255, 153, 0) 100%); 
         .emart-welcome-package{
             padding: 40px;
             color: white;
