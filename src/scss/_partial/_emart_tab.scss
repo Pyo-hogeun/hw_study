@@ -1,0 +1,97 @@
+// emart_detail 시작----------------------------------------------------------------------------
+.emart-wrap{
+    .emart-tab-wrap{
+        ul{
+            &.tab{
+                display: flex;
+                width: 100%;
+                border-bottom: 1px solid #888888;
+                li{
+                    flex: 0 0 25%;
+                    &.tab-item{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50px;
+                        a{
+                            color: #000000;
+                        }
+                        &.active{
+                            font-weight: 800;
+                            border-bottom: 5px solid black;
+                        }
+                        &:hover{
+                            font-weight: 800;
+                            border-bottom: 5px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-content-wrap{
+        #product-info{
+            .product-box{
+                display: flex;
+                padding: 20px 0 20px 0;
+                .product-detail{
+                    padding: 40px;
+                    width: 315px;
+                    text-align: left;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .product-number-left{
+                        border: 1px solid black;
+                        border-radius: 5px 0 0 5px;
+                        padding: 5px;
+                        height: 20px;
+                    }
+                    .product-number-right{
+                        border: 1px solid black;
+                        color: white;
+                        background-color: black;
+                        border-radius: 0 5px 5px 0;
+                        padding: 5px;
+                        height: 20px;
+                    }
+                    .sold-count{
+                        padding: 5px;
+                        font-size: 12px;
+                    }
+                    .left-count{
+                        padding: 5px 5px 5px 0;
+                        font-size: 12px;
+                        &::before{
+                            content: "|  ";                            
+                        }
+                    }
+                    .product-price{
+                        width: 400px;
+                        font-size: 24px;
+                        font-weight: 800;
+                        padding-bottom: 0;
+                    }
+                    .product-pergram{
+                        color: gray;
+                        font-size: 14px;
+                        width: 400px;
+                    }
+                }
+            }
+        }
+        #product-benefit{
+
+        }
+        #product-review{
+
+        }
+        #product-recommend{
+
+        }
+    }
+}
+
+
+// emart_detail 끝----------------------------------------------------------------------------
