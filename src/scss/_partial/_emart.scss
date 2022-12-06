@@ -59,19 +59,27 @@
         a{
             display: block;
         }
-        .milk{
+        .emart-product-description{
+            color: black;
             text-align: left;
             margin: 10px;
+            .product-review{
+                a{
+                    display: inline-block;
+                }
+            }
             li{
                 margin-bottom: 10px;
-                &:nth-child(2){
+                &.product-price{
                     font-size: 24px;
                     font-weight: 800;
                 }
-                &:nth-child(4)::first-letter{
-                    color: red;
+                &.product-review-point{
+                        &::first-letter{
+                            color: red;
+                        }
+                    }
                 }
-            }
             span{
                 color: rgb(77, 212, 77);
             }
@@ -83,15 +91,12 @@
     line-height: 40px;
     height: 40px;
     margin: 100px auto;
-    color: white;
     width: 300px;
     border-radius: 50px;
     background-color: rgb(255, 186, 36);
+    a{
+        color: white;
+    }
 }
-.ssg{
-    margin: 100px auto;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 800;
-}
+
 /* emart 끝------------------------------------------ */
