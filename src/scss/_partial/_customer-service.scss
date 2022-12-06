@@ -1,0 +1,93 @@
+/* customer-service 시작----------------------------------------*/
+.customer-service-wrap{
+    width: 1320px;
+    margin: 30px auto;
+    text-align: center;
+    .customer-service-header{
+        width: 60%;
+        text-align: left;
+        margin: 20px auto;
+        .question-input-box{
+            border-bottom: 5px solid black;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            .question-input-title{
+                font-size: 35px;
+                font-weight: 700;
+            }
+            .question-input{
+                width: 60%;
+                border: 0;
+                color: gray;
+                font-size: 24px;
+            }
+            .question-input-submit{
+                background-color: white;
+            }
+            .question-input-busy{
+                font-size: 12px;
+                &::before{
+                    content: ' | ';
+                }
+            }
+        }
+        .question-type-box{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            .question-type-left{
+                display: flex;
+                li{
+                    color: gray;
+                    border-right: 1px solid gray;
+                    padding: 0 5px 0 5px;
+                }
+            }
+            .question-type-right{
+                display: flex;
+                li{
+                    border-left: 1px solid gray;
+                    padding: 0 5px 0 5px;
+                    &.question-center-talk{
+                        a{
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .topten-questions-header{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .topten-questions{
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            display: flex;
+            align-items: center;
+            border: 1px solid gray;
+            width: calc(20% - 2px);
+            height: 150px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* customer-service 끝----------------------------------------*/
