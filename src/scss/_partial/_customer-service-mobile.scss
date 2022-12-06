@@ -1,0 +1,16 @@
+/* customer-service 시작----------------------------------------*/
+@media all and (max-width: 720px){
+  .customer-service-wrap{
+      width: 100%; //<-- 예시
+      .customer-service-header{
+          width: 60%;
+          text-align: left;
+          margin: 20px auto;
+      }
+      .topten-questions-header{
+      }
+      .topten-questions{
+      }
+  }
+}
+/* customer-service 끝----------------------------------------*/
