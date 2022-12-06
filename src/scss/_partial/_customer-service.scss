@@ -79,6 +79,7 @@
             border: 1px solid black;
             display: flex;
             flex-wrap: wrap;
+            word-break: keep-all;
             li{
                 box-sizing: border-box;
                 display: flex;
@@ -92,18 +93,15 @@
                 a{
                     margin-top: 25px;
                     width: 70%;
-                    div{
+                    .topten-questions-number{
                         font-size: 24px;
                         margin-bottom: 15px;
                     }
                 }
                 &:hover{
                     background-color: black;
-                        a{
-                            color: white;
-                        div{
-                            color: white;
-                        }
+                    a{
+                        color: white;
                     }
                 }
             }
@@ -115,6 +113,11 @@
         display: flex;
         flex-wrap: wrap;
         li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
             width: 20%;
             height: 80px;
         }

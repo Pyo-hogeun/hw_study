@@ -1,16 +1,46 @@
 /* customer-service 시작----------------------------------------*/
 @media all and (max-width: 720px){
   .customer-service-wrap{
-      width: 100%; //<-- 예시
-      .customer-service-header{
-          width: 60%;
-          text-align: left;
-          margin: 20px auto;
+    width: 100%; //<-- 예시
+    .customer-service-header{
+      width: 60%;
+      text-align: left;
+      margin: 20px auto;
+      .question-input-box{
+        visibility: hidden;
       }
+      .question-type-box{
+        visibility: hidden;
+      }
+    }
+    .topten-questions-wrap{
+      background-color: rgb(238, 238, 238);
+      padding: 20px;
+      width: 1500px;
       .topten-questions-header{
+        text-align: left;
       }
       .topten-questions{
+        background-color: rgb(238, 238, 238);
+        margin: 0;
+        border: 0;
+        width: 1500px;
+        display: flex;
+        flex-wrap: nowrap;
+        li{
+          background-color: white;
+          margin: 0 5px;
+          display: inline-block;
+          width: 150px;
+          height: 130px;
+          overflow: hidden;
+          padding: 15px 5px 15px 5px;
+          .topten-question-number{
+            font-size: 12px;
+          }
+        }
       }
+    }
   }
 }
 /* customer-service 끝----------------------------------------*/
