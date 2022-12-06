@@ -34,25 +34,29 @@
                             border-bottom: 5px solid black;
                         }
                     }
+                    .active{
+                        border-bottom: 5px solid black;
+                    }
                 }
             }
         }
     }
     .emart-content-wrap{
         #product-info-tab{
-            width: 100%;
             margin-top: 100px;
             .product-info-box{
-                display: flex;
                 margin: 40px 0 40px 0;
+                line-height: 25px;
+                .product-info-img{
+                    display: inline-block;
+                    vertical-align: top;
+                }
                 .product-info-description{
-                    padding: 40px 0 40px 40px;
+                    display: inline-block;
                     text-align: left;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    width: 700px;
+                    margin-left: 20px;
                     .product-number-left{
+                        display: inline-block;
                         border: 1px solid black;
                         border-radius: 5px 0 0 5px;
                         padding: 5px;
@@ -60,8 +64,11 @@
                         width: 25px;
                         font-size: 12px;
                         text-align: center;
+                        line-height: 15px;
+                        float: left;
                     }
                     .product-number-right{
+                        display: inline-block;
                         border: 1px solid black;
                         color: white;
                         background-color: black;
@@ -71,8 +78,11 @@
                         width: 20px;
                         font-size: 12px;
                         text-align: center;
+                        line-height: 15px;
+                        float: left;
                     }
                     .sold-count{
+                        display: inline-block;
                         width: 70px;
                         margin-left: 15px;
                         font-size: 12px;
@@ -80,6 +90,7 @@
                         text-align: center;
                     }
                     .left-count{
+                        display: inline-block;
                         width: 450px;
                         margin-left: 5px;
                         font-size: 12px;
@@ -90,39 +101,53 @@
                         }
                     }
                     .product-name{
-                        margin: 10px 0 0 0 ;
-                        color: black;
-                        width: 700px;
+                        text-align: left;
+                        a{
+                            margin: 10px 0 0 0 ;
+                            color: black;
+                            width: 700px;
+                        }
                     }
                     .product-price{
+                        text-align: left;
                         margin: 10px 0 0 0 ;
                         width: 700px;
                         font-size: 24px;
                         font-weight: 800;
                     }
                     .product-pergram{
+                        text-align: left;
                         margin: 5px 0 0 0 ;
                         color: gray;
                         font-size: 12px;
                         width: 700px;
                     }
                     .delivery-option{
+
                         margin: 10px 0 0 0 ;
-                        display: flex;
-                        width: 700px;
+                        li{
+                            display: inline-block;
+                        }
                     }
                     .saving-points-box{
                         margin: 10px 0 0 0 ;
-                        display: flex;
+                        display: inline-block;
                         color: brown;
                         font-size: 12px;
                         background-color: lightgray;
                         border-radius: 5px;
+                        .saving-points-img{
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                        .saving-points{
+                            margin-top: 0;
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 0 15px 0 5px;
+                        }
                     }
-                    .saving-points{
-                        padding: 0 5px 0 5px;
-                        line-height: 20px;
-                    }
+                    
                 }
             }
         }
@@ -215,6 +240,9 @@
                     justify-content: space-between;
                     .review-detail-header-left{
                         display: flex;
+                        .five-star-points{
+                            width: 20px;
+                        }
                         li{
                             margin-right: 10px;
                             &::after{
@@ -241,13 +269,17 @@
                 display: flex;
                 justify-content: center;
                 li{
-                    padding: 10px;
-                    margin: 20px auto;
+                    margin-top: 20px;
+                    a{
+                        padding: 10px;
+                        margin: 20px auto;
+                        &:hover{
+                            border: 1px solid black;
+                            border-radius: 5px;
+                        }
+                    }
                 }
-                li:hover{
-                    border: 1px solid black;
-                    border-radius: 5px;
-                }
+                
             }
         }
         #product-recommend-tab{
