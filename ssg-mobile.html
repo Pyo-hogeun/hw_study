@@ -8,7 +8,39 @@
     <title>ssg-mobile</title>
 </head>
 <body>
-    <div class="ssg-wrap">
+    <div class="ssg-gnb-top">
+        <div class="ssg-gnb-top-left">
+            <a class="ssg-gnb-top-left-img" href="#"><img src="./src/img/SSG/SSG_mobile_0.png"></a>
+        </div>
+        <ul class="ssg-gnb-top-middle">
+            <li class="ssg-gnb-top-middle-toggle">
+                <a href="#">
+                    <label for="#">상세</label>
+                </a>
+            </li>
+            <li class="ssg-gnb-top-middle-toggle">
+                <a href="#">
+                    <label for="#ssg-gnb-top-review-count">리뷰</label> 
+                    <div id="ssg-gnb-top-review-count">2</div>
+                </a>
+            </li>
+            <li class="ssg-gnb-top-middle-toggle">
+                <a href="#">
+                    <label for="#ssg-gnb-top-qna">Q&A</label> 
+                    <div id="ssg-gnb-top-qna">27</div>
+                </a>
+            </li>
+        </ul>
+        <div class="ssg-gnb-top-right">
+            <a href="#" class="ssg-gnb-top-right-img">
+                <img src="./src/img/SSG/SSG_mobile_1.png">
+            </a>
+            <a href="#" class="ssg-gnb-top-right-img">
+                <img src="./src/img/SSG/SSG_mobile_2.png">
+            </a>
+        </div>
+    </div>
+    <div class="ssg-wrap"><!--search bar-->
         <a class="ssg-app-download" href="#">
             <img src="./src/img/SSG/SSG_mobile_6.png">
         </a>
@@ -24,39 +56,12 @@
                 <img src="./src/img/SSG/SSG_mobile_2.png">
             </a>
         </div>
-        <div class="ssg-gnb">
-            <div class="ssg-gnb-left">
-                <a href="#"><img src="./src/img/SSG/SSG_mobile_0.png"></a>
-            </div>
-            <ul class="ssg-gnb-middle">
-                <li class="ssg-gnb-middle-toggle">
-                    <a href="#">
-                        <label for="#">상세</label>
-                    </a>
-                </li>
-                <li class="ssg-gnb-middle-toggle">
-                    <a href="#">
-                        <label for="#ssg-gnb-review-count">리뷰</label> 
-                        <div id="ssg-gnb-review-count">2</div>
-                    </a>
-                </li>
-                <li class="ssg-gnb-middle-toggle">
-                    <a href="#">
-                        <label for="#ssg-gnb-qna">Q&A</label> 
-                        <div id="ssg-gnb-qna">27</div>
-                    </a>
-                </li>
-            </ul>
-            <div class="ssg-gnb-right">
-                <a href="#"><img src="./src/img/SSG/SSG_mobile_1.png"></a>
-                <a href="#"><img src="./src/img/SSG/SSG_mobile_2.png"></a>
-            </div>
-        </div>
-    </div><!--ssg-wrap-->
+        
+    </div>
     <div class="ssg-main-img">
         <img src="./src/img/SSG/SSG_mobile_3.png">
     </div>
-    <div class="ssg-wrap">
+    <div class="ssg-wrap"><!--ssg-share-sns-bar-->
         <ul class="ssg-share-sns-bar">
             <li>
                 신세계몰
@@ -66,6 +71,96 @@
                 <img src="./src/img/SSG/SSG_mobile_8.png">
             </a>
         </ul>
+    </div>
+    <div class="ssg-wrap"><!--ssg-product-name/ssg-product-price/ssg-coupon -->
+        <ul class="ssg-productor-product-name">
+            <li class="ssg-productor-name">
+                <a href="#">캐스키드슨</a>
+            </li>
+            <li class="ssg-product-name">
+                ★15% 상품쿠폰★ [2022 홀리데이 에디션] 캐스키드슨 크리스마스 어드밴트 캘린더 (24종)
+            </li>
+        </ul>
+        <div class="ssg-product-price-wrap">
+            <div class="ssg-product-price-wrap-top">
+                <span class="ssg-product-price-original">52,500원</span>
+                <span class="ssg-product-price-involve-coupon">쿠폰포함</span>
+            </div>
+            <div class="ssg-product-price-wrap-bottom">
+                <span class="ssg-product-price-percentage">5%</span>
+                <span class="ssg-product-price-discounted">49,875원</span>
+                <a class="ssg-product-price-question" href="#">
+                    <img src="./src/img/SSG/SSG_mobile_9.png">
+                </a>
+            </div>
+        </div>
+        <div class="ssg-coupon-wrap">
+            <div class="ssg-coupon-starbucks">
+                <a href="#">
+                    <img src="./src/img/SSG/SSG_mobile_10.png">
+                </a>
+            </div>
+            <a href="#" class="ssg-coupon-download">
+                <p>
+                    15% 상품 쿠폰받기<br>
+                    [1205-1211]먼데이문위크 트렌드 뷰티 15% 상품쿠폰<br>
+                    1원 이상 구매 시 사용가능<br>
+                    2022.12.05 ~ 2022.12.11<br>
+                </p>
+                <button class="ssg-coupon-download-button"></button>
+            </a>
+            <div class="ssg-coupon-notice">상품쿠폰 유의사항</div>
+        </div>
+        <ul class="ssg-review-score-count-wrap">
+            <li id="ssg-review-score">★ 5.0</li>
+            <a href="#">
+                <li id="ssg-review-count">2건 리뷰</li>
+            </a>
+            <a class="ssg-review-user-image" href="#">
+                <img src="./src/img/SSG/SSG_mobile_12.png">
+                >
+            </a>
+        </ul>
+    </div>
+    <div class="ssg-wrap"><!--ssg-product-info-label-->
+        <ul class="ssg-product-info-label">
+            <li>45,013원~</li>
+            <li>카드사별 무이자 혜택</li>
+            <li>
+                [1205-1211]12월 언데이문 위크'홀리데이 뷰티 기프트'<br>
+                2022.12.05 ~ 2022.12.11
+                <div>바로가기</div>
+            </li>
+            <li>
+                신세계몰/신세계백화점 설 명절 사전예약<br>
+                2022.12.01 ~ 2022.12.14
+                <div>바로가기</div>
+            </li>
+            <li>
+                택배배송
+                12/12(월)도착 예정
+                배송비 무료(3만원 이상 무료)
+            </li>
+            <li>
+                명절 선물과 함께 메세지 보내기
+            </li>
+        </ul>
+    </div>
+    <div class="ssg-gnb-side">
+        <a class="ssg-gnb-side-icon" href="#">
+            <img src="./src/img/SSG/SSG_mobile_14.png">
+        </a>
+        <a class="ssg-gnb-side-icon" href="#">
+            <img src="./src/img/SSG/SSG_mobile_15.png">
+        </a>
+    </div>
+    <div class="ssg-gnb-bottom">
+        <a class="ssg-gnb-bottom-button" href="#">♡</a>
+        <a class="ssg-gnb-bottom-button" href="#">
+            <img class="ssg-gnb-bottom-present-img" src="./src/img/SSG/SSG_mobile_13.png">
+            <span>선물하기</span>
+        </a>
+        <a class="ssg-gnb-bottom-button" href="#">구매하기</a>
     </div>
 </body>
 </html>

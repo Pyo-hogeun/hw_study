@@ -1,10 +1,114 @@
 body{
     background-color: $background-color;
 }
-.ssg-wrap{
+.ssg-main-img{ 
+    img{
+        width: 100%;
+    }
+}
+.ssg-gnb-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    .ssg-gnb-top-left{
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        .ssg-gnb-top-left-img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .ssg-gnb-top-middle{
+        display: inline-flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        font-weight: 700;
+        align-items:flex-start;
+        .ssg-gnb-top-middle-toggle{
+            margin: 0 10px;
+            #ssg-gnb-top-review-count{
+                color: lightgray;
+                font-size: 12px;
+            }
+            #ssg-gnb-top-qna{
+                color: lightgray;
+                font-size: 12px;
+            }
+        }
+    }
+    .ssg-gnb-top-right{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        .ssg-gnb-top-right-img{
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+        }
+    }
+}
+.ssg-gnb-side{
+    position: fixed;
+    bottom: 60px;
+    height: 100px;
+    right: 10px;
+    .ssg-gnb-side-icon{
+        text-align: right;
+        display: block;
+        height: 40px;
+        margin-top: 10px;
+        img{
+            border-radius: 10px;
+        }
+    }
+}
+.ssg-gnb-bottom{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    border: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    flex: 0 0 20%;
+        .ssg-gnb-bottom-button{
+        padding: 15px;
+        height: 20px;
+        .ssg-gnb-bottom-present-img{
+            vertical-align: top;
+        }
+        &:first-child{
+            border-right: 1px solid gray;
+            text-align: center;
+        }
+        &:nth-child(2){
+            text-align: center;
+            min-width: 90px;
+        }
+        &:last-child{
+            text-align: center;
+            color: white;
+            background-color: $emphas-color;
+            width: 100%;
+        }
+    }
+}
+.ssg-wrap{ //search bar
     background-color: white;
     padding: 20px;
     text-align: center;
+    border-bottom: 1px solid $background-color;
     .ssg-app-download{
         display: block;
         margin-top: 80px;
@@ -15,7 +119,7 @@ body{
     }
     .ssg-search-bar{
         display: flex;
-        margin: 20px auto;
+        margin: 20px 0 0 0;
         align-items: center;
         justify-content: space-between;
         .ssg-search-bar-left{
@@ -50,59 +154,119 @@ body{
             }
         }
     }
-    .ssg-gnb{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-        text-align: center;
-        .ssg-gnb-left{
-            display: inline-block;
-            position: absolute;
-            left: 20px;
-            top: 15px;
+    .ssg-share-sns-bar{
+    img{
+        vertical-align: -5px;
+    }
+    display: flex;
+    justify-content: space-between;
+    }
+    .ssg-productor-product-name{
+        text-align: left;
+        margin: 0 0 20px 0;
+        .ssg-productor-name{
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .ssg-product-name{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .ssg-product-price-wrap{
+        text-align: left;
+        margin-bottom: 20px;
+        .ssg-product-price-wrap-top{
+            margin-bottom: 5px;
+        }
+        .ssg-product-price-original{
+            text-decoration:line-through;
+            color: gray;
+        }
+        .ssg-product-price-involve-coupon{
+            border: 1px solid $emphas-color;
+            font-size: 10px;
+            color: $emphas-color;
+        }
+        .ssg-product-price-percentage{
+            color: $emphas-color;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .ssg-product-price-discounted{
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    .ssg-coupon-wrap{
+        .ssg-coupon-starbucks{
+            margin-bottom: 20px;
             a{
                 display: block;
-                width: 100%;
                 height: 100%;
-            }
-        }
-        .ssg-gnb-middle{
-            display: inline-flex;
-            justify-content:space-between;
-            flex-wrap: wrap;
-            font-weight: 700;
-            align-items:flex-start;
-            .ssg-gnb-middle-toggle{
-                margin: 0 10px;
-                div{
-                    color: lightgray;
-                    font-size: 12px;
+                img{
+                    width: 100%;
                 }
             }
         }
-        .ssg-gnb-right{
-            display: inline-block;
-            position: absolute;
-            right: 20px;
-            a{
-                display: inline-block;
-                width: 40%;
-                height: 100%;
+        .ssg-coupon-download{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            padding: 15px;
+            border: 0;
+            border-radius: 10px;
+            background: linear-gradient(to right,orange, rgb(255, 106, 131), rgb(161, 83, 161), rgb(112, 112, 255), rgb(44, 138, 114));
+            color: white;
+            font-size: 12px;
+            p{
+                line-height: 16px;
+                &::first-line{
+                    font-size: 16px;
+                    line-height: 36px;
+                }
+            }
+            .ssg-coupon-download-button{
+                background-image: url(d:/hw_study_2/src/img/SSG/SSG_mobile_11.png);
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 23px;
+                border: 0;
+
             }
         }
+        .ssg-coupon-notice{
+            text-align: left;
+            color: gray;
+            padding: 10px;
+            font-size: 12px;
+        }
     }
-    .ssg-share-sns-bar{
+    .ssg-review-score-count-wrap{
         display: flex;
-        justify-content: space-between;
+        margin-top: 20px;
+        #ssg-review-score{
+            font-weight: 700;
+            margin-right: 20px;
+        }
+        #ssg-review-count{
+            text-decoration: underline;
+            margin-right: 10px;
+        }
+        .ssg-review-user-image{
+            img{
+                vertical-align: top;
+            }
+            display: block;
+            font-size: 20px;
+            color: gray;
+        }
     }
-} //ssg-wrap
-.ssg-main-img{
-    img{
-        width: 100%;
+    .ssg-product-info-label{
+        text-align: left;
     }
-}
+} 
