@@ -1,0 +1,35 @@
+@media all and (max-width:720px){
+    .ssg-wrap{
+        margin: 20px;
+        .ssg-gnb{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            .ssg-gnb-left{
+                display: inline-block;
+                position: absolute;
+                left: 20px;
+            }
+            .ssg-gnb-middle{
+                display: inline-flex;
+                justify-content:space-between;
+                width: 150px;
+                font-weight: 700;
+            }
+            .ssg-gnb-right{
+                display: inline-block;
+                position: absolute;
+                right: 20px;
+            }
+        }
+        .ssg-main-img{
+            overflow: scroll;
+        }
+    }
+}
