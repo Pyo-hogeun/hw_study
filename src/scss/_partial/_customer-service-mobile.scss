@@ -7,14 +7,30 @@
       width: 100%;
       margin: 0;
       top: 0;
+      .question-input-box{
+        justify-content: flex-start;
+        .question-input-title{
+          font-size: 16px;
+        }
+        .question-input{
+          width: 50%;
+          font-size: 14px;
+        }
+        a{
+          width: 10%;
+        }
+        .question-input-submit{
+        }
+      }
+      .question-type-box{
+        font-size: 10px;
+      }      
     }
     .topten-questions-wrap{
       background-color: rgb(238, 238, 238);
       padding: 20px;
-      width: 100%;
       overflow:scroll;
       .topten-questions-header{
-        position: fixed;
         text-align: left;
       }
       .topten-questions{
@@ -24,34 +40,38 @@
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        li{
+        .topten-questions-item{
           background-color: white;
           margin: 0 5px;
           display: inline-block;
           width: 150px;
           height: 130px;
           overflow: hidden;
-          padding: 15px 5px 15px 5px;
-          .topten-question-number{
-            font-size: 12px;
+          .topten-questions-number{
+            font-size: 15px;
           }
         }
       }
     }
     .question-category-wrap{
-      position: fixed;
+      width: 100%;
+      .question-category-item{
+      }
     }
     .customer-service-benefit-wrap{
-      position: fixed;
+      overflow: scroll;
       top: 700px;
+      .benefit-icon{
+        width: 100%;
+      }
     }
     .customer-service-questions-wrap{
-      position: fixed;
       top: 750px;
+      width: 100%;
     }
     .customer-service-footer{
-      position: fixed;
       bottom: 0;
+      width: 100%;
     }
   }
 }
