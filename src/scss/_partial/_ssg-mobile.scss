@@ -401,7 +401,27 @@ body{
         font-size: 14px;
 
     }
-    .ssg-customer-review{
-        text-align: left;
+    .ssg-customer-review-box1{
+        text-align: center;
+        font-size: 32px;
+        margin: 40px 0 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .ssg-customer-review-score{
+            font-weight: 700;
+        }
+        .ssg-customer-review-box2{
+            text-align: left;
+            margin-left: 20px;
+            .ssg-customer-review-star{
+                font-size: 30px;
+            }
+            .ssg-customer-review-count{
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
     }
 } 
