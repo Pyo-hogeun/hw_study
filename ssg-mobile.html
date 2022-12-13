@@ -21,13 +21,13 @@
             <li class="ssg-gnb-top-middle-toggle">
                 <a href="#">
                     <label for="#ssg-gnb-top-review-count">리뷰</label> 
-                    <div id="ssg-gnb-top-review-count">2</div>
+                    <div class="ssg-gnb-top-review-count">2</div>
                 </a>
             </li>
             <li class="ssg-gnb-top-middle-toggle">
                 <a href="#">
                     <label for="#ssg-gnb-top-qna">Q&A</label> 
-                    <div id="ssg-gnb-top-qna">27</div>
+                    <div class="ssg-gnb-top-qna">27</div>
                 </a>
             </li>
         </ul>
@@ -58,7 +58,7 @@
         </div>
         
     </div>
-    <div class="ssg-main-img">
+    <div class="ssg-thumbnail-img">
         <img src="./src/img/SSG/SSG_mobile_3.png">
     </div>
     <div class="ssg-wrap"><!--ssg-share-sns-bar-->
@@ -71,8 +71,6 @@
                 <img src="./src/img/SSG/SSG_mobile_8.png">
             </a>
         </ul>
-    </div>
-    <div class="ssg-wrap"><!--ssg-product-name/ssg-product-price/ssg-coupon -->
         <ul class="ssg-productor-product-name">
             <li class="ssg-productor-name">
                 <a href="#">캐스키드슨</a>
@@ -112,48 +110,46 @@
             <div class="ssg-coupon-notice">상품쿠폰 유의사항</div>
         </div>
         <ul class="ssg-review-score-count-wrap">
-            <li id="ssg-review-score">★ 5.0</li>
+            <li class="ssg-review-score">★ 5.0</li>
             <a href="#">
-                <li id="ssg-review-count">2건 리뷰</li>
+                <li class="ssg-review-count">2건 리뷰</li>
             </a>
             <a class="ssg-review-user-image" href="#">
                 <img src="./src/img/SSG/SSG_mobile_12.png">
                 >
             </a>
         </ul>
-    </div>
-    <div class="ssg-wrap"><!--ssg-product-info-->
         <dl class="ssg-product-info">
             <dt class="ssg-product-info-dt">카드혜택가</dt>
-            <dd class="ssg-product-info-dd" id="ssg-product-info-cardprice">
+            <dd class="ssg-product-info-dd ssg-product-info-cardprice">
                 <a href="#">45,013원~ ▽</a>
             </dd>
         </dl>
         <dl class="ssg-product-info">
             <dt class="ssg-product-info-dt">무이자 할부</dt>
-            <dd class="ssg-product-info-dd" id="ssg-product-info-nointerest">
+            <dd class="ssg-product-info-dd ssg-product-info-nointerest">
                 <a href="#">카드사별 무이자 혜택</a>
             </dd>
         </dl>
         <dl class="ssg-product-info">
             <dt class="ssg-product-info-dt">이벤트</dt>
-            <dd class="ssg-product-info-dd" id="ssg-product-info-event">
-                [1205-1211]12월 언데이문 위크'홀리데이 뷰티 기프트'<br>
+            <dd class="ssg-product-info-dd ssg-product-info-event">
+                <p>[1205-1211]12월 언데이문 위크'홀리데이 뷰티 기프트'</p>
                 2022.12.05 ~ 2022.12.11
                 <a class="ssg-product-info-barogo" href="#">바로가기 ></a>
             </dd>
         </dl>
         <dl class="ssg-product-info">
             <dt class="ssg-product-info-dt">이벤트</dt>
-            <dd class="ssg-product-info-dd" id="ssg-product-info-event">
-                신세계몰/신세계백화점 설 명절 사전예약<br>
+            <dd class="ssg-product-info-dd ssg-product-info-event">
+                <p>신세계몰/신세계백화점 설 명절 사전예약</p>
                 2022.12.01 ~ 2022.12.14
                 <a class="ssg-product-info-barogo" href="#">바로가기 ></a>
             </dd>
         </dl>
         <dl class="ssg-product-info">
             <dt class="ssg-product-info-dt">배송정보</dt>
-            <dd class="ssg-product-info-dd" id="ssg-product-info-delivery">
+            <dd class="ssg-product-info-dd ssg-product-info-delivery">
                 택배배송<br>
                 12/12(월)도착 예정
                 <a class="ssg-product-info-question-icon" href="#">
@@ -164,7 +160,7 @@
         </dl>
         <dl class="ssg-product-info">
             <dt class="ssg-product-info-dt">땡큐카드</dt>
-            <dd class="ssg-product-info-dd" id="ssg-product-info-thankyoucard">
+            <dd class="ssg-product-info-dd ssg-product-info-thankyoucard">
                 명절 선물과 함께 메세지 보내기
                 <a class="ssg-product-info-question-icon" href="#">
                     <img src="./src/img/SSG/SSG_mobile_9.png">
@@ -172,23 +168,50 @@
             </dd>
         </dl>
     </div>
-    <div class="ssg-wrap">
-        <div>
-            상품정보
+    <br>
+    <div class="ssg-wrap"><!--ssg-product-info-->
+        <div class="ssg-product-info-header">
+            <span>상품정보</span>
         </div>
-        <dl>
-            <dt>색상</dt>
-            <dd>로즈골드,버건디,베이지,오렌지,코랄,피치,핑크</dd>
-            <dd></dd>
+        <dl class="ssg-product-info">
+            <dt class="ssg-product-info-dt">색상</dt>
+            <dd class="ssg-product-info-dd">로즈골드,버건디,베이지,오렌지,코랄,피치,핑크</dd>
         </dl>
-        <dl>
-            <dt>보관방식</dt>
-            <dd>실온(상온) 보관</dd>
+        <dl class="ssg-product-info">
+            <dt class="ssg-product-info-dt">보관방식</dt>
+            <dd class="ssg-product-info-dd">실온(상온) 보관</dd>
         </dl>
-        <dl>
-            <dt>형태</dt>
-            <dd>튜브형,펌프형,캡형</dd>
+        <dl class="ssg-product-info">
+            <dt class="ssg-product-info-dt">형태</dt>
+            <dd class="ssg-product-info-dd">튜브형,펌프형,캡형</dd>
         </dl>
+    </div>
+    <br>
+    <div class="ssg-wrap">
+        <div class="ssg-warning-direct-transaction">
+            <p>
+                <img src="./src/img/SSG/SSG_mobile_17.png">
+                직거래 유도 주의 안내
+            </p>
+            <p>
+                판매자가 쓱톡/문자 등을 이용하여<br>
+                현금 입금을 유도하는 경우 사기 가능성이 있으니 거부하시고<br>
+                <span>SSG.COM 고객센터로 신고</span> 해 주시기 바랍니다.
+            </p>
+        </div>
+        <div class="ssg-product-info-header">
+            <span>상세정보</span>
+        </div>
+        <div class="ssg-product-info-product-number">
+            상품번호:1000521970042
+        </div>
+        <div class="ssg-product-info-report">
+            <div class="ssg-product-info-report-left">
+                <img src="./src/img/SSG/SSG_mobile_16.png">
+                <div>상품정보에<br>문제가 있나요?</div>
+            </div>
+            <a class="ssg-product-info-report-button" href="#">신고하기</a>
+        </div>
     </div>
     <div class="ssg-gnb-side">
         <a class="ssg-gnb-side-icon" href="#">
