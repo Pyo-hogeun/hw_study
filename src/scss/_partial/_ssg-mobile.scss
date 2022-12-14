@@ -104,7 +104,7 @@ body{
         }
     }
 }
-.ssg-wrap{
+.ssg-container{
     background-color: white;
     padding: 20px;
     text-align: center;
@@ -219,7 +219,6 @@ body{
         }
         .ssg-coupon-download{
             display: flex;
-            flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
             text-align: left;
@@ -229,12 +228,12 @@ body{
             background: linear-gradient(to right,orange, rgb(255, 106, 131), rgb(161, 83, 161), rgb(112, 112, 255), rgb(44, 138, 114));
             color: white;
             font-size: 12px;
+            .ssg-coupon-download-title{
+                font-size: 16px;
+                line-height: 36px;
+            }
             p{
                 line-height: 16px;
-                &::first-line{
-                    font-size: 16px;
-                    line-height: 36px;
-                }
             }
             .ssg-coupon-download-button{
                 background-image: url('../../src/img/SSG/SSG_mobile_11.png');
@@ -290,14 +289,17 @@ body{
     .ssg-product-info{
         text-align: left;
         display: flex;
+        flex-wrap: wrap;
         .ssg-product-info-dt{
             color: gray;
             min-width: 100px;
             margin-bottom: 30px;
             line-height: 25px;
+            width: 100px;
         }
         .ssg-product-info-dd{
             line-height: 25px;
+            width: calc(100% - 100px);
         }
         .ssg-product-info-barogo{
             text-align: center;
@@ -326,7 +328,7 @@ body{
             }
         }
         .ssg-product-info-delivery{
-            &::first-line{
+            .delivery-title{
                 font-weight: 700;
             }
         }
@@ -421,6 +423,32 @@ body{
             .ssg-customer-review-count{
                 margin-top: 10px;
                 font-size: 14px;
+            }
+        }
+    }
+    .ssg-photo-video-review{
+        text-align: left;
+        .ssg-photo-video-review-title{
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .ssg-photo-video-review-thumbnail{
+            img{
+                margin-right: 5px;
+            }
+        }
+    }
+    .ssg-review-overview{
+        margin-top: 60px;
+        text-align: left;
+        .ssg-review-overview-title{
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .ssg-review-overview-first{
+            .overview-first-info{
+                font-size: 14px;
+                margin-bottom: 20px;
             }
         }
     }
