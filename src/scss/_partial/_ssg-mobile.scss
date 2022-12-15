@@ -66,6 +66,7 @@ body{
         display: block;
         height: 40px;
         margin-top: 10px;
+        opacity: 0.5;
         img{
             border-radius: 10px;
         }
@@ -445,11 +446,147 @@ body{
             font-weight: 700;
             margin-bottom: 20px;
         }
-        .ssg-review-overview-first{
-            .overview-first-info{
-                font-size: 14px;
+        .ssg-review-overview-container{
+            .review-overview-info{
+                font-size: 12px;
                 margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                span::after{
+                    color: lightgray;
+                    content: ' |';
+                }
+                .info-id::after{
+                    content: '';
+                }
+                .info-date{
+                    color: gray;
+                }
+                .info-id{
+                    color: gray;
+                }
             }
+            .review-overview-section{
+                font-size: 14px;
+                margin: 10px 0 30px 0;
+                padding-bottom: 20px;
+                border-bottom: 1px solid lightgray;
+                line-height: 20px;
+            }
+        }
+    }
+    .ssg-qna-header{
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        justify-content: space-between;
+        .ssg-qna-title{
+            font-weight: 700;
+            font-size: 18px;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+        .ssg-qna-ask-button{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+    .ssg-qna-list{
+        padding: 0 0 0 20px;
+        .ssg-qna-question{
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            margin: 15px auto;
+            padding: 20px;
+            text-align: left;
+            img{
+                vertical-align: top;
+            }
+            .ssg-qna-info{
+                color: gray;
+                font-size: 12px;
+                margin-bottom: 10px;
+                .ssg-qna-info-date::after{
+                    content: ' |';
+                }
+            }
+            .ssg-qna-section{
+                font-size: 14px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .ssg-qna-answer{
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            background-color: $qna-answer;
+            margin-left: 40px;
+            text-align: left;
+            .ssg-qna-answer-info{
+                font-size: 12px;
+                color: gray;
+                margin-bottom: 10px;
+                img{
+                    vertical-align: middle;
+                }
+            }
+            .ssg-qna-answer-section{
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        .ssg-qna-overview{
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 20px;     
+            margin: 20px auto;
+            font-size: 14px;
+            .ssg-qna-overview-count{
+                color: gray;
+            }       
+        }
+    }
+    .ssg-product-introduction{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        .ssg-product-introduction-item{
+            border: 1px solid lightgray;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(50% - 52px);
+            margin: 5px;
+            flex-grow: 1;
+            .introduction-item{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .ssg-product-recommend-title{
+        text-align: left;
+        margin: 20px 0;
+        margin-bottom: 20px;
+        .recommend-title-line1{
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .recommend-title-line2{
+            color: gray;
+            font-size: 14px;
+        }
+    }
+    .ssg-product-recommend-section{
+        display: flex;
+        flex-wrap: wrap;
+        .ssg-product-recommend-item{
+            width: calc(50% - 40px);
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 } 
