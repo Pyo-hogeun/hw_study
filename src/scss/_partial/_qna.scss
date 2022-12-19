@@ -1,14 +1,14 @@
 
 /* qna 시작-----------------------------------*/
-.qna-question{
+.practice-qna-question{
     margin:20px 20px;
 }
-.qna-answer{
+.practice-qna-answer{
     padding-left: 40px;
     height: 0;
     visibility: hidden;
 }
-.qna-question{
+.practice-qna-question{
     &:active{
         &+.qna-answer{
         visibility: visible;

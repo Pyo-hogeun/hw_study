@@ -16,7 +16,7 @@ body{
     color: black;
     text-decoration: none;
     text-align: center;
-    .ssg-gnb-top-left{
+    .gnb-top-left{
         display: inline-block;
         position: absolute;
         left: 20px;
@@ -27,29 +27,29 @@ body{
             height: 100%;
         }
     }
-    .ssg-gnb-top-middle{
+    .gnb-top-middle{
         display: inline-flex;
         justify-content:space-between;
         flex-wrap: wrap;
         font-weight: 700;
         align-items:flex-start;
-        .ssg-gnb-top-middle-toggle{
+        .gnb-toggle{
             margin: 0 10px;
-            .ssg-gnb-top-review-count{
+            .gnb-review-count{
                 color: lightgray;
                 font-size: 12px;
             }
-            .ssg-gnb-top-qna{
+            .gnb-top-qna{
                 color: lightgray;
                 font-size: 12px;
             }
         }
     }
-    .ssg-gnb-top-right{
+    .gnb-top-right{
         display: inline-block;
         position: absolute;
         right: 20px;
-        .ssg-gnb-top-right-img{
+        .gnb-img{
             display: inline-block;
             width: 40%;
             height: 100%;
@@ -61,7 +61,7 @@ body{
     bottom: 60px;
     height: 100px;
     right: 10px;
-    .ssg-gnb-side-icon{
+    .side-icon{
         text-align: right;
         display: block;
         height: 40px;
@@ -83,10 +83,10 @@ body{
     position: fixed;
     bottom: 0;
     flex: 0 0 20%;
-        .ssg-gnb-bottom-button{
+        .bottom-button{
         padding: 15px;
         height: 20px;
-        .ssg-gnb-bottom-present-img{
+        .bottom-present-img{
             vertical-align: top;
         }
         &:first-child{
@@ -110,7 +110,7 @@ body{
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid $background-color;
-    .ssg-app-download{
+    .app-download{
         display: block;
         margin-top: 80px;
         img{
@@ -118,7 +118,7 @@ body{
             height: 100%;
         }
     }
-    .ssg-search-bar{
+    .search-bar{
         display: flex;
         margin: 20px 0 0 0;
         align-items: center;
@@ -126,7 +126,7 @@ body{
         .ssg-search-bar-left{
             width: 86px;
         }
-        .ssg-search-bar-middle{
+        .search-bar-middle{
             background-color: $background-color;
             border-radius: 20px;
             margin: 0 10px 0 30px;
@@ -156,7 +156,7 @@ body{
             }
         }
     }
-    .ssg-share-sns-bar{
+    .share-sns-bar{
     img{
         vertical-align: -5px;
     }
@@ -168,47 +168,47 @@ body{
     margin-bottom: 20px;
     padding-bottom: 10px;
     }
-    .ssg-productor-product-name{
+    .productor-product-name{
         text-align: left;
         margin: 0 0 20px 0;
-        .ssg-productor-name{
+        .productor-name{
             text-decoration: underline;
             font-weight: 700;
             font-size: 14px;
             margin-bottom: 10px;
         }
-        .ssg-product-name{
+        .product-name{
             font-size: 14px;
             line-height: 20px;
         }
     }
-    .ssg-product-price-wrap{
+    .product-price-wrap{
         text-align: left;
         margin-bottom: 20px;
-        .ssg-product-price-wrap-top{
+        .wrap-top{
             margin-bottom: 5px;
         }
-        .ssg-product-price-original{
+        .price-original{
             text-decoration:line-through;
             color: gray;
         }
-        .ssg-product-price-involve-coupon{
+        .price-involve-coupon{
             border: 1px solid $emphas-color;
             font-size: 10px;
             color: $emphas-color;
         }
-        .ssg-product-price-percentage{
+        .price-percentage{
             color: $emphas-color;
             font-size: 24px;
             font-weight: 700;
         }
-        .ssg-product-price-discounted{
+        .price-discounted{
             font-size: 24px;
             font-weight: 700;
         }
     }
-    .ssg-coupon-wrap{
-        .ssg-coupon-starbucks{
+    .coupon-wrap{
+        .coupon-starbucks{
             margin-bottom: 20px;
             a{
                 display: block;
@@ -218,7 +218,7 @@ body{
                 }
             }
         }
-        .ssg-coupon-download{
+        .coupon-download{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -229,14 +229,14 @@ body{
             background: linear-gradient(to right,orange, rgb(255, 106, 131), rgb(161, 83, 161), rgb(112, 112, 255), rgb(44, 138, 114));
             color: white;
             font-size: 12px;
-            .ssg-coupon-download-title{
+            .download-title{
                 font-size: 16px;
                 line-height: 36px;
             }
             p{
                 line-height: 16px;
             }
-            .ssg-coupon-download-button{
+            .download-button{
                 background-image: url('../../src/img/SSG/SSG_mobile_11.png');
                 background-repeat: no-repeat;
                 width: 20px;
@@ -245,28 +245,28 @@ body{
 
             }
         }
-        .ssg-coupon-notice{
+        .coupon-notice{
             text-align: left;
             color: gray;
             padding: 10px;
             font-size: 12px;
         }
     }
-    .ssg-review-score-count-wrap{
+    .review-score-count-wrap{
         display: flex;
         margin-top: 20px;
         border-bottom: 1px solid $background-color;
         padding-bottom: 10px;
         margin-bottom: 20px;
-        .ssg-review-score{
+        .review-score{
             font-weight: 700;
             margin-right: 20px;
         }
-        .ssg-review-count{
+        .review-count{
             text-decoration: underline;
             margin-right: 10px;
         }
-        .ssg-review-user-image{
+        .review-user-image{
             img{
                 vertical-align: top;
             }
@@ -275,7 +275,54 @@ body{
             color: gray;
         }
     }
-    .ssg-product-info-header{
+    .product-info{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        .product-info-dt{
+            color: gray;
+            min-width: 100px;
+            margin-bottom: 30px;
+            line-height: 25px;
+            width: 100px;
+        }
+        .product-info-dd{
+            line-height: 25px;
+            width: calc(100% - 100px);
+        }
+        .product-info-barogo{
+            text-align: center;
+            display: block;
+            border: 1px solid lightgray;
+            padding: 5px;
+            max-width: 90px;
+            margin: 10px 0 30px 0;
+        }
+        .question-icon{
+            img{
+                vertical-align: -5px;
+            }
+        }
+        .product-info-cardprice{
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .product-info-nointerest{
+            text-decoration: underline;
+        }
+        .product-info-event{
+            p{
+                color: $secondary-color;
+                font-weight: 700;
+            }
+        }
+        .product-info-delivery{
+            .delivery-title{
+                font-weight: 700;
+            }
+        }
+    }
+    .product-info-header{
         text-align: left;
         margin: 20px 0;
         padding: 6px 0;
@@ -287,54 +334,7 @@ body{
             font-size: 20px;
         }
     }
-    .ssg-product-info{
-        text-align: left;
-        display: flex;
-        flex-wrap: wrap;
-        .ssg-product-info-dt{
-            color: gray;
-            min-width: 100px;
-            margin-bottom: 30px;
-            line-height: 25px;
-            width: 100px;
-        }
-        .ssg-product-info-dd{
-            line-height: 25px;
-            width: calc(100% - 100px);
-        }
-        .ssg-product-info-barogo{
-            text-align: center;
-            display: block;
-            border: 1px solid lightgray;
-            padding: 5px;
-            max-width: 90px;
-            margin: 10px 0 30px 0;
-        }
-        .ssg-product-info-question-icon{
-            img{
-                vertical-align: -5px;
-            }
-        }
-        .ssg-product-info-cardprice{
-            font-weight: 700;
-            font-size: 18px;
-        }
-        .ssg-product-info-nointerest{
-            text-decoration: underline;
-        }
-        .ssg-product-info-event{
-            p{
-                color: $secondary-color;
-                font-weight: 700;
-            }
-        }
-        .ssg-product-info-delivery{
-            .delivery-title{
-                font-weight: 700;
-            }
-        }
-    }
-    .ssg-warning-direct-transaction{
+    .warning-direct-transaction{
         color: $emphas-color;
         margin: 40px 0;
         p{
@@ -355,18 +355,18 @@ body{
             vertical-align: -5px;
         }
     }
-    .ssg-product-info-product-number{
+    .product-number{
         color: gray;
         text-align: left;
         font-size: 14px;
     }
-    .ssg-product-info-report{
+    .product-info-report{
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
         border-bottom: 1px solid lightgray;
-        .ssg-product-info-report-left{
+        .report-left{
             display: flex;
             text-align: left;
             font-size: 14px;
@@ -375,7 +375,7 @@ body{
                 margin-right: 5px;
             }
         }
-        .ssg-product-info-report-button{
+        .report-button{
             border-radius: 30px;
             border: 1px solid lightgray;
             font-size: 12px;
@@ -383,7 +383,7 @@ body{
             padding: 15px;
         }
     }
-    .ssg-product-main-img{
+    .product-main-img{
         height: 1000px;
         overflow: hidden;
         img{
@@ -404,7 +404,7 @@ body{
         font-size: 14px;
 
     }
-    .ssg-customer-review-box1{
+    .customer-review-box1{
         text-align: center;
         font-size: 32px;
         margin: 40px 0 100px 0;
@@ -412,41 +412,41 @@ body{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        .ssg-customer-review-score{
+        .review-score{
             font-weight: 700;
         }
-        .ssg-customer-review-box2{
+        .review-box2{
             text-align: left;
             margin-left: 20px;
-            .ssg-customer-review-star{
+            .review-star{
                 font-size: 30px;
             }
-            .ssg-customer-review-count{
+            .review-count{
                 margin-top: 10px;
                 font-size: 14px;
             }
         }
     }
-    .ssg-photo-video-review{
+    .photo-video-review{
         text-align: left;
-        .ssg-photo-video-review-title{
+        .review-title{
             font-weight: 700;
             margin-bottom: 20px;
         }
-        .ssg-photo-video-review-thumbnail{
+        .review-thumbnail{
             img{
                 margin-right: 5px;
             }
         }
     }
-    .ssg-review-overview{
+    .review-overview{
         margin-top: 60px;
         text-align: left;
-        .ssg-review-overview-title{
+        .review-overview-title{
             font-weight: 700;
             margin-bottom: 20px;
         }
-        .ssg-review-overview-container{
+        .review-overview-container{
             .review-overview-info{
                 font-size: 12px;
                 margin-bottom: 20px;
@@ -475,25 +475,25 @@ body{
             }
         }
     }
-    .ssg-qna-header{
+    .qna-header{
         border-bottom: 1px solid lightgray;
         display: flex;
         justify-content: space-between;
-        .ssg-qna-title{
+        .qna-title{
             font-weight: 700;
             font-size: 18px;
             border-bottom: 1px solid black;
             padding-bottom: 10px;
         }
-        .ssg-qna-ask-button{
+        .qna-ask-button{
             a{
                 font-size: 14px;
             }
         }
     }
-    .ssg-qna-list{
+    .qna-list{
         padding: 0 0 0 20px;
-        .ssg-qna-question{
+        .qna-question{
             border: 1px solid lightgray;
             border-radius: 10px;
             margin: 15px auto;
@@ -502,28 +502,28 @@ body{
             img{
                 vertical-align: top;
             }
-            .ssg-qna-info{
+            .qna-info{
                 color: gray;
                 font-size: 12px;
                 margin-bottom: 10px;
-                .ssg-qna-info-date::after{
+                .qna-info-date::after{
                     content: ' |';
                 }
             }
-            .ssg-qna-section{
+            .qna-section{
                 font-size: 14px;
                 display: flex;
                 justify-content: space-between;
             }
         }
-        .ssg-qna-answer{
+        .qna-answer{
             padding: 20px;
             border-radius: 10px;
             border: 1px solid lightgray;
             background-color: $qna-answer;
             margin-left: 40px;
             text-align: left;
-            .ssg-qna-answer-info{
+            .qna-answer-info{
                 font-size: 12px;
                 color: gray;
                 margin-bottom: 10px;
@@ -531,27 +531,27 @@ body{
                     vertical-align: middle;
                 }
             }
-            .ssg-qna-answer-section{
+            .qna-answer-section{
                 font-size: 14px;
                 line-height: 18px;
             }
         }
-        .ssg-qna-overview{
+        .qna-overview{
             border: 1px solid lightgray;
             border-radius: 10px;
             padding: 20px;     
             margin: 20px auto;
             font-size: 14px;
-            .ssg-qna-overview-count{
+            .qna-overview-count{
                 color: gray;
             }       
         }
     }
-    .ssg-product-introduction{
+    .product-introduction{
         display: flex;
         flex-wrap: wrap;
         font-size: 12px;
-        .ssg-product-introduction-item{
+        .product-introduction-item{
             border: 1px solid lightgray;
             padding: 20px;
             border-radius: 10px;
@@ -564,7 +564,7 @@ body{
             }
         }
     }
-    .ssg-product-recommend-title{
+    .recommend-title{
         text-align: left;
         margin: 20px 0;
         margin-bottom: 20px;
@@ -580,24 +580,24 @@ body{
             font-size: 14px;
         }
     }
-    .ssg-product-recommend-section{
+    .recommend-section{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .ssg-product-recommend-item{
+        .recommend-item{
             width: calc(48%);
             text-align: left;
             margin-bottom: 40px;
             .recommend-main-img{
                 width: 100%;
             }
-            .recommend-like-basket-icon{
+            .like-basket-icon{
                 text-align: right;
                 margin: 10px 0;
                 padding-bottom: 5px;
                 border-bottom: 1px solid lightgray;
             }
-            .recommend-product-name{
+            .product-name{
                 margin-bottom: 5px;
                 font-size: 14px;
                 line-height: 18px;
@@ -605,16 +605,16 @@ body{
                     font-weight: 700;
                 }
             }
-            .recommend-product-price-beforediscounted{
+            .product-price-beforediscounted{
                 color: gray;
                 text-decoration: line-through;
                 font-size: 14px;
                 margin-bottom: 5px;
             }
-            .recommend-discount-percentage{
+            .discount-percentage{
                 color: $emphas-color;
             }
-            .recommend-product-price-discounted{
+            .product-price-discounted{
                 font-weight: 700;
             }
         }
