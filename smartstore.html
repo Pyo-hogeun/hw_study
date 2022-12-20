@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>smartstore</title>
     <link rel="stylesheet" href="./src/css/style_scss.css">
+    <script>
+        window.onload=function(){
+            document.querySelector('.content-img-big').style.display='block'
+        }
+        function show_bigImage(a){
+            let img = document.querySelectorAll('.content-img-big');
+            for( let i=0; i < img.length; i++ ){
+                img[i].style.display = 'none'
+            }
+            img[a].style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <div class="wrap">
@@ -47,12 +59,28 @@
         </div>
         <div class="content"> 
             <div class="content-left">
-                <input type="checkbox" id="checkbox-1" checked>
-                <input type="checkbox" id="checkbox-2">
-                <a href="#"><img class="content-img-big-1" src="./src/img/smartstore_5.png"></a>
-                <a href="#"><img class="content-img-big-2" src="./src/img/smartstore_15.png"></a>
-                <label for="checkbox-1" href="#"><img class="content-img-small"src="./src/img/smartstore_6.png"></label>
-                <label for="checkbox-2" href="#"><img class="content-img-small"src="./src/img/smartstore_16.png"></label>
+                <div class="img-big-box">
+                    <a href="#">
+                        <img class="content-img-big" src="./src/img/smartstore_5.png">
+                    </a>
+                    <a href="#">
+                        <img class="content-img-big" src="./src/img/smartstore_15.png">
+                    </a>
+                    <a href="#">
+                        <img class="content-img-big" src="./src/img/smartstore_5.png">
+                    </a>
+                    <a href="#">
+                        <img class="content-img-big" src="./src/img/smartstore_15.png">
+                    </a>
+                </div>
+                <img class="content-img-small" src="./src/img/smartstore_6.png"        
+                 onclick="show_bigImage(0)">
+                <img class="content-img-small" src="./src/img/smartstore_16.png" 
+                onclick="show_bigImage(1)">
+                <img class="content-img-small" src="./src/img/smartstore_6.png" 
+                onclick="show_bigImage(2)">
+                <img class="content-img-small" src="./src/img/smartstore_16.png" 
+                onclick="show_bigImage(3)">
                 <ul class="review">
                     <li>리뷰수</li>
                     <li>706 </li>
