@@ -1,4 +1,5 @@
 .daum-mail-wrap{
+    background-color: white;
     .gnb-top{
         display: flex;
         justify-content: space-between;
@@ -26,23 +27,22 @@
                     vertical-align: -5px;
                 }
             }
-            .mail-delete{
+            .delete{
                 &:hover{
                     background-color: #80abe4;
                 }
-             
             }
             .spam-prevent{
                 &:hover{
                     background-color: #80abe4;
                 }
             }
-            .mail-forward{
+            .forward{
                 &:hover{
                     background-color: #80abe4;
                 }
             }
-            .mail-move{
+            .move{
                 &:hover{
                     background-color: #80abe4;
                 }
@@ -50,7 +50,7 @@
                     display: none;
                 }
             }
-            .mail-checked{
+            .checked-mail{
                 &:hover{
                     background-color: #80abe4;
                 }
@@ -76,21 +76,40 @@
         }
         .gnb-top-right{
             display: flex;
-            li{
+            background-color: $daum-mail-gnb-top;
+            a{
                 width: 30px;
                 height: 30px;
-                border: 1px solid white;
+                margin: 0 10px;
             }
-            .mail-search{
-                background: url('../../img/daum-mail/daum_mail_3.png');
+            .search-icon{
+                background: url('../../src/img/daum-mail/daum_search.png');
+                background-repeat: no-repeat;                
+                background-position: 5px;
             }
-            .profile-button{
-                background: url('../../img/daum-mail/daum_mail_3.png');
+            .profile-icon{
+                background: url('../../src/img/daum-mail/daum_profile.png');
+                background-repeat: no-repeat;                
+                background-position: 3px;
             }
-            .menu-button{
-                background: url('../../img/daum-mail/daum_mail_3.png');
+            .menu-icon{
+                background: url('../../src/img/daum-mail/daum_menu.png');
+                background-repeat: no-repeat;                
+                background-position: 5px;
             }
         }
     }
-
+    .gnb-left{
+        position: fixed;
+        border: 1px solid lightgray;
+        width: 220px;
+        .write-box{
+            display: flex;
+            justify-content: space-between;
+            .write{
+                padding: 20px;
+                font-weight: 700;
+            }
+        }
+    }
 }    

@@ -13,12 +13,12 @@
             <ul class="gnb-top-left">
                 <li class="main-logo">
                     <a href="#">
-                        <img src="./src/img/daum-mail/daum_mail_1.png"> 
+                        <img src="./src/img/daum-mail/daum_main_logo.png"> 
                         메일
                     </a>
                 </li>
-                <li class="mail-delete">
-                    <input class="mail-delete-checkbox" type="checkbox">
+                <li class="delete">
+                    <input class="delete-checkbox" type="checkbox">
                     <a href="#">
                         삭제
                     </a>
@@ -28,13 +28,13 @@
                         스팸차단
                     </a>
                 </li>
-                <li class="mail-forward">
+                <li class="forward">
                     <a href="#">
                         전달
                     </a>
                 </li>
                 <li>|</li>
-                <li class="mail-move">
+                <li class="move">
                     <a href="#">
                         이동▽
                     </a>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="mail-checked">
+                <li class="checked-mail">
                     <a href="#">
                         읽음 표시▽
                     </a>
@@ -63,42 +63,91 @@
                         <div>안 읽음 표시</div>
                     </div>
                 </li>
-                <li class="unread-mail">
-                    <a href="#">
-                        30
-                    </a>
-                </li>
-                <li>
-                    /
-                </li>
-                <li class="total-mail">
-                    <a href="#">
-                        30
-                    </a>
+                <li class="unread-total-mail">
+                    <span class="unread-mail">
+                        <a href="#">
+                            30
+                        </a>
+                    </span>
+                    <span>
+                        /
+                    </span>
+                    <span class="total-mail">
+                        <a href="#">
+                            30
+                        </a>
+                    </span>
                 </li>
                 <li class="mail-refresh">
                     <a href="#">
-                        <img src="./src/img/daum-mail/daum_mail_2.png">
+                        <img src="./src/img/daum-mail/daum_refresh.png">
                     </a>
                 </li>
             </ul>
-            <ul class="gnb-top-right">
-                <li class="mail-search">
-                    <a href="#">
-                    </a>
-                </li>
-                <li class="profile-button">
-                  
-                </li>
-                <li class="menu-button">
-                    <a href="#">
-                    </a>
-                </li>
-            </ul`>
+            <div class="gnb-top-right">
+                <a href="#" class="search-icon">
+                </a>
+                <a href="#" class="profile-icon">
+                </a>
+                <a href="#" class="menu-icon">
+                </a>
+            </div>
         </div>
         <div class="gnb-left">
-            
+            <div class="write-box">
+                <a href="#" class="write">
+                    메일쓰기
+                </a>
+                <a href="#" class="write">
+                    내게쓰기
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <span>전체</span>
+                    <span>|</span>
+                    <span>안읽음</span>
+                    <span>30</span>
+                    <button>▽</button>
+                </li>
+                <li>
+                    <span>받은메일함</span>
+                    <span>30</span>
+                </li>
+                <li>
+                    내게쓴메일함
+                </li>
+                <li>
+                    보낸메일함
+                    <button>수신확인</button>
+                </li>
+                <li>임시보관함</li>
+                <li>스팸메일함</li>
+                <li>휴지통</li>
+                <li>
+                    ▽내 메일함
+                    <button>+</button>
+                    <button>㉧</button>
+                </li>
+                <li>
+                    <div>▽분류 메일함</div>
+                    <div>청구서함</div>
+                    <div>카페메일함</div>
+                </li>
+                <li>
+                    <div>▽더보기</div>
+                    <div>외부 메일 확인</div>
+                    <div>Daum 스마트워크</div>
+                    <span>환경설정</span>
+                    <span>|</span>
+                    <span>주소록</span>
+                </li>
+            </ul>
+            <a href="#">
+                <img src="./src/img/daum-mail/daum_id_combine.png">
+            </a>
         </div>
+
         <div class="gnb-bottom">
             
         </div>
@@ -108,4 +157,5 @@
     </div>
     
 </body>
+<script src="./src/js/script.js"></script>
 </html>
