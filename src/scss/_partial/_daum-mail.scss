@@ -1,0 +1,96 @@
+.daum-mail-wrap{
+    .gnb-top{
+        display: flex;
+        justify-content: space-between;
+        background-color: $daum-mail-gnb-top;
+        padding: 15px;
+        color: white;
+        align-items: center;
+        font-size: 14px;
+        a{
+            color: white;
+        }
+        .gnb-top-left{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            li{
+                padding:10px 10px;
+                flex-shrink: 0;
+                border-radius: 5px;
+            }
+            .main-logo{
+                width: 200px;
+                font-size: 20px;
+                img{
+                    vertical-align: -5px;
+                }
+            }
+            .mail-delete{
+                &:hover{
+                    background-color: #80abe4;
+                }
+             
+            }
+            .spam-prevent{
+                &:hover{
+                    background-color: #80abe4;
+                }
+            }
+            .mail-forward{
+                &:hover{
+                    background-color: #80abe4;
+                }
+            }
+            .mail-move{
+                &:hover{
+                    background-color: #80abe4;
+                }
+                .mail-move-menu{
+                    display: none;
+                }
+            }
+            .mail-checked{
+                &:hover{
+                    background-color: #80abe4;
+                }
+                .mail-checked-menu{
+                    display: none;
+                }
+            }
+            .unread-mail{
+                a{
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .total-mail{
+                a{
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    color:#9ebce4
+                }
+            }
+        }
+        .gnb-top-right{
+            display: flex;
+            li{
+                width: 30px;
+                height: 30px;
+                border: 1px solid white;
+            }
+            .mail-search{
+                background: url('../../img/daum-mail/daum_mail_3.png');
+            }
+            .profile-button{
+                background: url('../../img/daum-mail/daum_mail_3.png');
+            }
+            .menu-button{
+                background: url('../../img/daum-mail/daum_mail_3.png');
+            }
+        }
+    }
+
+}    
