@@ -55,10 +55,14 @@ for(let i = 0; i < read_mail.length; i++){
     trash_image[i].style.visibility = "hidden"
   }
   function change_color(){
-    if(favorite_icon[i].src == "./src/img/daum-mail/daum_favorite.png"){
-      favorite_icon[i].src = "./src/img/daum-mail/daum_favorite_clicked.png"
+    let picsrc = favorite_icon[i].getAttribute("src") 
+    let picsrc2 = favorite_icon[i].src
+    console.log(picsrc)
+    console.log(picsrc2)
+    if(picsrc == './src/img/daum-mail/daum_favorite.png'){   
+      favorite_icon[i].src = './src/img/daum-mail/daum_favorite_clicked.png'
     }else{
-      favorite_icon[i].src = "./src/img/daum-mail/daum_favorite.png"
+      favorite_icon[i].src = './src/img/daum-mail/daum_favorite.png'
     }
   }
 }
