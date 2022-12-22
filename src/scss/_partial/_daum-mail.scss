@@ -1,6 +1,7 @@
 .daum-mail-wrap{
-    background-color: white;
     .gnb-top{
+        position: fixed;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         background-color: $daum-mail-gnb-top;
@@ -100,15 +101,116 @@
         }
     }
     .gnb-left{
+        background-color: white;
         position: fixed;
         border: 1px solid lightgray;
         width: 220px;
+        height: 100%;
+        top: 75px;
+        a{
+            color: black;
+        }
         .write-box{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            border-bottom: 1px solid $daum-mail-gnb-top;
             .write{
+                width: 50%;
+                text-align: center;
                 padding: 20px;
                 font-weight: 700;
+                font-size: 12px;
+                &:first-child{
+                    border-right: 1px solid lightgray;
+                }
+            }
+        }
+        .left-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: calc(100% - 160px);
+            align-content: space-between;
+            .left-top-wrap{
+                padding-top: 30px;
+                width: 85%;
+                font-size: 12px;
+                button{
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    font-size: 10px;
+                }
+                .left-margin{
+                    margin-left: 12px;
+                }
+                .mail-box-wrap{
+                    margin-bottom: 20px;
+                    .header{
+                        color: gray;
+                    }
+                    .mail-box{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .sidemenu-opener{
+                            display: none;
+                        }
+                    }
+                }
+                .left-bottom-wrap{
+                }
+            }
+        }
+    }
+    .content-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: -1;
+        position: absolute;
+        top: 76px;
+        left: 223px;
+        width: calc(100% - 223px);
+        height: calc(100% - 110px);
+        background-color: white;
+        .mail-list{
+            font-size: 14px;
+            font-weight: 700;
+            width: 100%;
+            .mail-item{
+                padding: 10px 20px;
+                border-bottom: 1px solid lightgray;
+            }
+        }
+        .page-number{
+            display: flex;
+            width: 90%;
+        }
+        .show-option{
+            display: none;
+        }
+    }
+    .gnb-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-size: 12px;
+        border-top: 1px solid lightgray;
+        position: fixed;
+        left: 222px;
+        bottom: 0;
+        width: calc(100% - 220px);
+        background-color: white;
+        .gnb-bottom-left{
+            min-width: 300px;
+            a {
+                color: black;
+            }
+        }
+        .gnb-bottom-right{
+            min-width: 400px;
+            a{
+                color: gray;
             }
         }
     }

@@ -36,7 +36,7 @@
                 <li>|</li>
                 <li class="move">
                     <a href="#">
-                        이동▽
+                        이동∨
                     </a>
                     <div class="mail-move-menu">
                         <div class="mail-move-item">보낸메일함</div>
@@ -56,7 +56,7 @@
                 </li>
                 <li class="checked-mail">
                     <a href="#">
-                        읽음 표시▽
+                        읽음 표시∨
                     </a>
                     <div class="mail-checked-menu">
                         <div>읽음 표시</div>
@@ -102,57 +102,323 @@
                     내게쓰기
                 </a>
             </div>
-            <ul>
-                <li>
-                    <span>전체</span>
-                    <span>|</span>
-                    <span>안읽음</span>
-                    <span>30</span>
-                    <button>▽</button>
+            <div class="left-box">
+                <ul class="left-top-wrap">
+                    <li class="mail-box-wrap left-margin">
+                        <div class="mail-box">
+                            <span>
+                                <a href="#" class="header">전체</a>
+                                <span class="header">|</span>
+                                <a href="#">
+                                    <span class="header">안읽음</span>
+                                    <span>30</span>
+                                </a>
+                            </span>
+                            <span>
+                                <button>∨</button>
+                            </span>
+                            <div class="sidemenu-opener">
+                                <div>중요메일</div>
+                                <div>첨부메일</div>
+                            </div>
+                        </div>
+                        <div class="mail-box">
+                            <a href="#">
+                                <span>받은메일함</span>
+                                <span>30</span>
+                            </a>
+                            <span>
+                                <button>∨</button>
+                            </span>
+                            <div class="sidemenu-opener">
+                                <div>비우기</div>
+                                <div>모두 읽음 표시</div>
+                                <div>안 읽은 메일 삭제</div>
+                            </div>
+                        </div>
+                        <div class="mail-box">
+                            <a href="#">내게쓴메일함</a>
+                            <span>
+                                <button>∨</button>
+                            </span>
+                            <div class="sidemenu-opener">
+                                <div>비우기</div>
+                                <div>모두 읽음 표시</div>
+                                <div>안 읽은 메일 삭제</div>
+                            </div>
+                        </div>
+                        <div class="mail-box">
+                            <a href="#">보낸메일함</a>
+                            <button>수신확인</button>
+                        </div>
+                        <div class="mail-box">
+                            <a href="#">임시보관함</a>
+                            <span>
+                                <button>∨</button>
+                            </span>
+                            <div class="sidemenu-opener">
+                                <div>비우기</div>
+                                <div>모두 읽음 표시</div>
+                                <div>안 읽은 메일 삭제</div>
+                            </div>
+                        </div>
+                        <div class="mail-box">
+                            <a href="#">
+                                스팸메일함
+                            </a>
+                            <span>
+                                <button>※</button>
+                            </span>
+                        </div>
+                        <div class="mail-box">
+                            <a href="#">
+                                휴지통
+                            </a>
+                            <span>
+                                <button>※</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="mail-box-wrap">
+                        <div class="mail-box">
+                            <a class="header" href="#">
+                                ∨내 메일함
+                            </a>
+                            <span>
+                                <button>+</button>
+                                <button>㉧</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="mail-box-wrap">
+                        <div class="mail-box">
+                            <a class="header" href="#">
+                                ∨분류 메일함
+                            </a>
+                        </div>
+                        <div class="mail-box left-margin">
+                            <a href="#">청구서함</a>
+                        </div>
+                        <div class="mail-box left-margin">
+                            <a href="#">카페메일함</a>
+                        </div>
+                    </li>
+                    <li class="mail-box-wrap">
+                        <div class="mail-box">
+                            <a class="header" href="#">
+                                ∨더보기
+                            </a>
+                        </div>
+                        <div class="mail-box left-margin">
+                            <a href="#">외부 메일 확인</a>
+                        </div>
+                        <div class="mail-box left-margin">
+                            <a href="#">Daum 스마트워크</a>
+                        </div>
+                        <span class="left-margin">
+                            <a href="#">환경설정</a>
+                            <span class="header">|</span>
+                            <a href="#">주소록</a>
+                        </span>
+                    </li>
+                </ul>
+                <a href="#" class="left-bottom-wrap">
+                    <img src="./src/img/daum-mail/daum_id_combine.png">
+                </a>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <ul class="mail-list">
+                <li class="mail-item">
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
                 </li>
                 <li>
-                    <span>받은메일함</span>
-                    <span>30</span>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
                 </li>
                 <li>
-                    내게쓴메일함
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
                 </li>
                 <li>
-                    보낸메일함
-                    <button>수신확인</button>
-                </li>
-                <li>임시보관함</li>
-                <li>스팸메일함</li>
-                <li>휴지통</li>
-                <li>
-                    ▽내 메일함
-                    <button>+</button>
-                    <button>㉧</button>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
                 </li>
                 <li>
-                    <div>▽분류 메일함</div>
-                    <div>청구서함</div>
-                    <div>카페메일함</div>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
                 </li>
                 <li>
-                    <div>▽더보기</div>
-                    <div>외부 메일 확인</div>
-                    <div>Daum 스마트워크</div>
-                    <span>환경설정</span>
-                    <span>|</span>
-                    <span>주소록</span>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>☆</span>
+                    <span>daum</span>
+                    <span>[daum]개인정보 이용내역 안내</span>
+                    <span>21.12.24</span>
+                    <span>20:34</span>
                 </li>
             </ul>
-            <a href="#">
-                <img src="./src/img/daum-mail/daum_id_combine.png">
-            </a>
+            <ul class="page-number">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <button>보기설정</button>
+            <dl class="show-option">
+                <dt>목록개수</dt>
+                <dd>
+                    <select>
+                        <option>10개</option>
+                        <option>15개</option>
+                        <option>20개</option>
+                        <option>30개</option>
+                        <option>40개</option>
+                        <option>50개</option>
+                        <option>100개</option>
+                    </select>
+                </dd>
+                <dt>목록간격</dt>
+                <dd>
+                    <select>
+                        <option>좁게</option>
+                        <option>보통</option>
+                    </select>
+                </dd>
+                <dt>보기방식</dt>
+                <dd>ㅁ</dd>
+                <dd>ㅂ</dd>
+                <dd>ㅅ</dd>
+            </dl>
         </div>
-
         <div class="gnb-bottom">
-            
-        </div>
-        <div class="content">
-            
+            <div class="gnb-bottom-left">
+                <span>사용량</span>
+                <a href="#">945.8KB</a>
+                <span>|</span>
+                <a href="#">스킨</a>
+                <span>|</span>
+                <a href="#">최근 접속 시간</a>
+            </div>
+            <div class="gnb-bottom-right">
+                <a href="#">공지사항</a>
+                <span>|</span>
+                <a href="#">운영정책</a>
+                <span>|</span>
+                <a href="#">고객센터</a>
+                <span>|</span>
+                <a href="#">서비스 약관</a>
+                <a href="#">ⓒkakao Corp.</a>
+            </div>
         </div>
     </div>
     
