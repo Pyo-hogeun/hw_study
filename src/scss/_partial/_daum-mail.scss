@@ -28,34 +28,11 @@
                     vertical-align: -5px;
                 }
             }
-            .delete{
+            .top-item{
                 &:hover{
                     background-color: #80abe4;
                 }
-            }
-            .spam-prevent{
-                &:hover{
-                    background-color: #80abe4;
-                }
-            }
-            .forward{
-                &:hover{
-                    background-color: #80abe4;
-                }
-            }
-            .move{
-                &:hover{
-                    background-color: #80abe4;
-                }
-                .mail-move-menu{
-                    display: none;
-                }
-            }
-            .checked-mail{
-                &:hover{
-                    background-color: #80abe4;
-                }
-                .mail-checked-menu{
+                .top-item-hidden{
                     display: none;
                 }
             }
@@ -178,8 +155,17 @@
             font-weight: 700;
             width: 100%;
             .mail-item{
+                display: flex;
+                justify-content: space-between;
                 padding: 10px 20px;
                 border-bottom: 1px solid lightgray;
+                .mail-title{
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    min-width: 300px;
+                }
             }
         }
         .page-number{

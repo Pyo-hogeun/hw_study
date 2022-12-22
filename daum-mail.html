@@ -17,28 +17,28 @@
                         메일
                     </a>
                 </li>
-                <li class="delete">
+                <li class="top-item">
                     <input class="delete-checkbox" type="checkbox">
                     <a href="#">
                         삭제
                     </a>
                 </li>
-                <li class="spam-prevent">
+                <li class="top-item">
                     <a href="#">
                         스팸차단
                     </a>
                 </li>
-                <li class="forward">
+                <li class="top-item">
                     <a href="#">
                         전달
                     </a>
                 </li>
                 <li>|</li>
-                <li class="move">
+                <li class="top-item">
                     <a href="#">
                         이동∨
                     </a>
-                    <div class="mail-move-menu">
+                    <div class="top-item-hidden">
                         <div class="mail-move-item">보낸메일함</div>
                         <div class="mail-move-item">스팸메일함</div>
                         <div class="mail-move-item">휴지통</div>
@@ -54,11 +54,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="checked-mail">
+                <li class="top-item">
                     <a href="#">
                         읽음 표시∨
                     </a>
-                    <div class="mail-checked-menu">
+                    <div class="top-item-hidden">
                         <div>읽음 표시</div>
                         <div>안 읽음 표시</div>
                     </div>
@@ -230,12 +230,16 @@
         <div class="content-wrap">
             <ul class="mail-list">
                 <li class="mail-item">
-                    <input type="checkbox">
-                    <span>☆</span>
-                    <span>daum</span>
-                    <span>[daum]개인정보 이용내역 안내</span>
-                    <span>21.12.24</span>
-                    <span>20:34</span>
+                    <div class="mail-item-left">
+                        <input type="checkbox">
+                        <span class="favorite">☆</span>
+                        <span class="sent-id">daum</span>
+                        <span class="mail-title">다음게임 서비스 이용약관 개정 및 운영정책 제정 안내</span>
+                    </div>
+                    <div class="mail-item-right">
+                        <span class="date">21.12.24</span>
+                        <span class="time">20:34</span>
+                    </div>
                 </li>
                 <li>
                     <input type="checkbox">
