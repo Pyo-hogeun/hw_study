@@ -246,6 +246,10 @@ html{
                 min-width: rem(400);
                 a{
                     color: gray;
+                    padding: 0 rem(10);
+                }
+                .bottom-bar{
+                    color: lightgray;
                 }
             }
         }
