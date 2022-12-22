@@ -32,4 +32,38 @@ window.onload = function(){
     })
   }
 }
+/*---------------------------daum-email-start-------------------------------- */
+let read_mail = document.querySelectorAll('.mail-item');
+let trash_image = document.querySelectorAll('.trash-img');
+let favorite_icon = document.querySelectorAll('.favorite-icon');
+
+for(let i = 0; i < read_mail.length; i++){
+  read_mail[i].addEventListener('click', add_class)
+  read_mail[i].addEventListener('mouseover', mouseover)
+  read_mail[i].addEventListener('mouseout', mouseout)
+  favorite_icon[i].addEventListener('click', change_color)
+
+  function add_class(){
+    read_mail[i].classList.toggle("read");
+  }
+  function mouseover(){
+    read_mail[i].style.backgroundColor = "lightgray";
+    trash_image[i].style.visibility = "visible"
+  } 
+  function mouseout(){
+    read_mail[i].style.backgroundColor = "white";
+    trash_image[i].style.visibility = "hidden"
+  }
+  function change_color(){
+    if(favorite_icon[i].src == "./src/img/daum-mail/daum_favorite.png"){
+      favorite_icon[i].src = "./src/img/daum-mail/daum_favorite_clicked.png"
+    }else{
+      favorite_icon[i].src = "./src/img/daum-mail/daum_favorite.png"
+    }
+  }
+}
+
+
+/*---------------------------daum-email-end-------------------------------- */
+
         
