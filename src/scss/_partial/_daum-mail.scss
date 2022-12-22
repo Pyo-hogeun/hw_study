@@ -1,203 +1,253 @@
-.daum-mail-wrap{
-    .gnb-top{
-        position: fixed;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background-color: $daum-mail-gnb-top;
-        padding: 15px;
-        color: white;
-        align-items: center;
-        font-size: 14px;
-        a{
-            color: white;
-        }
-        .gnb-top-left{
+html{
+    background-color: white;
+    .daum-mail-wrap{
+        .gnb-top{
+            position: fixed;
+            width: 100%;
             display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            li{
-                padding:10px 10px;
-                flex-shrink: 0;
-                border-radius: 5px;
-            }
-            .main-logo{
-                width: 200px;
-                font-size: 20px;
-                img{
-                    vertical-align: -5px;
-                }
-            }
-            .top-item{
-                &:hover{
-                    background-color: #80abe4;
-                }
-                .top-item-hidden{
-                    display: none;
-                }
-            }
-            .unread-mail{
-                a{
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-            .total-mail{
-                a{
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                    color:#9ebce4
-                }
-            }
-        }
-        .gnb-top-right{
-            display: flex;
+            justify-content: space-between;
             background-color: $daum-mail-gnb-top;
+            padding: rem(15);
+            color: white;
+            align-items: center;
+            font-size: rem(14);
             a{
-                width: 30px;
-                height: 30px;
-                margin: 0 10px;
+                color: white;
             }
-            .search-icon{
-                background: url('../../src/img/daum-mail/daum_search.png');
-                background-repeat: no-repeat;                
-                background-position: 5px;
-            }
-            .profile-icon{
-                background: url('../../src/img/daum-mail/daum_profile.png');
-                background-repeat: no-repeat;                
-                background-position: 3px;
-            }
-            .menu-icon{
-                background: url('../../src/img/daum-mail/daum_menu.png');
-                background-repeat: no-repeat;                
-                background-position: 5px;
-            }
-        }
-    }
-    .gnb-left{
-        background-color: white;
-        position: fixed;
-        border: 1px solid lightgray;
-        width: 220px;
-        height: 100%;
-        top: 75px;
-        a{
-            color: black;
-        }
-        .write-box{
-            display: flex;
-            justify-content: center;
-            border-bottom: 1px solid $daum-mail-gnb-top;
-            .write{
-                width: 50%;
-                text-align: center;
-                padding: 20px;
-                font-weight: 700;
-                font-size: 12px;
-                &:first-child{
-                    border-right: 1px solid lightgray;
+            .gnb-top-left{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                li{
+                    padding: rem(10) rem(10) ;
+                    flex-shrink: 0;
+                    border-radius: rem(5);
                 }
-            }
-        }
-        .left-box{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: calc(100% - 160px);
-            align-content: space-between;
-            .left-top-wrap{
-                padding-top: 30px;
-                width: 85%;
-                font-size: 12px;
-                button{
-                    background-color: white;
-                    border: 1px solid lightgray;
-                    font-size: 10px;
-                }
-                .left-margin{
-                    margin-left: 12px;
-                }
-                .mail-box-wrap{
-                    margin-bottom: 20px;
-                    .header{
-                        color: gray;
+                .main-logo{
+                    width: rem(200);
+                    font-size: rem(20);
+                    img{
+                        vertical-align: rem(-5);
                     }
-                    .mail-box{
-                        display: flex;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-                        .sidemenu-opener{
-                            display: none;
+                }
+                .top-item{
+                    &:hover{
+                        background-color: #80abe4;
+                    }
+                    .top-item-hidden{
+                        display: none;
+                    }
+                }
+                .unread-mail{
+                    a{
+                        &:hover{
+                            text-decoration: underline;
                         }
                     }
                 }
-                .left-bottom-wrap{
+                .total-mail{
+                    a{
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        color:#9ebce4
+                    }
                 }
             }
-        }
-    }
-    .content-wrap{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        z-index: -1;
-        position: absolute;
-        top: 76px;
-        left: 223px;
-        width: calc(100% - 223px);
-        height: calc(100% - 110px);
-        background-color: white;
-        .mail-list{
-            font-size: 14px;
-            font-weight: 700;
-            width: 100%;
-            .mail-item{
+            .gnb-top-right{
                 display: flex;
-                justify-content: space-between;
-                padding: 10px 20px;
-                border-bottom: 1px solid lightgray;
-                .mail-title{
-                    display: inline-block;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    min-width: 300px;
+                margin-right: rem(20);
+                background-color: $daum-mail-gnb-top;
+                a{
+                    width: rem(30);
+                    height: rem(30);
+                    margin: rem(0) rem(10);
+                }
+                .search-icon{
+                    background: url('../../src/img/daum-mail/daum_search.png');
+                    background-repeat: no-repeat;                
+                    background-position: rem(5);
+                }
+                .profile-icon{
+                    background: url('../../src/img/daum-mail/daum_profile.png');
+                    background-repeat: no-repeat;                
+                    background-position: rem(3);
+                }
+                .menu-icon{
+                    background: url('../../src/img/daum-mail/daum_menu.png');
+                    background-repeat: no-repeat;                
+                    background-position: rem(5);
                 }
             }
         }
-        .page-number{
-            display: flex;
-            width: 90%;
-        }
-        .show-option{
-            display: none;
-        }
-    }
-    .gnb-bottom{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 20px;
-        font-size: 12px;
-        border-top: 1px solid lightgray;
-        position: fixed;
-        left: 222px;
-        bottom: 0;
-        width: calc(100% - 220px);
-        background-color: white;
-        .gnb-bottom-left{
-            min-width: 300px;
-            a {
+        .gnb-left{
+            background-color: white;
+            position: fixed;
+            border: rem(1) solid lightgray;
+            width: rem(220);
+            height: 100%;
+            top: rem(75);
+            a{
                 color: black;
             }
-        }
-        .gnb-bottom-right{
-            min-width: 400px;
-            a{
-                color: gray;
+            .write-box{
+                display: flex;
+                justify-content: center;
+                border-bottom: rem(1) solid $daum-mail-gnb-top;
+                .write{
+                    width: 50%;
+                    text-align: center;
+                    padding: rem(20);
+                    font-weight: 700;
+                    font-size: rem(12);
+                    &:first-child{
+                        border-right: rem(1) solid lightgray;
+                    }
+                }
+            }
+            .left-box{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: calc(100% - rem(160));
+                align-content: space-between;
+                .left-top-wrap{
+                    padding-top: rem(30);
+                    width: 85%;
+                    font-size: rem(12);
+                    button{
+                        background-color: white;
+                        border: rem(1) solid lightgray;
+                        font-size: rem(10);
+                    }
+                    .left-margin{
+                        margin-left: rem(12);
+                    }
+                    .mail-box-wrap{
+                        margin-bottom: rem(20);
+                        .header{
+                            color: gray;
+                        }
+                        .mail-box{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: rem(10);
+                            .sidemenu-opener{
+                                display: none;
+                            }
+                            .mail-box-button{
+                                border: rem(1) solid lightgray;
+                                padding: rem(3) rem(5);
+                            }
+                            .hidden-button{
+                                display: none;
+                            }
+                        }
+                    }
+                    .left-bottom-wrap{
+                    }
+                }
             }
         }
-    }
-}    
+        .content-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            z-index: -1;
+            position: absolute;
+            top: rem(76);
+            left: rem(223);
+            width: calc(100% - rem(223));
+            background-color: white;
+            .mail-list{
+                font-size: rem(14);
+                font-weight: 700;
+                width: 100%;
+                .mail-item{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: rem(10) rem(20);
+                    border-bottom: rem(1) solid lightgray;
+                    a{
+                        color: black;
+                    }
+                    .mail-item-left{
+                        min-width: rem(550);
+                        display: inline-block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        .sent-id{
+                            display: inline-block;
+                            width: rem(145);
+                            margin: rem(0) rem(5);
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .mail-item-right{
+                        min-width: rem(98);
+                        font-weight: 400;
+                    }
+                }
+            }
+            .page-number-wrap{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: rem(20);
+                .page-number{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        padding: rem(8) rem(10);
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+                .show-option-button{
+                    font-size: rem(12);
+                    text-align: center;
+                    line-height: 14px;
+                    width: rem(100);
+                    height: rem(20);
+                    margin-right: rem(20);
+                    background-color: white;
+                    border: rem(1) solid lightgray;
+                    padding: rem(5) 0;
+                    color: black;
+                }
+                .show-option{
+                    display: none;
+                }
+            }
+        }
+        .gnb-bottom{
+            display: flex;
+            justify-content: space-between;
+            padding: rem(10) rem(20);
+            font-size: rem(12);
+            border-top: rem(1) solid lightgray;
+            position: fixed;
+            left: rem(222);
+            bottom: 0;
+            width: calc(100% - rem(220));
+            background-color: white;
+            .gnb-bottom-left{
+                min-width: rem(300);
+                a {
+                    color: black;
+                }
+            }
+            .gnb-bottom-right{
+                min-width: rem(400);
+                a{
+                    color: gray;
+                }
+            }
+        }
+    }    
+}
