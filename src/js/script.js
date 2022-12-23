@@ -39,6 +39,7 @@ let trash_image = document.querySelectorAll('.trash-img');
 let favorite_icon = document.querySelectorAll('.favorite-icon');
 let unread_icon = document.querySelectorAll('.unread-icon');
 let sent_id = document.querySelectorAll('.sent-id');
+let delete_button = document.querySelector('.delete-checkbox');
 
 for(let i = 0; i < mail_item.length; i++){
   sent_id_title[i].addEventListener('click', function(event){
@@ -64,16 +65,37 @@ for(let i = 0; i < mail_item.length; i++){
     change_unread(targetoo)
   });
   sent_id[i].addEventListener('mouseover', function(event){
-    var targetoo = event.target.style
+    var targetoo = this.style
     console.log(targetoo)
     mouseover_sent_id(targetoo)
   })
+  sent_id[i].addEventListener('mouseout', function(event){
+    var targetoo = this.style
+    console.log(targetoo)
+    mouseout_sent_id(targetoo)
+  })
 }
+
+delete_button.addEventListener('click', function(){
+  let mail_checkbox = document.querySelectorAll('.mail-checkbox');
+  for(i = 0; i < mail_checkbox.length; i++){
+    if(delete_button.checked == false){
+      mail_checkbox[i].checked = false;
+    }else{
+      mail_checkbox[i].checked = true;
+    }
+  }
+})
+
 
 function add_class(i){
   i.toggle("read");
 }
 function mouseover_sent_id(targetoo){
+  targetoo.textDecoration = "underline";
+}
+function mouseout_sent_id(targetoo){
+  targetoo.textDecoration = "none";
 }
 function mouseover(targetoo, targetoooo){
   targetoo.backgroundColor = "lightgray";
