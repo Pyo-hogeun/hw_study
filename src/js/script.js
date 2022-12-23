@@ -33,39 +33,73 @@ window.onload = function(){
   }
 }
 /*---------------------------daum-email-start-------------------------------- */
-let read_mail = document.querySelectorAll('.mail-item');
+let sent_id_title = document.querySelectorAll('.sent-id-title');
+let mail_item = document.querySelectorAll('.mail-item');
 let trash_image = document.querySelectorAll('.trash-img');
 let favorite_icon = document.querySelectorAll('.favorite-icon');
+let unread_icon = document.querySelectorAll('.unread-icon');
+let sent_id = document.querySelectorAll('.sent-id');
 
-for(let i = 0; i < read_mail.length; i++){
-  read_mail[i].addEventListener('click', add_class)
-  read_mail[i].addEventListener('mouseover', mouseover)
-  read_mail[i].addEventListener('mouseout', mouseout)
-  favorite_icon[i].addEventListener('click', change_color)
+for(let i = 0; i < mail_item.length; i++){
+  sent_id_title[i].addEventListener('click', function(event){
+    var title = event.target.parentElement;
+    add_class(title.classList);
+  });
+  mail_item[i].addEventListener('mouseover', function(event){
+    var targetoo = this.style;
+    var targetoooo = this.querySelector('.trash-img').style;
+    mouseover(targetoo, targetoooo);
+  });
+  mail_item[i].addEventListener('mouseout', function(event){
+    var targetoo = this.style;
+    var targetoooo = this.querySelector('.trash-img').style;
+    mouseout(targetoo, targetoooo)
+  });
+  favorite_icon[i].addEventListener('click', function(event){
+    var targetoo = event.target
+    change_color(targetoo)
+  });
+  unread_icon[i].addEventListener('click', function(event){
+    var targetoo = event.target
+    change_unread(targetoo)
+  });
+  sent_id[i].addEventListener('mouseover', function(event){
+    var targetoo = event.target.style
+    console.log(targetoo)
+    mouseover_sent_id(targetoo)
+  })
+}
 
-  function add_class(){
-    read_mail[i].classList.toggle("read");
-  }
-  function mouseover(){
-    read_mail[i].style.backgroundColor = "lightgray";
-    trash_image[i].style.visibility = "visible"
-  } 
-  function mouseout(){
-    read_mail[i].style.backgroundColor = "white";
-    trash_image[i].style.visibility = "hidden"
-  }
-  function change_color(){
-    let picsrc = favorite_icon[i].getAttribute("src") 
-    let picsrc2 = favorite_icon[i].src
-    console.log(picsrc)
-    console.log(picsrc2)
-    if(picsrc == './src/img/daum-mail/daum_favorite.png'){   
-      favorite_icon[i].src = './src/img/daum-mail/daum_favorite_clicked.png'
-    }else{
-      favorite_icon[i].src = './src/img/daum-mail/daum_favorite.png'
-    }
+function add_class(i){
+  i.toggle("read");
+}
+function mouseover_sent_id(targetoo){
+}
+function mouseover(targetoo, targetoooo){
+  targetoo.backgroundColor = "lightgray";
+  targetoooo.visibility = "visible"
+} 
+function mouseout(targetoo, targetoooo){
+  targetoo.backgroundColor = "white";
+  targetoooo.visibility = "hidden"
+}
+function change_color(targetoo){
+  let picsrc = targetoo.getAttribute("src") 
+  if(picsrc == './src/img/daum-mail/daum_favorite.png'){   
+    targetoo.src = './src/img/daum-mail/daum_favorite_clicked.png'
+  }else{
+    targetoo.src = './src/img/daum-mail/daum_favorite.png'
   }
 }
+function change_unread(targetoo){
+  let picsrc = targetoo.getAttribute("src") 
+  if(picsrc == './src/img/daum-mail/daum_unread.png'){
+    targetoo.src = './src/img/daum-mail/daum_read.png'
+  }else{
+    targetoo.src = './src/img/daum-mail/daum_unread.png'
+  }
+}
+
 
 
 /*---------------------------daum-email-end-------------------------------- */
