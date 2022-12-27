@@ -1,7 +1,12 @@
 .practice-img-list{
-    padding: 50px;
-    .img{
-        width: rem(100);
-        height: rem(100);
+    padding: rem(50);
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        padding: rem(20);
+        flex: 0 0 calc(50% - rem(40));
+        img{
+            width: 100%;
+        }
     }
 }

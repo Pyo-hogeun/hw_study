@@ -5,15 +5,50 @@ async function callApiImages () {
   .then((data) => data);
   
   console.log(imgList);
+  renderImgList(imgList);
 }
 
-window.onload = function(){
-    let img_stroage = ['img1', 'img2', 'img3', 'img4', 'img5', 'img6'];
-    let img_list = '';
-    for(let i = 0; i < img_storage.length; i++){
-        img_list += `<li>
-        <img src = "https://picsum.photos/300/">
-        </li>` 
-    }
-    document.querySelector('.practice-img-list').innerHTML = img_list;
+function renderImgList(imgList){
+    let imageData = '';
+    imgList.forEach(function(event){
+        console.log(event)
+        imageData += `
+        ${event.id}
+        ${event.author}
+        ${event.width}
+        ${event.height}
+        ${event.url}
+        `
+    })
+    document.querySelector('.practice-img-list').innerHTML = imageData;
 }
+
+
+
+// function renderImgList(imageData){
+//     console.log(imageData);
+//     let img_list = '';
+//     for(let i = 0; i < imageData.length; i++){
+//         img_list += `<li>
+//         <img src = '${imageData[i].download_url}'>
+//         <div>
+//             <div>
+//                 id = ${imageData[i].id}
+//             </div>
+//             <div>
+//                 author = ${imageData[i].author}
+//             </div>
+//             <div>
+//                 width = ${imageData[i].width}
+//             </div>
+//             <div>
+//                 height = ${imageData[i].height}
+//             </div>
+//             <div>
+//                 url = ${imageData[i].url}
+//             </div>
+//         </div>
+//         </li>` 
+//     }
+//     document.querySelector('.practice-img-list').innerHTML = img_list;
+// }
