@@ -1,3 +1,12 @@
+
+async function callApiImages () {
+  let imgList = await fetch('https://picsum.photos/v2/list?page=1&limit=20')
+  .then((response) => response.json())
+  .then((data) => data);
+  
+  console.log(imgList);
+}
+
 window.onload = function(){
     let img_stroage = ['img1', 'img2', 'img3', 'img4', 'img5', 'img6'];
     let img_list = '';
