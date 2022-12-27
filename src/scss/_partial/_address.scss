@@ -1,0 +1,24 @@
+.address-wrap{
+  max-width: rem(900);
+  margin: 0 auto;
+  padding: rem(80);
+  h1{
+    font-size: rem(30);
+    font-weight: 700;
+  }
+  .address-list{
+    margin-top: rem(30);
+    li{
+      padding: rem(5);
+      border-bottom: 1px solid #333;
+      dl{
+        dt{
+          font-weight: 600;
+        }
+        dt,dd{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
