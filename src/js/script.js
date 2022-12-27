@@ -40,6 +40,8 @@ let favorite_icon = document.querySelectorAll('.favorite-icon');
 let unread_icon = document.querySelectorAll('.unread-icon');
 let sent_id = document.querySelectorAll('.sent-id');
 let delete_button = document.querySelector('.delete-checkbox');
+let mail_checkbox = document.querySelectorAll('.mail-checkbox');
+let top_item = document.querySelectorAll('.top-item');
 
 for(let i = 0; i < mail_item.length; i++){
   sent_id_title[i].addEventListener('click', function(event){
@@ -54,7 +56,8 @@ for(let i = 0; i < mail_item.length; i++){
   mail_item[i].addEventListener('mouseout', function(event){
     var targetoo = this.style;
     var targetoooo = this.querySelector('.trash-img').style;
-    mouseout(targetoo, targetoooo)
+    var targetoooooo = mail_checkbox[i];
+    mouseout(targetoo, targetoooo, targetoooooo)
   });
   favorite_icon[i].addEventListener('click', function(event){
     var targetoo = event.target
@@ -77,14 +80,30 @@ for(let i = 0; i < mail_item.length; i++){
 }
 
 delete_button.addEventListener('click', function(){
-  let mail_checkbox = document.querySelectorAll('.mail-checkbox');
-  for(i = 0; i < mail_checkbox.length; i++){
+  for(let i = 0; i < mail_checkbox.length; i++){
     if(delete_button.checked == false){
       mail_checkbox[i].checked = false;
+      mail_item[i].style.backgroundColor = 'white';
     }else{
       mail_checkbox[i].checked = true;
+      console.log(mail_item[i].style.backgroundColor)
+      mail_item[i].style.backgroundColor = 'lightgray';
     }
+
   }
+})
+
+for (let i = 0; i < top_item.length; i++){
+  top_item[i].addEventListener('click', function(){
+    document.querySelector('.dim').style.display = 'block';
+  })
+}
+
+document.querySelector('.choose-x').addEventListener('click', function(){
+  document.querySelector('.dim').style.display = 'none';
+})
+document.querySelector('.choose-confirm').addEventListener('click', function(){
+  document.querySelector('.dim').style.display = 'none';
 })
 
 
@@ -101,8 +120,12 @@ function mouseover(targetoo, targetoooo){
   targetoo.backgroundColor = "lightgray";
   targetoooo.visibility = "visible"
 } 
-function mouseout(targetoo, targetoooo){
-  targetoo.backgroundColor = "white";
+function mouseout(targetoo, targetoooo, targetoooooo){
+  if(targetoooooo.checked == true){
+    targetoo.backgroundColor = "lightgray";
+  }else{
+    targetoo.backgroundColor = "white";
+  }
   targetoooo.visibility = "hidden"
 }
 function change_color(targetoo){
