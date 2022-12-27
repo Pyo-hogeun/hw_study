@@ -92,10 +92,19 @@ delete_button.addEventListener('click', function(){
 
   }
 })
-
 for (let i = 0; i < top_item.length; i++){
   top_item[i].addEventListener('click', function(){
-    document.querySelector('.dim').style.display = 'block';
+    
+    let isChecked = false;
+    
+    for (let j = 0; j < mail_checkbox.length; j++){
+      if(mail_checkbox[j].checked == true){
+        isChecked = true
+      }
+    }
+    if(isChecked == false){
+      document.querySelector('.dim').style.display = 'block';
+    }
   })
 }
 
