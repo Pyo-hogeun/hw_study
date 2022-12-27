@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>img-for-practice</title>
     <link rel="stylesheet" href="./src/css/style_scss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./src/js/img_for_practice.js"></script>
 </head>
 <body>
@@ -14,6 +16,32 @@
             <lmg src = "https://picsum.photos/300/">
         </li>
     </ul>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="https://picsum.photos/300">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://picsum.photos/300">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://picsum.photos/300">
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     <script>
         callApiImages();
     </script>

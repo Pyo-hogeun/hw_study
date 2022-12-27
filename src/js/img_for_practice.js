@@ -1,18 +1,40 @@
-
+window.onload = function(){
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+}
 async function callApiImages () {
   let imgList = await fetch('https://picsum.photos/v2/list?page=1&limit=20')
   .then((response) => response.json())
   .then((data) => data);
   
-  console.log(imgList);
   renderImgList(imgList);
 }
 
 function renderImgList(imgList){
     let imageData = '';
     imgList.forEach(function(event){
-        console.log(event)
         imageData += `
+        <img src = '${imgList.download_url}'>
         ${event.id}
         ${event.author}
         ${event.width}

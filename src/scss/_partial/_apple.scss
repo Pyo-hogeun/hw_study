@@ -1,0 +1,66 @@
+.apple-wrap{
+    .gnb-top{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        font-size: rem(12);
+        font-weight: 400;
+        height: rem(44);
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        min-width: rem(830);
+        a{
+            color: #cccccc ;
+            &:hover{
+                color: white;
+            }
+        }
+        .apple-logo{
+            display: block;
+            height: rem(44);
+            width: rem(44);
+            background: url('../../src/img/apple/apple_logo.png');
+            background-repeat: no-repeat;
+            background-position: 50%;
+            &:hover{
+                display: block;
+                height: rem(44);
+                width: rem(44);
+                background: url('../../src/img/apple/apple_logo_hover.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+        .search-icon{
+            display: block;
+            height: rem(44);
+            width: rem(44);
+            background: url('../../src/img/apple/search_icon.png');
+            background-repeat: no-repeat;
+            background-position: 50%;
+            &:hover{
+                display: block;
+                height: rem(44);
+                width: rem(44);
+                background: url('../../src/img/apple/search_icon_hover.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+        .bag-icon{
+            display: block;
+            height: rem(44);
+            width: rem(44);
+            background: url('../../src/img/apple/bag_icon.png');
+            background-repeat: no-repeat;
+            background-position: 50%;
+            &:hover{
+                display: block;
+                height: rem(44);
+                width: rem(44);
+                background: url('../../src/img/apple/bag_icon_hover.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+    }
+}
