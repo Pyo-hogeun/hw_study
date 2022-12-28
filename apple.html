@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style_scss.css">
-    <script src="./src/js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./src/css/style_scss.css">
     <title>Apple</title>
 </head>
 <body>
@@ -157,8 +156,12 @@
                 <h1>The lastest.</h1>
                 <span>Take a look at what's new, right now.</span>
             </div>
-            <div class="display-image">
-                <a href ="#" class="img-item">
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+        <div class="display-image-wrap">
+            <div class="display-image" style="transform: translateX(0px);">
+                <a href ="#" class="card-item">
                     <div class="description">
                         <div class="description-name">IPHONE 14</div>
                         <div class="description-description">Big and bigger.</div>
@@ -166,7 +169,7 @@
                     </div>
                     <img src="./src/img/apple/iphone14.png">
                 </a>
-                <a href="#" class="img-item">
+                <a href="#" class="card-item">
                     <div class="description">
                         <div class="description-name">APPLE WATCH ULTRA</div>
                         <div class="description-description">Adventure awaits.</div>
@@ -174,7 +177,7 @@
                     </div>
                     <img src="./src/img/apple/applewatchultra.png">
                 </a>
-                <a href="#" class="img-item black">
+                <a href="#" class="card-item black">
                     <div class="description">
                         <div class="description-name">IPAD PRO</div>
                         <div class="description-description">Supercharged by M2.</div>
@@ -182,7 +185,7 @@
                     </div>
                     <img src="./src/img/apple/ipadpro.png">
                 </a>
-                <a href="#" class="img-item black">
+                <a href="#" class="card-item black">
                     <div class="description">
                         <div class="description-name">IPHONE 14 PRO</div>
                         <div class="description-description">Pro.Beyond.</div>
@@ -190,7 +193,7 @@
                     </div>
                     <img src="./src/img/apple/iphone14pro.png">
                 </a>
-                <a href="#" class="img-item black">
+                <a href="#" class="card-item black">
                     <div class="description">
                         <div class="description-name">APPLE WATCH SERIES 8</div>
                         <div class="description-description">A healthy leap ahead.</div>
@@ -198,7 +201,7 @@
                     </div>
                     <img src="./src/img/apple/applewatchseries8.png">
                 </a>
-                <a href="#" class="img-item">
+                <a href="#" class="card-item">
                     <div class="description">
                         <div class="description-name">APPLE TV 4K</div>
                         <div class="description-description">The Apple experience.Cinematic in every sense.</div>
@@ -206,7 +209,7 @@
                     </div>
                     <img src="./src/img/apple/appletv4k.png">
                 </a>
-                <a href="#" class="img-item">
+                <a href="#" class="card-item">
                     <div class="description">
                         <div class="description-name">IPAD</div>
                         <div class="description-description">Lovable. Drawable. Magical.</div>
@@ -214,7 +217,7 @@
                     </div>
                     <img src="./src/img/apple/ipad_2.png">
                 </a>
-                <a href="#" class="img-item">
+                <a href="#" class="card-item">
                     <div class="description">
                         <div class="description-name">APPLE WATCH SE</div>
                         <div class="description-description">A great deal to love.</div>
@@ -222,7 +225,7 @@
                     </div>
                     <img src="./src/img/apple/applewatchse.png">
                 </a>
-                <a href="#" class="img-item">
+                <a href="#" class="card-item">
                     <div class="description">
                         <div class="description-name">MACBOOK AIR WITH M2 CHIP</div>
                         <div class="description-description">Don't take it lightly.</div>
@@ -230,93 +233,7 @@
                     </div>
                     <img src="./src/img/apple/macbookairwithm2chip.png">
                 </a>
-                <a href="#" class="img-item black">
-                    <div class="description">
-                        <div class="description-name">AIRPODS PRO (2ND GENERATION)</div>
-                        <div class="description-description">Rebuilt from the sound up.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/airpodspro.png">
-                </a>
-            </div>
-            <div class="hook">
-                <h1>The lastest.</h1>
-                <span>Take a look at what's new, right now.</span>
-            </div>
-            <div class="display-image">
-                <a href ="#" class="img-item">
-                    <div class="description">
-                        <div class="description-name">IPHONE 14</div>
-                        <div class="description-description">Big and bigger.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/iphone14.png">
-                </a>
-                <a href="#" class="img-item">
-                    <div class="description">
-                        <div class="description-name">APPLE WATCH ULTRA</div>
-                        <div class="description-description">Adventure awaits.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/applewatchultra.png">
-                </a>
-                <a href="#" class="img-item black">
-                    <div class="description">
-                        <div class="description-name">IPAD PRO</div>
-                        <div class="description-description">Supercharged by M2.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/ipadpro.png">
-                </a>
-                <a href="#" class="img-item black">
-                    <div class="description">
-                        <div class="description-name">IPHONE 14 PRO</div>
-                        <div class="description-description">Pro.Beyond.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/iphone14pro.png">
-                </a>
-                <a href="#" class="img-item black">
-                    <div class="description">
-                        <div class="description-name">APPLE WATCH SERIES 8</div>
-                        <div class="description-description">A healthy leap ahead.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/applewatchseries8.png">
-                </a>
-                <a href="#" class="img-item">
-                    <div class="description">
-                        <div class="description-name">APPLE TV 4K</div>
-                        <div class="description-description">The Apple experience.Cinematic in every sense.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/appletv4k.png">
-                </a>
-                <a href="#" class="img-item">
-                    <div class="description">
-                        <div class="description-name">IPAD</div>
-                        <div class="description-description">Lovable. Drawable. Magical.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/ipad_2.png">
-                </a>
-                <a href="#" class="img-item">
-                    <div class="description">
-                        <div class="description-name">APPLE WATCH SE</div>
-                        <div class="description-description">A great deal to love.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/applewatchse.png">
-                </a>
-                <a href="#" class="img-item">
-                    <div class="description">
-                        <div class="description-name">MACBOOK AIR WITH M2 CHIP</div>
-                        <div class="description-description">Don't take it lightly.</div>
-                        <div class="description-price">From $799.00 or $33.29/mo. for 24 mo. before trade-in*</div>
-                    </div>
-                    <img src="./src/img/apple/macbookairwithm2chip.png">
-                </a>
-                <a href="#" class="img-item black">
+                <a href="#" class="card-item black">
                     <div class="description">
                         <div class="description-name">AIRPODS PRO (2ND GENERATION)</div>
                         <div class="description-description">Rebuilt from the sound up.</div>
@@ -328,4 +245,5 @@
         </div>
     </div>
 </body>
+<script src="./src/js/script.js"></script>
 </html>

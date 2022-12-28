@@ -16,9 +16,10 @@
             height: rem(44);
             .bag{
                 .bag-menu{
+                    display: none;
                     position: absolute;
-                    right: rem(20);
-                    top: rem(5);
+                    right: rem(150);
+                    top: rem(50);
                     border: 1px solid gray;
                     border-radius: rem(20);
                     background-color: white;
@@ -261,16 +262,22 @@
                 color: gray;
             }
         }
+
+    }
+    .right{
+    }
+    .display-image-wrap{
         .display-image{
             display: flex;
+            gap: rem(20);
             flex-wrap: nowrap;
-            margin: rem(30) 0 rem(70) 0;
-            .img-item{
+            margin: rem(30) 0 rem(70) rem(300);
+            transition: 0.5s;
+            .card-item{
+                flex: 0 0 rem(400);
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                width: rem(400);
-                margin: 0 rem(10);
                 background-color: white;
                 border-radius: rem(20);
                 color: black;
