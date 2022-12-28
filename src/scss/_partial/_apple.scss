@@ -267,6 +267,7 @@
     .right{
     }
     .display-image-wrap{
+        overflow-x: hidden;
         .display-image{
             display: flex;
             gap: rem(20);
