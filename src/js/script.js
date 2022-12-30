@@ -167,34 +167,34 @@ function change_unread(targetoo){
 
 /*---------------------------daum-email-end-------------------------------- */
 /* -----------------------------apple----------------------------------------*/
-document.querySelector('.left').addEventListener('click', slidePrev)
-document.querySelector('.right').addEventListener('click', slideNext)
+// document.querySelector('.left').addEventListener('click', slidePrev)
+// document.querySelector('.right').addEventListener('click', slideNext)
 
-let count = 0
-let imgCount = document.querySelectorAll('.img-item').length
+// let count = 0
+// let imgCount = document.querySelectorAll('.img-item').length
 
-function slidePrev(){
-  let currentTransform = document.querySelector('.display-image').style.transform
-  let aa = currentTransform.split('(')
-  let bb = aa[1].split('px',1)
-  let translateXValue = Number(bb[0])
+// function slidePrev(){
+//   let currentTransform = document.querySelector('.display-image').style.transform
+//   let aa = currentTransform.split('(')
+//   let bb = aa[1].split('px',1)
+//   let translateXValue = Number(bb[0])
 
-  if(count > 0){
-    document.querySelector('.display-image').style.transform = `translateX(${translateXValue + 420}px)`;
-    count --;
-  }
-}
+//   if(count > 0){
+//     document.querySelector('.display-image').style.transform = `translateX(${translateXValue + 420}px)`;
+//     count --;
+//   }
+// }
 
-function slideNext(){
-  let currentTransform = document.querySelector('.display-image').style.transform;
-  let aa = currentTransform.split('(')
-  let bb = aa[1].split('px',1)
-  let translateXValue = Number(bb[0])
+// function slideNext(){
+//   let currentTransform = document.querySelector('.display-image').style.transform;
+//   let aa = currentTransform.split('(')
+//   let bb = aa[1].split('px',1)
+//   let translateXValue = Number(bb[0])
   
-  if(count <= imgCount - 4){
-    document.querySelector('.display-image').style.transform = `translateX(${translateXValue - 420}px)`;
-    count ++;
-  }
-}
+//   if(count <= imgCount - 4){
+//     document.querySelector('.display-image').style.transform = `translateX(${translateXValue - 420}px)`;
+//     count ++;
+//   }
+// }
 
 /* -----------------------------apple----------------------------------------*/

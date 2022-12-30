@@ -178,7 +178,7 @@
         overflow: scroll;
         overflow-x: hidden;
         overflow-y: hidden;
-        width: cacl(100% - calc((100% - rem(980)) / 2));
+        width: calc(100% - calc((100% - rem(980)) / 2));
         .img-item{
             display: flex;
             flex-wrap: wrap;
