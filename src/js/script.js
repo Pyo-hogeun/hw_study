@@ -104,11 +104,8 @@ for (let i = 0; i < top_item.length; i++){
       document.querySelector('.dim').style.display = 'block'
     }
 
-
-   /* 
-   let isChecked = false;
-
     for (let j = 0; j < mail_checkbox.length; j++){
+      let isChecked = false;
       if(mail_checkbox[j].checked == true){
         isChecked = true
       }
@@ -117,9 +114,8 @@ for (let i = 0; i < top_item.length; i++){
       document.querySelector('.dim').style.display = 'block';
     }
   })
-  */
-  })
-};
+  };
+
 
 // document.querySelector('.choose-x').addEventListener('click', function(){
 //   document.querySelector('.dim').style.display = 'none';
@@ -178,7 +174,7 @@ let count = 0
 let imgCount = document.querySelectorAll('.img-item').length
 
 function slidePrev(){
-  let currentTransform = document.querySelector('.display-image').style.transform;
+  let currentTransform = document.querySelector('.display-image').style.transform
   let aa = currentTransform.split('(')
   let bb = aa[1].split('px',1)
   let translateXValue = Number(bb[0])

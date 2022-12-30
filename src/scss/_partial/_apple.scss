@@ -157,99 +157,7 @@
                 }
             }
         }
-        .display-categories{
-            display: flex;
-            flex-wrap: nowrap;
-            margin: rem(80) 0;
-            .img-item{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                font-size: rem(14);
-                font-weight: 500;
-                color: black;
-                .mac-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/mac.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .iphone-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/iphone.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .ipad-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/ipad.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .apple-watch-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/applewatch.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .airpods-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/airpods.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .airtag-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/airtag.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .appletv-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/appletv.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .homepod-mini-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/homepodmini.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .accessories-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/accessories.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-                .gift-card-img{
-                    display: block;
-                    width: rem(120);
-                    height: rem(94);
-                    background: url("../../src/img/apple/applegiftcard.png");
-                    background-position: 50%;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
+
         .hook{
             width: 100%;
             font-size: rem(28);
@@ -262,9 +170,105 @@
                 color: gray;
             }
         }
-
     }
-    .right{
+    .display-categories{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: rem(80) 0 rem(80) calc((100% - rem(980)) / 2);
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: cacl(100% - calc((100% - rem(980)) / 2));
+        .img-item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: rem(14);
+            font-weight: 500;
+            color: black;
+            width: rem(120);
+            margin-right: rem(30);
+            .mac-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/mac.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .iphone-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/iphone.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .ipad-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/ipad.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .apple-watch-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/applewatch.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .airpods-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/airpods.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .airtag-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/airtag.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .appletv-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/appletv.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .homepod-mini-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/homepodmini.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .accessories-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/accessories.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .gift-card-img{
+                display: block;
+                width: rem(120);
+                height: rem(94);
+                background: url("../../src/img/apple/applegiftcard.png");
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+        }
     }
     .display-image-wrap{
         overflow-x: hidden;
@@ -272,7 +276,7 @@
             display: flex;
             gap: rem(20);
             flex-wrap: nowrap;
-            margin: rem(30) 0 rem(70) rem(280);
+            margin: rem(30) 0 rem(70) calc((100% - rem(980)) / 2);
             transition: 0.5s;
             .card-item{
                 flex: 0 0 rem(400);
@@ -311,6 +315,372 @@
                     }
                     .description-price{
                         line-height: rem(20);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 980px){
+    .apple-wrap{
+        .apple-nav{
+            width: 100%;
+            min-width: rem(320);
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            margin-bottom: rem(80);
+            .responsive{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .menu{
+                    display: block;
+                    width: rem(44);
+                    height: rem(44);
+                    background: url('../../src/img/apple/menu.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                }
+                .apple-logo{
+                    display: block;
+                    width: rem(44);
+                    height: rem(44);
+                    background: url('../../src/img/apple/apple_logo.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                }
+                .bag-icon{
+                    display: block;
+                    width: rem(44);
+                    height: rem(44);
+                    background: url('../../src/img/apple/bag_icon.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                }
+            }
+            .gnb-top{
+                display: none;
+                justify-content: space-between;
+                align-items: center;
+                font-size: rem(12);
+                font-weight: 400;
+                width: rem(1020);
+                height: rem(44);
+                .bag{
+                    .bag-menu{
+                        display: none;
+                        position: absolute;
+                        right: rem(150);
+                        top: rem(50);
+                        border: 1px solid gray;
+                        border-radius: rem(20);
+                        background-color: white;
+                        color: rgb(76, 124, 255);
+                        padding: 0 rem(20);
+                        font-size: rem(14);
+                        width: rem(250);
+                        li{
+                            display: flex;
+                            padding: rem(15) 0;
+                            border-bottom: 1px solid gray;
+                            align-items: center;
+                            &:first-child{
+                                padding: rem(30) 0;
+                                text-align: center;
+                                color: black;
+                            }
+                            &:last-child{
+                                border: 0;
+                            }
+                            a{
+                                color: rgb(76, 124, 255);
+
+                            }
+                        }
+                    }
+                }
+                a{
+                    color: #cccccc ;
+                    &:hover{
+                        color: white;
+                    }
+                }
+                .apple-logo{
+                    display: block;
+                    height: rem(44);
+                    width: rem(44);
+                    background: url('../../src/img/apple/apple_logo.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    &:hover{
+                        display: block;
+                        height: rem(44);
+                        width: rem(44);
+                        background: url('../../src/img/apple/apple_logo_hover.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                    }
+                }
+                .search-icon{
+                    display: block;
+                    height: rem(44);
+                    width: rem(44);
+                    background: url('../../src/img/apple/search_icon.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    &:hover{
+                        display: block;
+                        height: rem(44);
+                        width: rem(44);
+                        background: url('../../src/img/apple/search_icon_hover.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                    }
+                }
+                .bag-icon{
+                    display: block;
+                    height: rem(44);
+                    width: rem(44);
+                    background: url('../../src/img/apple/bag_icon.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    &:hover{
+                        display: block;
+                        height: rem(44);
+                        width: rem(44);
+                        background: url('../../src/img/apple/bag_icon_hover.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                    }
+                }
+            }
+        }
+        .content-wrap{
+            width: calc(90% - rem(20));
+            display: flex;
+            flex-wrap: wrap;
+            min-width: rem(300);
+            .header{
+                display: flex;
+                flex-wrap: wrap;
+                .header-left{
+                    font-weight: 700;
+                    font-size: rem(32);
+                    line-height: rem(37);
+                    width: rem(700);
+                    margin-bottom: rem(30);
+                    h1{
+                        display: inline;
+                    }
+                    span{
+                        color: gray;
+                    }
+                }
+                .header-right{
+                    width: rem(185);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: space-between;
+                    font-size: rem(14);
+                    font-weight: 700;
+                    line-height: rem(20);
+                    .right-item{
+                        display: flex;
+                        margin-bottom: rem(15); 
+                    }
+                    a{
+                        margin-right: rem(5);
+                        color: rgb(54, 124, 255);
+                    }
+                    .need-help-img{
+                        display: block;
+                        width: rem(35);
+                        height: rem(35);
+                        background: url("../../src/img/apple/need_help.png");
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                    }
+                    .visit-store-img{
+                        display: block;
+                        width: rem(35);
+                        height: rem(35);
+                        background: url("../../src/img/apple/visit_store.png");
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            
+            .hook{
+                margin-top: rem(40);
+                width: 100%;
+                font-size: rem(24);
+                font-weight: 600;
+                letter-spacing: rem(-1.5);
+                line-height: rem(30);
+                h1{
+                    display: inline;
+                }
+                span{
+                    color: gray;
+                }
+            }
+            .left{
+                display: none;
+            }
+            .right{
+                display: none;
+            }
+        }
+        .display-categories{
+            display: block;
+            flex-wrap: nowrap;
+            margin: rem(30) 0;
+            margin-left: rem(20);
+            overflow: scroll;
+            overflow-x: auto;
+            overflow-y: hidden;
+            .img-item{
+                display: flex;
+                flex: 0 0 rem(80);
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: rem(14);
+                font-weight: 500;
+                color: black;
+                margin: 0 rem(20);
+                .mac-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/mac.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .iphone-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/iphone.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .ipad-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/ipad.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .apple-watch-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/applewatch.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .airpods-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/airpods.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .airtag-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/airtag.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .appletv-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/appletv.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .homepod-mini-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/homepodmini.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .accessories-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/accessories.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+                .gift-card-img{
+                    display: block;
+                    width: 100%;
+                    height: rem(94);
+                    background: url("../../src/img/apple/applegiftcard.png");
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        .display-image-wrap{
+            overflow-x: hidden;
+            .display-image{
+                display: flex;
+                gap: rem(20);
+                flex-wrap: nowrap;
+                margin: rem(30) 0 rem(70) rem(20);
+                transition: 0.5s;
+                overflow-y: hidden;
+                overflow-x: auto;
+                .card-item{
+                    flex: 0 0 rem(300);
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    border-radius: rem(20);
+                    color: black;
+                    &.black{
+                        background-color: black;
+                        color: white;
+                    }
+                    &:hover{
+                        scale: (1.03);
+                        transition-duration: 1s;
+                        box-shadow: rem(5) rem(5) rem(5) rem(5) gray;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: rem(20);
+                    }
+                    .description{
+                        padding: rem(30) rem(30) rem(0) rem(30);
+                        height: rem(120);
+                        .description-name{
+                            color: gray;
+                            font-size: rem(12);
+                            font-weight: 700;
+                            margin-bottom: rem(20);
+                        }
+                        .description-description{
+                            font-size: rem(28);
+                            font-weight: 700;
+                            margin-bottom: rem(15);
+                        }
+                        .description-price{
+                            line-height: rem(20);
+                        }
                     }
                 }
             }
