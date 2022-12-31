@@ -99,8 +99,9 @@ html{
                 color: black;
             }
             .write-box{
+                width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content:space-between;
                 border-bottom: rem(1) solid $daum-mail-gnb-top;
                 .write{
                     width: 50%;
@@ -213,6 +214,7 @@ html{
                 width: 100%;
                 margin-top: rem(20);
                 .page-number{
+                    min-width: rem(580);
                     width: 100%;
                     display: flex;
                     justify-content: center;
