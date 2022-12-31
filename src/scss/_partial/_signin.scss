@@ -1,76 +1,76 @@
 
 /* signIn 시작--------------------------------*/
+.signin{
+    .signin-welcome{
+        margin-bottom: 30px;
+    }
+    .agree-checkbox{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    ul li{
+        list-style: none;
+    }
 
-.signin-welcome{
-    margin-bottom: 30px;
-}
-.agree-checkbox{
-    margin-top: 15px;
-    margin-bottom: 0;
-}
-ul li{
-    list-style: none;
-}
-
-input[type=text]{
-    background-color: gainsboro;
-    border-radius: 10px;
-}
-input[type=password]{
-    background-color: gainsboro;
-    border-radius: 10px;
-}
-input[type=number]{
-    background-color: gainsboro;
-    border-radius: 10px;
-}
-.form-select{
-    background-color: gainsboro;
-}
-span.warning {
-    color: red;
-    font-size: 12px;
-}
-ul {
-    padding-inline-start: 0;
-}
-label{
-    width:100px
-}
-.phoneinput{
-    width:90px
-}
-.signin-list{
-    li{
-    margin: 10px;
+    input[type=text]{
+        background-color: gainsboro;
+        border-radius: 10px;
+    }
+    input[type=password]{
+        background-color: gainsboro;
+        border-radius: 10px;
+    }
+    input[type=number]{
+        background-color: gainsboro;
+        border-radius: 10px;
+    }
+    .form-select{
+        background-color: gainsboro;
+    }
+    span.warning {
+        color: red;
+        font-size: 12px;
+    }
+    ul {
+        padding-inline-start: 0;
+    }
+    label{
+        width:100px
+    }
+    .phoneinput{
+        width:90px
+    }
+    .signin-list{
+        li{
+        margin: 10px;
+        }
+    }
+    .input-group{
+        width: 70%;
+    }
+    #id {
+        display: inline;
+    }
+    .col-small{
+        display: inline-block;
+        width: 200px;
+    }
+    .col-extrasmall{
+        display: inline-block;
+        width: 98px;
+    }
+    .col-medium{
+        display: inline-block;
+        width: 305px;
+    }
+    .form-select{
+        display: inline-block;
+        width: 300px;
+    }
+    .last-button{
+        text-align: right;
+        margin-bottom: 20px;
+        margin-right: 195px;
     }
 }
-.input-group{
-    width: 70%;
-}
-#id {
-    display: inline;
-}
-.col-small{
-    display: inline-block;
-    width: 200px;
-}
-.col-extrasmall{
-    display: inline-block;
-    width: 98px;
-}
-.col-medium{
-    display: inline-block;
-    width: 305px;
-}
-.form-select{
-    display: inline-block;
-    width: 300px;
-}
-.last-button{
-    text-align: right;
-    margin-bottom: 20px;
-    margin-right: 195px;
-}
-
 /* signIn 끝--------------------------------*/
