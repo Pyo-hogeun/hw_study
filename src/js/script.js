@@ -200,7 +200,7 @@ function change_unread(targetoo){
 /* -----------------------------apple end----------------------------------------*/
 /*------------------- hometax start -------------------*/
 
-var centerItemArr = document.querySelectorAll('.center-item');
+var centerItemTitleArr = document.querySelectorAll('.center-item-title');
 var megaDropArr = document.querySelectorAll('.mega-drop');
 
 // index 버전 ///////////////////////////////////////////////////////////////
@@ -216,15 +216,16 @@ var megaDropArr = document.querySelectorAll('.mega-drop');
 // };
 
 // target 버전 //////////////////////////////////////////////////////////////
-for(let i = 0; i < centerItemArr.length; i++ ){
-  centerItemArr[i].addEventListener('mouseover', function(event){
-    megaDrop = this.firstElementChild;
+for(let i = 0; i < centerItemTitleArr.length; i++ ){
+  centerItemTitleArr[i].addEventListener('mouseover', function(event){
+    console.log(event);
+    megaDrop = this.nextElementSibling;
     megaDrop.style.display = 'flex'
   });
 };
-for(let i = 0; i < centerItemArr.length; i++ ){
-  centerItemArr[i].addEventListener('mouseout', function(event){
-    megaDrop = this.firstElementChild;
+for(let i = 0; i < centerItemTitleArr.length; i++ ){
+  centerItemTitleArr[i].addEventListener('mouseout', function(event){
+    megaDrop = this.nextElementSibling;
     megaDrop.style.display = 'none'
   });
 };
