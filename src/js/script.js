@@ -207,6 +207,11 @@ for(let i = 0; i < centerItemArr.length; i++ ){
     megaDropArr[i].style.display = 'flex';
   });
 };
+for(let i = 0; i < centerItemArr.length; i++ ){
+  megaDropArr[i].addEventListener('mouseout', function(){
+    megaDropArr[i].style.display = 'none';
+  });
+};
 
 
 
