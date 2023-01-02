@@ -9,6 +9,7 @@
         justify-content: center;
         border-bottom: 1px solid lightgray;
         .gnb{
+            min-width: rem(980);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -24,24 +25,58 @@
                 }
             }
             .gnb-center{
-                .mega-drop{
-                    position: absolute;
-                    background-color: white;
-                    border-bottom: 1px solid rgb(0, 132, 255);
-                    width: rem(960);
-                    .second-depth{
-                        .third-depth{
-                            color: rgb(0, 92, 179);
-                            padding: rem(10) 0;
-                            div{
-                                border-bottom: 1px solid lightgray;
+                min-width: rem(640);
+                display: flex;
+                justify-content: space-around;
+                .center-item{
+                    color: black;
+                    .mega-drop{
+                        position: absolute;
+                        background-color: white;
+                        top: rem(70);
+                        left: 0;
+                        border-bottom: 1px solid rgb(0, 132, 255);
+                        width: 100%;
+                        display: none;
+                        justify-content: center;
+                        .mega-drop-small{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                            width: rem(1020);
+                            height: rem(700);
+                            overflow: scroll;
+                            overflow-x: hidden;
+                            .column-line{
+                                width: rem(250);  
+                                margin: rem(20) rem(10);  
+                                .second-depth{
+                                    width: 100%;
+                                    margin-bottom: rem(20);
+                                    header{
+                                        font-size: rem(14);
+                                        padding: rem(10) 0;
+                                        margin-bottom: rem(10);
+                                        border-bottom: 1px solid lightgray;
+                                        color: #003471
+                                    }
+                                    .third-depth{
+                                        font-size: rem(12);
+                                        font-weight: 400;
+                                        padding: rem(5) 0 rem(5) rem(12);
+                                        line-height: rem(18);
+                                        &::before{
+                                            content: '⊙';
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-                }
-                a{
-                    color: black;
-                    margin: 0 rem(10);
+                    a{
+                        color: black;
+                        margin: 0 rem(10);
+                    }
                 }
             }
         }

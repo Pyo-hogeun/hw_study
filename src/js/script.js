@@ -166,7 +166,7 @@ function change_unread(targetoo){
 
 
 /*---------------------------daum-email-end-------------------------------- */
-/* -----------------------------apple----------------------------------------*/
+/* -----------------------------apple start----------------------------------------*/
 // document.querySelector('.left').addEventListener('click', slidePrev)
 // document.querySelector('.right').addEventListener('click', slideNext)
 
@@ -197,4 +197,24 @@ function change_unread(targetoo){
 //   }
 // }
 
-/* -----------------------------apple----------------------------------------*/
+/* -----------------------------apple end----------------------------------------*/
+/*------------------- hometax start -------------------*/
+
+var centerItemArr = document.querySelectorAll('.center-item');
+var megaDropArr = document.querySelectorAll('.mega-drop');
+for(let i = 0; i < centerItemArr.length; i++ ){
+  centerItemArr[i].addEventListener('mouseover', function(){
+    megaDropArr[i].style.display = 'flex';
+  });
+};
+
+
+
+
+
+
+
+
+
+
+/*------------------- hometax end -------------------*/
