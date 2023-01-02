@@ -202,18 +202,32 @@ function change_unread(targetoo){
 
 var centerItemArr = document.querySelectorAll('.center-item');
 var megaDropArr = document.querySelectorAll('.mega-drop');
+
+// index 버전 ///////////////////////////////////////////////////////////////
+// for(let i = 0; i < centerItemArr.length; i++ ){
+//   centerItemArr[i].addEventListener('mouseover', function(){
+//     megaDropArr[i].style.display = 'flex';
+//   });
+// };
+// for(let i = 0; i < centerItemArr.length; i++ ){
+//   megaDropArr[i].addEventListener('mouseout', function(){
+//     megaDropArr[i].style.display = 'none';
+//   });
+// };
+
+// target 버전 //////////////////////////////////////////////////////////////
 for(let i = 0; i < centerItemArr.length; i++ ){
-  centerItemArr[i].addEventListener('mouseover', function(){
-    megaDropArr[i].style.display = 'flex';
+  centerItemArr[i].addEventListener('mouseover', function(event){
+    megaDrop = this.firstElementChild;
+    megaDrop.style.display = 'flex'
   });
 };
 for(let i = 0; i < centerItemArr.length; i++ ){
-  megaDropArr[i].addEventListener('mouseout', function(){
-    megaDropArr[i].style.display = 'none';
+  centerItemArr[i].addEventListener('mouseout', function(event){
+    megaDrop = this.firstElementChild;
+    megaDrop.style.display = 'none'
   });
 };
-
-
 
 
 

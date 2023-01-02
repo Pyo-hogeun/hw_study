@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: space-between;
             width: rem(960);
-            height: rem(50);
+            height: rem(60);
             font-weight: bold;
             .gnb-left{
                 a{
@@ -28,24 +28,41 @@
                 min-width: rem(640);
                 display: flex;
                 justify-content: space-around;
+                height: 100%;
+                align-items: center;
                 .center-item{
+                    display: flex;
                     color: black;
+                    height: 100%;
+                    align-items: center;
+                    .center-item-title{
+                        color: black;
+                        display: flex;
+                        align-items:center;
+                        box-sizing: content-box;
+                        height: calc(100% - rem(8));
+                        &:hover{
+                            color: rgb(74, 147, 255);
+                            border-bottom: 8px solid rgb(74, 147, 255);
+                            border-top: 8px solid white;
+                        }
+                    }
                     .mega-drop{
+                        display: none;
+                        justify-content: center;
                         position: absolute;
                         background-color: white;
-                        top: rem(50);
+                        top: rem(60);
                         left: 0;
                         border-bottom: 1px solid rgb(0, 132, 255);
                         width: 100%;
-                        display: none;
-                        justify-content: center;
                         .mega-drop-small{
                             display: flex;
                             flex-wrap: nowrap;
                             justify-content: center;
                             width: rem(1020);
-                            height: rem(700);
-                            overflow: scroll;
+                            max-height: rem(700);
+                            overflow: auto;
                             overflow-x: hidden;
                             .column-line{
                                 width: rem(250);  
@@ -73,11 +90,8 @@
                             }
                         }
                     }
-                    a{
-                        color: black;
-                        margin: 0 rem(10);
-                    }
                 }
+ 
             }
         }
     }
