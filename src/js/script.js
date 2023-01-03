@@ -200,20 +200,23 @@ function change_unread(targetoo){
 /* -----------------------------apple end----------------------------------------*/
 /*------------------- hometax start -------------------*/
 
-var centerItemTitleArr = document.querySelectorAll('.center-item-title');
-var megaDropArr = document.querySelectorAll('.mega-drop');
+var hometax = function(){
 
-// index 버전 ///////////////////////////////////////////////////////////////
-// for(let i = 0; i < centerItemArr.length; i++ ){
-//   centerItemArr[i].addEventListener('mouseover', function(){
-//     megaDropArr[i].style.display = 'flex';
-//   });
-// };
-// for(let i = 0; i < centerItemArr.length; i++ ){
-//   megaDropArr[i].addEventListener('mouseout', function(){
-//     megaDropArr[i].style.display = 'none';
-//   });
-// };
+  var centerItemTitleArr = document.querySelectorAll('.center-item-title');
+  var megaDropArr = document.querySelectorAll('.mega-drop');
+  
+  ///////////////////////////////////////////////////////////////index 버전
+  for(let i = 0; i < centerItemArr.length; i++ ){
+    centerItemArr[i].addEventListener('mouseover', function(){
+      megaDropArr[i].style.display = 'flex';
+    });
+  };
+  for(let i = 0; i < centerItemArr.length; i++ ){
+    megaDropArr[i].addEventListener('mouseout', function(){
+      megaDropArr[i].style.display = 'none';
+    });
+  };
+}
 
 // target 버전 //////////////////////////////////////////////////////////////
 for(let i = 0; i < centerItemTitleArr.length; i++ ){
@@ -229,12 +232,5 @@ for(let i = 0; i < centerItemTitleArr.length; i++ ){
     megaDrop.style.display = 'none'
   });
 };
-
-
-
-
-
-
-
 
 /*------------------- hometax end -------------------*/
