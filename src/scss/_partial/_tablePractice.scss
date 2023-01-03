@@ -1,10 +1,59 @@
-table{
-    border: 1px solid black;
-    text-align: center;
-    tr{
-        border: 1px solid red;
-        td{
-            border: 1px solid blue;
+body{
+    display: flex;
+    flex-wrap: wrap;
+    .table-practice{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        table{
+            margin-bottom: rem(150);
+            text-align: center;
+            height: rem(960);
+            font-size: rem(12);
+            font-weight: 700;
+            border: 4px double black;
+            caption{
+                font-size: rem(24);
+                font-weight: 700;
+                letter-spacing: rem(20);
+                margin: rem(20) 0;
+            }
+            tr{
+                border: 1px solid red;
+                td{
+                    border: 1px solid black;
+                }
+            }
+            thead{
+                td{
+                    padding: rem(15) rem(5) rem(15) rem(5);
+                }
+            }
+            tbody{
+                td{
+                    padding: rem(5);
+                }
+            }
+        }
+    }
+    .sign{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        top: rem(850);
+        font-weight: 700;
+        div{
+            &:first-child{
+                text-align: center;
+                margin-bottom: rem(10);
+                width: 100%;
+            }
+            &:last-child{
+                width: rem(300);
+                text-align: end;
+            }
         }
     }
 }
