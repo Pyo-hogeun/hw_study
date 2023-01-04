@@ -1,0 +1,181 @@
+.airbnb-main{
+    .gnb-top{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100vw;
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: rem(10);
+        .search-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid lightgray;
+            border-radius: rem(40);
+            width: 100%;
+            min-width: rem(300);
+            margin: rem(15) rem(30);
+            padding: rem(10);
+            background-color: white;
+            box-shadow: rem(1) rem(3) rem(20) rem(1)lightgray;
+            .bar-left{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                .search-icon{
+                    width: rem(25);
+                    height: rem(25);
+                    background: url('../../src/img/airbnb/search_icon.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    border-radius: rem(20);
+                    padding: rem(5)
+                }
+                .center-phrase{
+                    margin-left: rem(10);
+                    font-size: rem(14);
+                    font-weight: 700;
+                    line-height: rem(20);
+                    div{
+                        &:last-child{
+                            font-size: rem(12);
+                            font-weight: 400;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+            .bar-right{
+                .filter-icon{
+                    width: rem(25);
+                    height: rem(25);
+                    background: url('../../src/img/airbnb/filter_icon.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    border: 1px solid lightgray;
+                    border-radius: rem(20);
+                    padding: rem(5)
+                }
+            }
+        }
+        .option-bar{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+            .option-icon{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: rem(60);
+                .option-image{
+                    width: 100%;
+                    height: rem(25);
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                }
+                .option-phrase{
+                    text-align: center;
+                    min-width: rem(90);
+                    font-size: rem(12);
+                }
+            }
+        }
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: rem(160);
+        .content-item{
+            max-width: rem(550);
+            margin: rem(20);
+            .item-images{
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                border-radius: rem(20);
+                height: calc(100vw - rem(40));
+                max-height: rem(550);
+                .item-image{
+                    width: 100%;
+                    object-fit: cover; 
+                    object-position: center; 
+                }
+            }
+            .item-description{
+                margin-top: rem(15);
+                div{
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-bottom: rem(5);
+                    font-size: rem(15);
+                    &.item-title{
+                        font-weight: 700;
+                    }
+                    &.item-option{
+                        color: gray;
+                    }
+                    &.item-date{
+                        color: gray;
+                    }
+                    &.item-price{
+                        margin-top: rem(10);
+                        font-weight: 700;
+                    }
+                }
+
+            }
+        }
+    }
+    .gnb-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        min-width: rem(205);
+        height: rem(60);
+        font-size: rem(12);
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        padding: rem(10) 0;
+        box-sizing: border-box;
+        a{
+            color: black;
+        }
+        .bottom-item{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 rem(10);
+            .default-img{
+                width: 100%;
+                height: rem(24);
+                background: url('../../src/img/airbnb/search_icon_clicked.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 45%;
+                margin-bottom: rem(5);
+            }
+            .wish-list-img{
+                width: 100%;
+                height: rem(24);
+                background: url('../../src/img/airbnb/wish_list.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                margin-bottom: rem(5);
+            }
+            .login-img{
+                width: 100%;
+                height: rem(24);
+                background: url('../../src/img/airbnb/login.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                margin-bottom: rem(5);
+            }
+        }
+    }
+}

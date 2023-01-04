@@ -1,0 +1,75 @@
+.airbnb-wishlist{
+    padding: 0 rem(25);
+    min-width: rem(190);
+    .header{
+        font-size: rem(32);
+        font-weight: 700;
+        margin: rem(40) 0 ;
+    }
+    .content{
+        .please-login{
+            font-size: rem(22);
+            font-weight: 700;
+            margin-bottom: rem(15);
+        }
+        .please-login-sub{
+            font-size: rem(14);
+            margin-bottom: rem(50);
+        }
+        .login-button{
+            color: white;
+            background-color: rgb(197, 0, 99);
+            padding: rem(15) rem(25);
+            border-radius: rem(10);
+        }
+    }
+    .gnb-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: rem(205);
+        height: rem(60);
+        font-size: rem(12);
+        background-color: white;
+        padding: rem(10) 0;
+        box-sizing: border-box;
+        a{
+            color: black;
+        }
+        .bottom-item{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 rem(10);
+            .default-img{
+                width: 100%;
+                height: rem(24);
+                background: url('../../src/img/airbnb/search_icon.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 45%;
+                margin-bottom: rem(5);
+            }
+            .wish-list-img{
+                width: 100%;
+                height: rem(24);
+                background: url('../../src/img/airbnb/wish_list_clicked.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                margin-bottom: rem(5);
+            }
+            .login-img{
+                width: 100%;
+                height: rem(24);
+                background: url('../../src/img/airbnb/login.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                margin-bottom: rem(5);
+            }
+        }
+    }
+}
