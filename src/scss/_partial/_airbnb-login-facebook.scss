@@ -1,0 +1,60 @@
+.facebook-popup{
+    .gnb{
+        background-color: rgb(37, 65, 155);
+        color: white;
+        padding: rem(10);
+    }
+    .content{
+        padding: rem(20) rem(40);
+        font-size: rem(14);
+        .header{
+            span{
+                font-weight: 700;
+            }
+        }
+        .login-box{
+            width: rem(340);
+            display: flex;
+            flex-wrap: wrap;
+            margin: rem(20) rem(80);
+            .id{
+                justify-content: space-between;
+                display: flex;
+                width: rem(300);
+                margin-bottom: rem(10);
+            }
+            .pw{
+                justify-content: space-between;
+                display: flex;
+                width: rem(300);
+                margin-bottom: rem(20);
+            }
+            .buttons{
+                margin-left: rem(107);
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                    margin-bottom: rem(20);
+                }
+                .login-button{
+                    display: block;
+                    background-color: rgb(37, 65, 155);
+                    color: white;
+                    padding: rem(5);
+                    border: 1px solid black;
+                }
+                .forgot-button{
+                    width: 100%;
+                    display: block;
+                    color: rgb(37, 65, 155);
+                }
+                .account-button{
+                    display: block;
+                    color: white;
+                    background-color: rgb(107, 153, 38);
+                    padding: rem(5);
+                }
+            }
+        }
+    }
+}

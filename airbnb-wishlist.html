@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style_scss.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> 
+</script>
+    <script src="./src/js/airbnb.js"></script>
     <title>airbnb--wishlist</title>
 </head>
 <body>
@@ -13,27 +16,95 @@
             위시리스트
         </div>
         <div class="content">
-            <div class="please-login">위시리스트를 확인하려면 로그인하세요</div>
-            <div class="please-login-sub">로그인한 후 위시리스트를 생성 및 조회, 수정할 수 있습니다.</div>
-            <a class= 'login-button' href="#">
+            <div class="please-login">
+                위시리스트를 확인하려면 로그인하세요
+            </div>
+            <div class="please-login-sub">
+                로그인한 후 위시리스트를 생성 및 조회, 수정할 수 있습니다.
+            </div>
+            <a class='login-button' href="#">
                 로그인
             </a>
         </div>
+        <div class="dim-class">
+        </div>
+        <div class="load-login">
+            <div class="airbnb-login">
+                <div class="header">
+                    <a href="#" class="xbutton">X</a>
+                    로그인 또는 회원가입
+                </div>
+                <div class="content">
+                    <div class="title">
+                        에어비앤비에 오신 것을 환영합니다.
+                    </div>
+                    <div class="user-number">
+                        <label class="nation-select-label" for="nation-select">
+                            <div class="font">국가/지역</div>
+                            <select class="nation-select" >
+                                    <option>
+                                        미국 (+1)
+                                    </option>
+                                    <option>
+                                        한국 (+82)
+                                    </option>
+                                    <option>
+                                        스위스 (+41)
+                                    </option>
+                                    <option>
+                                        일본 (+81)
+                                    </option>
+                            </select>
+                            <input class="input-number" type="text" placeholder="전화번호">
+                        </label>
+                    </div>
+                    <div class="warning">
+                        전화나 문자로 전화번호를 확인하겠습니다. 일반 문자 메세지 요금 및 데이터 요금이 부과됩니다. 
+                        <a class="personal-info-handle" href="https://www.airbnb.co.kr/help/article/2855">개인정보 처리방침</a>
+                    </div>
+                    <a class="continue button" href="#">
+                        계속
+                    </a>
+                    <div class="or-wrap">
+                        <div class="left"></div>
+                        <span class="or">또는</span>
+                        <div class="right"></div>
+                    </div>
+                    <a class="facebook button" href="airbnb-login-facebook.html" target="_blank">
+                        <span class="facebook-icon"></span>
+                        페이스북으로 로그인하기
+                    </a>
+                    <a class="google button" href="airbnb-login-google.html" target="_blank">
+                        <span class="google-icon"></span>
+                        구글로 로그인하기
+                    </a>
+                    <a class="apple button" href="airbnb-login-apple.html" target="_blank">
+                        <span class="apple-icon"></span>
+                        Apple 계정으로 계속하기
+                    </a>
+                    <a class="email button" href="airbnb-login-email.html" target="_blank">
+                        <span class="email-icon "></span>
+                        이메일로 로그인하기
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="gnb-bottom">
-            <a href="#" class="bottom-item default">
-                <div class="default-img bottom-img"></div>
-                <div>둘러보기</div>
-            </a>
-            <a href="#" class="bottom-item wish-list">
-                <div class="wish-list-img bottom-img"></div>
-                <div>위시리스트</div>
-            </a>
-            <a href="#" class="bottom-item login">
-                <div class="login-img bottom-img"></div>
-                <div>로그인</div>
-            </a>
+            <div class="bottom-items">
+                <a href="./airbnb-main.html" class="bottom-item default">
+                    <div class="default-img bottom-img"></div>
+                    <div>둘러보기</div>
+                </a>
+                <a href="./airbnb-wishlist.html" class="bottom-item wish-list">
+                    <div class="wish-list-img bottom-img"></div>
+                    <div>위시리스트</div>
+                </a>
+                <a href="./airbnb-login.html" class="bottom-item login">
+                    <div class="login-img bottom-img"></div>
+                    <div>로그인</div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
-<script src="./src/js/airbnb.js"></script>
 </html>
