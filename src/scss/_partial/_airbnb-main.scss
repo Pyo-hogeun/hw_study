@@ -59,6 +59,123 @@
                     border-radius: rem(20);
                     padding: rem(5)
                 }
+                .filter-wrap{
+                    background-color: white;
+                    border: 1px solid black;
+                    left: 0;
+                    top: rem(15);
+                    position: fixed;
+                    width: 100%;
+                    border-radius: rem(15);
+                    box-sizing: border-box;
+                    .filter-gnb-top{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding: rem(20) 0;
+                        border-bottom: 1px solid lightgray;
+                        .xbutton{
+                            position: absolute;
+                            left: rem(30);
+                        }
+                    }
+                    .filter-content{
+                        padding: 0 rem(25) rem(25) rem(25);
+                        .filter-content-item{
+                            border-bottom: 1px solid lightgray;
+                            padding-bottom: rem(20);
+                            .title{
+                                font-size: rem(18);
+                                font-weight: 700;
+                                margin: rem(20) 0;
+                            }
+                            &.price-range{
+                                .sub-title{
+                                    font-size: rem(16);
+                                    color: gray;
+                                }
+                                .range-box{
+                                    
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    .price-show{
+                                        width: 90%;
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        .top-text{
+                                            font-size: rem(14);
+                                            color: gray;
+                                            margin-bottom: rem(5);
+                                        }
+                                        .minimum-price{
+                                            border: 1px solid lightgray;
+                                            padding: rem(10);
+                                            border-radius: rem(10);
+                                            width: 40%;
+                                        }
+                                        .maximum-price{
+                                            border: 1px solid lightgray;
+                                            padding: rem(10);
+                                            border-radius: rem(10);
+                                            width: 40%;
+                                        }
+                                    }
+                                }
+                            }
+                            &.house-type{
+                                .type-content{
+                                    .type-option{
+                                        width: 100%;
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        justify-content: space-between;
+                                        .option-description{
+                                            margin-bottom: rem(20);
+                                            .description-title{
+                                                margin-bottom: rem(10);
+                                            }
+                                            .description-sub-title{
+                                                color: gray;
+                                                font-size: rem(14);
+                                            }
+                                        }
+                                        .option-checkbox{
+                                            width: rem(30);
+                                        }
+                                    }
+                                }
+                            }
+                            &.bed-room{
+                                .bed-room-content{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    .bed-room-item{
+                                        margin-bottom: rem(30);
+                                        .item-name{
+                                            margin-bottom: rem(30);
+                                            font-weight: 700;
+                                        }
+                                        .choose-number{
+                                            display: flex;
+                                            overflow: scroll;
+                                            font-weight: rem(12);
+                                            li{
+                                                border: 1px solid lightgray;
+                                                border-radius: rem(20);
+                                                width: rem(60);
+                                                padding: rem(10) rem(15);
+                                                margin-right: rem(20);
+                                            }
+                                        }
+                                }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         .option-bar{
