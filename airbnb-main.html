@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style_scss.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> 
+    </script>
+    <script src="./src/js/airbnb.js"></script>
     <title>airbnb-main</title>
 </head>
 <body>
@@ -12,8 +15,8 @@
         <div class="gnb-top">
             <div class="search-bar">
                 <div class="bar-left">
-                    <div class="search-icon">
-                    </div>
+                    <a href="#" class="search-icon">
+                    </a>
                     <div class="center-phrase">
                         <div>
                             어디로 여행가세요?
@@ -24,163 +27,218 @@
                     </div>
                 </div>
                 <div class="bar-right">
-                    <div class="filter-icon">
-                    </div>
+                    <a href="#" class="filter-icon">
+                    </a>
                 </div>
             </div>
             <ul class="option-bar">
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">최고의 전망</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">최고의 전망</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">해변 바로 앞</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">해변 바로 앞</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">한옥</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">한옥</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">상징적 도시</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">상징적 도시</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">국립공원</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">국립공원</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">개인실</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">개인실</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">료칸</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">료칸</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">인기 급상승</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">인기 급상승</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">한적한 시골</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">한적한 시골</div>
+                    </a>
                 </li>
                 <li class="option-icon">
-                    <div class="option-image"></div>
-                    <div class="option-phrase">기상천외한 숙소</div>
+                    <a class="option-link" href="#">
+                        <div class="option-image"></div>
+                        <div class="option-phrase">기상천외한 숙소</div>
+                    </a>
                 </li>
             </ul>
         </div>
         <ul class="content">
             <li class="content-item">
-                <div class="item-images">
-                    <img class="item-image" src="https://picsum.photos/id/237/550/300/"></img>
-                    <img class="item-image" src="https://picsum.photos/550/300"></img>
-                    <img class="item-image" src="https://picsum.photos/550/300"></img>
-                    <img class="item-image" src="https://picsum.photos/550/300"></img>
-                    <img class="item-image" src="https://picsum.photos/550/300"></img>
-                </div>
-                <div class="item-description">
-                    <div class="item-title">
-                        Geoje-myeon, Geoje-si, 한국
+                <a class="content-item-link" href="#">
+                    <div class="item-images">
+                        <img class="item-image" src="https://picsum.photos/id/237/550/300/"></img>
+                        <img class="item-image" src="https://picsum.photos/550/300"></img>
+                        <img class="item-image" src="https://picsum.photos/550/300"></img>
+                        <img class="item-image" src="https://picsum.photos/550/300"></img>
+                        <img class="item-image" src="https://picsum.photos/550/300"></img>
                     </div>
-                    <div class="item-option">
-                        바다 전망
+                    <div class="item-description">
+                        <div class="item-title">
+                            Geoje-myeon, Geoje-si, 한국
+                        </div>
+                        <div class="item-option">
+                            바다 전망
+                        </div>
+                        <div class="item-date">
+                            1월 9일~14일
+                        </div>
+                        <div class="item-price">
+                            ￦550,140 /박
+                        </div>
                     </div>
-                    <div class="item-date">
-                        1월 9일~14일
-                    </div>
-                    <div class="item-price">
-                        ￦550,140 /박
-                    </div>
-                </div>
+                </a>
             </li>
             <li class="content-item">
-                <div class="item-images">
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                </div>
-                <div class="item-description">
-                    <div class="item-title">
-                        Geoje-myeon, Geoje-si, 한국
+                <a class="content-item-link" href="#">
+                    <div class="item-images">
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
                     </div>
-                    <div class="item-option">
-                        바다 전망
+                    <div class="item-description">
+                        <div class="item-title">
+                            Geoje-myeon, Geoje-si, 한국
+                        </div>
+                        <div class="item-option">
+                            바다 전망
+                        </div>
+                        <div class="item-date">
+                            1월 9일~14일
+                        </div>
+                        <div class="item-price">
+                            ￦550,140 /박
+                        </div>
                     </div>
-                    <div class="item-date">
-                        1월 9일~14일
-                    </div>
-                    <div class="item-price">
-                        ￦550,140 /박
-                    </div>
-                </div>
+                </a>
             </li>
             <li class="content-item">
-                <div class="item-images">
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                </div>
-                <div class="item-description">
-                    <div class="item-title">
-                        Geoje-myeon, Geoje-si, 한국
+                <a class="content-item-link" href="#">
+                    <div class="item-images">
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
                     </div>
-                    <div class="item-option">
-                        바다 전망
+                    <div class="item-description">
+                        <div class="item-title">
+                            Geoje-myeon, Geoje-si, 한국
+                        </div>
+                        <div class="item-option">
+                            바다 전망
+                        </div>
+                        <div class="item-date">
+                            1월 9일~14일
+                        </div>
+                        <div class="item-price">
+                            ￦550,140 /박
+                        </div>
                     </div>
-                    <div class="item-date">
-                        1월 9일~14일
-                    </div>
-                    <div class="item-price">
-                        ￦550,140 /박
-                    </div>
-                </div>
+                </a>
             </li>
             <li class="content-item">
-                <div class="item-images">
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                    <img class="item-image" src="https://picsum.photos/550"></img>
-                </div>
-                <div class="item-description">
-                    <div class="item-title">
-                        Geoje-myeon, Geoje-si, 한국
+                <a class="content-item-link" href="#">
+                    <div class="item-images">
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
                     </div>
-                    <div class="item-option">
-                        바다 전망
+                    <div class="item-description">
+                        <div class="item-title">
+                            Geoje-myeon, Geoje-si, 한국
+                        </div>
+                        <div class="item-option">
+                            바다 전망
+                        </div>
+                        <div class="item-date">
+                            1월 9일~14일
+                        </div>
+                        <div class="item-price">
+                            ￦550,140 /박
+                        </div>
                     </div>
-                    <div class="item-date">
-                        1월 9일~14일
+                </a>
+            </li>
+            <li class="content-item">
+                <a class="content-item-link" href="#">
+                    <div class="item-images">
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
+                        <img class="item-image" src="https://picsum.photos/550"></img>
                     </div>
-                    <div class="item-price">
-                        ￦550,140 /박
+                    <div class="item-description">
+                        <div class="item-title">
+                            Geoje-myeon, Geoje-si, 한국
+                        </div>
+                        <div class="item-option">
+                            바다 전망
+                        </div>
+                        <div class="item-date">
+                            1월 9일~14일
+                        </div>
+                        <div class="item-price">
+                            ￦550,140 /박
+                        </div>
                     </div>
-                </div>
+                </a>
             </li>
         </ul>
         <div class="gnb-bottom">
-            <a href="#" class="bottom-item default">
-                <div class="default-img bottom-img"></div>
-                <div>둘러보기</div>
-            </a>
-            <a href="#" class="bottom-item wish-list">
-                <div class="wish-list-img bottom-img"></div>
-                <div>위시리스트</div>
-            </a>
-            <a href="#" class="bottom-item login">
-                <div class="login-img bottom-img"></div>
-                <div>로그인</div>
-            </a>
+            <div class="bottom-items">
+                <a href="./airbnb-main.html" class="bottom-item default">
+                    <div class="default-img bottom-img"></div>
+                    <div>둘러보기</div>
+                </a>
+                <a href="./airbnb-wishlist.html" class="bottom-item wish-list">
+                    <div class="wish-list-img bottom-img"></div>
+                    <div>위시리스트</div>
+                </a>
+                <a href="./airbnb-login.html" class="bottom-item login">
+                    <div class="login-img bottom-img"></div>
+                    <div>로그인</div>
+                </a>
+            </div>
         </div>
     </div>
 </body>
-<script src="./src/js/airbnb.js"></script>
+
 
 </html>
