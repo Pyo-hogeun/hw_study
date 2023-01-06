@@ -1,14 +1,53 @@
 $(document).ready(function(){
 //airbnb-main start--------------------------------------------
+   //option-bar 이미지 넣기
     var optionImageArr = document.querySelectorAll('.option-image');
     for(var i = 0; i < optionImageArr.length; i++){
         optionImageArr[i].style.backgroundImage = 
         `url('./src/img/airbnb/option_bar_${i}.png')`
     };
 
+    //필터아이콘 클릭 여닫기
     $('.filter-icon').click(function(){
-        
+        $('.filter-wrap').show()
+        $('.airbnb-main .bar-right .dim').show()
+        $('.airbnb-main .gnb-bottom').hide()
     })
+    $('.filter-wrap .xbutton').click(function(){
+        $('.filter-wrap').hide()
+        $('.airbnb-main .bar-right .dim').hide()
+        $('.airbnb-main .gnb-bottom').show()
+    })
+
+    //필터내 range-bar 50개 생성
+    var rangeBars = $('.airbnb-main .range-bars');
+    for(var i =0; i < 50; i++){
+        $(rangeBars).append('<div class="range-bar"></div>');
+    }
+    var rangeBarArr = $('.airbnb-main .range-bar');
+    for(var i = 0; i < rangeBarArr.length; i++){
+        var ranNum = Math.floor(Math.random() * 65);
+        $(rangeBarArr[i]).css('height',ranNum)
+    }
+
+    //필터내 침실과침대 색깔바꾸기
+    var bedRoomIcons = $('.airbnb-main .bedroom a')
+    var bedIcons = $('.airbnb-main .bed a')
+    var bathRoomIcons = $('.airbnb-main .bathroom a')
+    for(var i = 0; i < bedRoomIcons.length; i ++){
+        $(bedRoomIcons[i]).click(function(){
+                $(this).toggleClass('selected');
+                $(bedRoomIcons).not($(this)).removeClass('selected')
+        })
+        $(bedIcons[i]).click(function(){
+                $(this).toggleClass('selected');
+                $(bedIcons).not($(this)).removeClass('selected')
+        })
+        $(bathRoomIcons[i]).click(function(){
+                $(this).toggleClass('selected');
+                $(bathRoomIcons).not($(this)).removeClass('selected')
+        })
+    }
 //airbnb-main end--------------------------------------------
 
 //airbnb-wishlist start--------------------------------------------
