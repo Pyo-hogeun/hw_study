@@ -1,5 +1,71 @@
 .google-popup{
     .gnb-top{
-        
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        padding: rem(10) rem(15);
+        span{
+            margin-left: rem(10);
+        }
+    }
+    .google-content{
+        padding: rem(20) rem(40);
+        .header{
+            display: flex;
+            justify-content: center;   
+            flex-wrap: wrap; 
+            margin: rem(30);
+            .header-title{
+                text-align: center;
+                width: 100%;
+                font-size: rem(24);
+                margin: rem(20) 0 rem(20) 0;
+            }        
+            .goto-airbnb{
+            }
+        }
+        .login-list{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: rem(50);
+            .login-user{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                width: 100%;
+                border-bottom: 1px solid lightgray;
+                padding: rem(10) 0;
+                .user-name{
+                    margin-left: rem(10);
+                    div{
+                        margin-bottom: rem(5);
+                        font-size: rem(14);
+                    }
+                }
+            }
+        }
+        .term{
+            line-height: rem(20);
+        }
+        .gnb-bottom{
+            width: calc(100% - rem(60));
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            margin-bottom: rem(30);
+            .help-term{
+                select{
+                    border: 0;
+                }
+                a{
+                    color: black;
+                    margin: 0 rem(15);
+                    color: gray;
+                    font-size: rem(14);
+                }
+            }
+        }
     }
 }

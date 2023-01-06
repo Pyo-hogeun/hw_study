@@ -1,0 +1,150 @@
+.apple-popup{
+    .gnb-top{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .img-box{
+            background-color: rgb(40, 40, 40);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .apple-logo{
+                display: block;
+                padding: rem(15);
+                background: url('../../src/img/airbnb/apple_white.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                width: rem(20);
+                height: rem(20);
+                &:hover{
+                    display: block;
+                    padding: rem(15);
+                    background: url('../../src/img/airbnb/apple_white_2.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    width: rem(20);
+                    height: rem(20);
+                }
+            }
+        }
+        .drop-down{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid lightgray;
+            width: 100%;
+            padding: rem(15);
+            font-weight: 700;
+            background-color: white;
+            a{
+                color: rgb(40, 40, 40);
+            }
+            .hide{
+                width: 100%;
+                font-size: rem(12);
+                color: gray;
+                padding: rem(30);
+                display: none;
+                &.show-hide{
+                    display: block;
+                }
+            }
+        }
+    }
+    .dim{
+        display: none;
+        position: fixed;
+        top: rem(170);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(185, 185, 185, 0.8);
+        &.show-hide{
+            display: block;
+        }
+    }
+    .apple-content-wrap{
+        min-height: rem(520);
+        height: calc(100vh - rem(170));
+        .apple-content{
+            padding: rem(20) rem(100);
+            margin-top: rem(100);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .airbnb-app{
+                display: block;
+                padding: rem(15);
+                background: url('../../src/img/airbnb/airbnb_app.png');
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-color: black;
+                width: rem(45);
+                height: rem(45);
+                border-radius: rem(20);
+            }
+            .content-title{
+                margin: rem(20) 0;
+                text-align: center;
+                width: 100%;
+                font-size: rem(14);
+            }
+            .input-box{
+                position: relative;
+                input[type=text]{
+                    padding: rem(20);
+                    width: rem(300);
+                    border: 1px solid lightgray;
+                    border-radius: rem(10);
+                }
+                .login-button{
+                    display: block;
+                    background: url('../../src/img/airbnb/default.png');
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    width: rem(35);
+                    height: rem(35);
+                    border: 1px solid lightgray;
+                    border-radius: rem(50);
+                    position: absolute;
+                    top: rem(10);
+                    right: rem(10);
+                }
+            }
+            .didyou{
+                color: blue;
+                text-align: center;
+                font-size: rem(12);
+                width: 100%;
+                margin: rem(25) 0;
+            }
+            .people-icon{
+                width: 100%;
+                text-align: center;
+            }
+            .description{
+                width: rem(340);
+                font-size: rem(10);
+                margin: rem(10) 0;
+                line-height: rem(16);
+                padding: 0 rem(50);
+                a{
+                    color: blue;
+                }
+            }
+
+        }
+    }
+    .gnb-bottom{
+        text-align: center;
+        font-size: rem(12);
+        background-color: rgb(248, 248, 248);
+        width: 100%;
+        padding: rem(20) 0;
+        color: gray;
+        line-height: rem(18);
+    }
+}

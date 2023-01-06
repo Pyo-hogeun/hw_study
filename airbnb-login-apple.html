@@ -5,27 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style_scss.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> 
+    </script>
+    <script src="./src/js/airbnb.js"></script>
     <title>Apple</title>
 </head>
 <body>
-    <div class="facebook-popup">
-        <div>Apple</div>
-        <div>Log in to use your Facebook account with <span>Airbnb.</span></div>
-        <div>
-            <span>
-                Email or phone
-            </span>
-            <input type="text">
+    <div class="apple-popup">
+        <div class='gnb-top'>
+            <div class="img-box">
+                <a class="apple-logo" href="#">
+                </a>
+            </div>
+            <div class="drop-down">
+                <span>Apple ID</span>
+                <a class="drop-down-button" href="#">V</a>
+                <div class="hide">
+                    로그인
+                </div>
+            </div>
         </div>
-        <div>
-            <span>
-                Password
-            </span>
-            <input type="text">
+        <div class="dim"></div>
+        <div class="apple-content-wrap">
+            <div class="apple-content">
+                <div class="airbnb-app"></div>
+                <div class="content-title">
+                    Apple ID를 사용해 Airbnb에 로그인하기.
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Apple ID">
+                    <a class="login-button" href="#" ></a>
+                </div>
+                <a class="didyou" href="#">
+                    Apple ID 또는 암호를 잊으셨습니까? ->
+                </a>
+                <div class="people-icon">
+                    <image src="./src/img/airbnb/apple_login_people.png"></image>
+                </div>
+                <div class="description">
+                    Apple로 로그인을 설정할 때 Apple과 이 기기의 
+                    상호 작용에 대한 정보는 
+                    사기 방지를 위해 Apple에서 사용할 수 있습니다. 
+                    <a href="#">내 데이터가 어떻게 관리되는지 알아보기...</a>
+                </div>
+            </div>
         </div>
-        <a href="#">Log In</a>
-        <a href="#">Forgot account?</a>
-        <a href="#">Create new account</a>
+        <div class="gnb-bottom">
+            Copyright © 2023 Apple Inc. 모든 권리 보유.
+            <div>개인정보 처리방침</div>
+        </div>
     </div>
 </body>
 </html>

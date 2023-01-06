@@ -73,6 +73,9 @@
         padding: rem(10) 0;
         box-sizing: border-box;
         border-top: 1px solid lightgray;
+        &.hide{
+            display: none;
+        }
         a{
             color: black;
         }
