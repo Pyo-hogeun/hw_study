@@ -1,11 +1,12 @@
 $(document).ready(function(){
 //airbnb-main start--------------------------------------------
-   //option-bar 이미지 넣기
-    var optionImageArr = document.querySelectorAll('.option-image');
-    for(var i = 0; i < optionImageArr.length; i++){
-        optionImageArr[i].style.backgroundImage = 
-        `url('./src/img/airbnb/option_bar_${i}.png')`
-    };
+    //where-when-who
+    $('.airbnb-main .bar-left').click(function(){
+        $('.where-when-who').animate({'top':'0'})
+    })
+    $('.airbnb-main .where-when-who .xbutton').click(function(){
+        $('.where-when-who').animate({'top':'1000px'})
+    })
 
     //필터아이콘 클릭 여닫기
     $('.filter-icon').click(function(){
@@ -45,15 +46,15 @@ $(document).ready(function(){
     var bathRoomIcons = $('.airbnb-main .bathroom a')
     for(var i = 0; i < bedRoomIcons.length; i ++){
         $(bedRoomIcons[i]).click(function(){
-                $(this).toggleClass('selected');
+                $(this).addClass('selected');
                 $(bedRoomIcons).not($(this)).removeClass('selected')
         })
         $(bedIcons[i]).click(function(){
-                $(this).toggleClass('selected');
+                $(this).addClass('selected');
                 $(bedIcons).not($(this)).removeClass('selected')
         })
         $(bathRoomIcons[i]).click(function(){
-                $(this).toggleClass('selected');
+                $(this).addClass('selected');
                 $(bathRoomIcons).not($(this)).removeClass('selected')
         })
     }
@@ -128,7 +129,7 @@ $(document).ready(function(){
         })
         $('.bathroom a').eq(0).addClass('selected')
         
-        $('.building-option').css('border','1px solid lightgray')
+        $('.building-option').removeClass('clicked')
 
         $('.button-background').css({'background-color':'lightgray'})
         
@@ -150,6 +151,12 @@ $(document).ready(function(){
 
     })
 
+    //option-bar 이미지 넣기
+    var optionImageArr = document.querySelectorAll('.option-image');
+    for(var i = 0; i < optionImageArr.length; i++){
+        optionImageArr[i].style.backgroundImage = 
+        `url('./src/img/airbnb/option_bar_${i}.png')`
+    };
 
     
 //airbnb-main end--------------------------------------------

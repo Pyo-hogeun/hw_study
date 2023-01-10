@@ -46,6 +46,27 @@
                         }
                     }
                 }
+                .where-when-who{
+                    position: fixed;
+                    top: rem(1000);
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: white;
+                    .gnb-top{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black;
+                        padding: rem(20);
+                        box-sizing: border-box;
+                        .xbutton{
+                            position: absolute;
+                            left: rem(20);
+                        }
+                        
+                    }
+                }
             }
             .bar-right{
                 .dim{
@@ -319,7 +340,7 @@
                                         }
                                         .button-background{
                                             margin-left: rem(20);
-                                            width: rem(50);
+                                            flex: 0 0 rem(50);
                                             height: rem(30);
                                             background-color: lightgray;
                                             border-radius: rem(20);
