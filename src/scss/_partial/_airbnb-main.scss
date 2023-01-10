@@ -67,13 +67,12 @@
                     position: fixed;
                     background-color: white;
                     left: 0;
-                    top: rem(15);
+                    top: rem(1000);
                     width: 100%;
                     height: 100%;
                     border-radius: rem(15);
                     box-sizing: border-box;
                     .filter-gnb-top{
-                        position: fixed;
                         top:rem(15);
                         width: 100%;
                         display: flex;
@@ -91,12 +90,12 @@
                     .filter-content{
                         position: relative;
                         box-sizing: border-box;
-                        top: rem(55);
                         width: calc(100%);
                         height: calc((100%) - rem(100));
                         padding: 0 rem(25) rem(25) rem(25);
                         background-color: white;
                         overflow: scroll;
+                        padding-bottom: rem(100);
                         .filter-content-item{
                             border-bottom: 1px solid lightgray;
                             padding-bottom: rem(20);
@@ -104,6 +103,7 @@
                                 font-size: rem(18);
                                 font-weight: 700;
                                 margin: rem(20) 0;
+                                width: 100%;
                             }
                             &.price-range{
                                 .sub-title{
@@ -118,7 +118,7 @@
                                     .range-bars{
                                         display: flex;
                                         flex-wrap: nowrap;
-                                        margin: rem(30);
+                                        margin: rem(30) rem(30) 0 rem(30);
                                         width: 90%;
                                         height: rem(100);
                                         align-items: flex-end;
@@ -129,12 +129,32 @@
                                             background-color: gray;
                                         }
                                     }
+                                    .range-buttons{
+                                        position: absolute;
+                                        top: rem(200);
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        justify-content: space-between;
+                                        width: calc(100% - rem(80));
+                                        .range-button{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: rem(30);
+                                            height: rem(30);
+                                            background-color: white;
+                                            border: 1px solid lightgray;
+                                            border-radius: rem(20);
+                                        }   
+                                     
+                                    }
                                     .price-show{
                                         width: 90%;
                                         display: flex;
                                         flex-wrap: nowrap;
                                         align-items: center;
                                         justify-content: space-between;
+                                        margin-top: rem(25);
                                         .top-text{
                                             font-size: rem(14);
                                             color: gray;
@@ -173,7 +193,8 @@
                                             }
                                         }
                                         .option-checkbox{
-                                            width: rem(30);
+                                            width: rem(20);
+                                            border: 1px solid lightgray;
                                         }
                                     }
                                 }
@@ -205,7 +226,8 @@
                                                 border: 1px solid lightgray;
                                                 border-radius: rem(30);
                                                 margin-right: rem(10);
-                                                padding: rem(15) rem(27);
+                                                padding: rem(15) rem(25);
+                                                font-size: rem(14);
                                                 &:hover{
                                                     border: 1px solid black;
                                                 }
@@ -215,7 +237,105 @@
                                                 }
                                             }
                                         }
+                                    }
                                 }
+                            }
+                            &.building-type{
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                font-weight: 700;
+                                .building-option{
+                                    display: block;
+                                    border: 1px solid lightgray;
+                                    border-radius: rem(20);
+                                    padding: rem(20);
+                                    color: black;
+                                    margin: rem(15) rem(15) 0 0;
+                                    flex: 0 1 calc(50% - rem(60));
+                                    &.clicked{
+                                        border: 2px solid black;
+                                    }
+                                    &.animated{
+                                        transform: scale(0.9);
+                                        transition-duration: 0.3s;
+                                    }
+                                    .bname{
+                                        margin-top: rem(35);
+                                    }
+                                }
+                            }
+                            &.convenience{
+                                height: rem(220);
+                                overflow: hidden;
+                                position: relative;
+                                &.clicked{
+                                    height: 200%;
+                                }
+                                .convenience-category{
+                                    .category-title{
+                                        font-weight: 700;
+                                        margin: rem(30) 0;
+                                    }
+                                    .category-item{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin: rem(18) 0;
+                                        .chkbox{
+                                            width: rem(25);
+                                            height: rem(25);
+                                        }
+                                    }
+                                }
+                                .showmore{
+                                    text-decoration: underline;
+                                    color: black;
+                                    font-weight: 700;
+                                    position: absolute;
+                                    bottom: 0;
+                                    background-color: white;
+                                    width: 100%;
+                                    height: rem(40);
+                                    line-height: rem(20);
+                                   
+                                }
+                            }
+                            &.reservation{
+                                .reservation-content{
+                                    .option-item{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-bottom: rem(20);
+                                        .option-description{
+                                            font-size: rem(14);
+                                            color: gray;
+                                            .option-title{
+                                                font-size: rem(16);
+                                                color: black;
+                                                margin-bottom: rem(10);
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .button-background{
+                                            margin-left: rem(20);
+                                            width: rem(50);
+                                            height: rem(30);
+                                            background-color: lightgray;
+                                            border-radius: rem(20);
+                                            position: relative;
+                                            display: flex;
+                                            align-items: center;
+                                            .button{
+                                                position: absolute;
+                                                width: rem(25);
+                                                height: rem(25);
+                                                background-color: white;
+                                                border-radius: rem(20);
+                                                margin-left: rem(3);
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -238,7 +358,7 @@
                         }
                         .show-all-option{
                             background-color: black;
-                            padding: rem(20) rem(30);
+                            padding: rem(15) rem(20);
                             color: white;
                             border-radius: rem(10);
                         }
