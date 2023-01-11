@@ -1,13 +1,96 @@
 $(document).ready(function(){
 //airbnb-main start--------------------------------------------
     //where-when-who
-    $('.airbnb-main .bar-left').click(function(){
-        $('.where-when-who').animate({'top':'0'})
+    $('.airbnb-main .bar-left .search-icon').click(function(){
+        $('.where-when-who-wrap').animate({'top':'0'})
     })
-    $('.airbnb-main .where-when-who .xbutton').click(function(){
-        $('.where-when-who').animate({'top':'1000px'})
+    $('.airbnb-main .where-when-who-wrap .xbutton').click(function(){
+        $('.where-when-who-wrap').animate({'top':'1000px'})
+    })
+    
+    //www top menu
+    var topMenuArr = $('.airbnb-main .where-when-who-wrap .top-menu a');
+    for(let i = 0; i < topMenuArr.length; i++){
+        $(topMenuArr[i]).click(function(){
+            var moveXVal = $(topMenuArr[1]).offset().left - $(topMenuArr[0]).offset().left;
+
+            if($(this).hasClass('selected') == false){
+                $(this).addClass('selected')
+                $(topMenuArr).not($(this)).removeClass('selected');
+            }
+            if($(this).offset().left >= $(topMenuArr).not(this).offset().left){
+                $('.underline').animate({'left': moveXVal})
+            }else{
+                $('.underline').animate({'left': 0})
+            }
+            //position 값 활용하기-------------------------
+            // console.log($(this).position().left)
+            //position 값 활용하기-------------------------
+        })
+    }
+
+    //where 펼치기
+    $('.airbnb-main .where').click(function(){
+        $('.airbnb-main .when').removeClass('selected')
+        $('.airbnb-main .who').removeClass('selected')
+        $('.airbnb-main .where').addClass('selected')
+        
+    })
+    $('.airbnb-main .when').click(function(){
+        $('.airbnb-main .where').removeClass('selected')
+        $('.airbnb-main .who').removeClass('selected')
+        $('.airbnb-main .when').addClass('selected')
+        
+    })
+    $('.airbnb-main .who').click(function(){
+        $('.airbnb-main .where').removeClass('selected')
+        $('.airbnb-main .when').removeClass('selected')
+        $('.airbnb-main .who').addClass('selected')
+    })
+    //where 이미지 넣기 /클릭
+    var continentImgArr = $('.airbnb-main .continent-img')
+    for(var i = 0; i < continentImgArr.length; i ++){
+        $(continentImgArr[i]).css('background-image', `url(./src/img/airbnb/continent_${i + 1}.png)`)
+    }
+    $.each(continentImgArr, function(index, object){
+        $(object).click(function(){
+            continentImgArr.css('border', '0')
+            $(object).css('border', '2px solid black')
+        })
     })
 
+    //when 날짜선택/유연한 일정
+    var twoOptionArr = $('.airbnb-main .option-item')
+    $.each(twoOptionArr, function(i, object){
+        $(object).click(function(){
+            $(twoOptionArr).removeClass('selected')
+            $(object).addClass('selected')
+        })
+    })
+
+    //who + - 더하기 빼기
+    let minus = $('.airbnb-main .age .minus')
+    let count = $('.airbnb-main .age .count')
+    let plus = $('.airbnb-main .age .plus')
+    let countNum = [0, 0, 0, 0];
+    
+    $.each(plus, function(i, object){
+        $(object).click(function(){
+            countNum[i]++
+            $(count[i]).text(countNum[i])
+        })
+    })
+    $.each(minus, function(i, object){
+        $(object).click(function(){
+            if(countNum[i] <= 0){
+                return;
+            }else{
+                countNum[i]--
+                $(count[i]).text(countNum[i])
+            }
+        })
+    })
+    
     //필터아이콘 클릭 여닫기
     $('.filter-icon').click(function(){
         $('.filter-wrap').show()
@@ -36,9 +119,8 @@ $(document).ready(function(){
     //필터내 range-bar 최저가 최고가 출력
     var mini = Math.floor(Math.random()*10001);
     var max = Math.floor(Math.random()*100001 + 10000);
-    console.log(mini)
-    $('.airbnb-main .minimum-price').text('￦' + mini)
-    $('.airbnb-main .maximum-price').text('￦' + max)
+    $('.airbnb-main .minimum-price').text('￦' + mini);
+    $('.airbnb-main .maximum-price').text('￦' + max);
 
     //필터내 침실과침대 색깔바꾸기
     var bedRoomIcons = $('.airbnb-main .bedroom a')

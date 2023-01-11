@@ -46,25 +46,231 @@
                         }
                     }
                 }
-                .where-when-who{
+                .where-when-who-wrap{
                     position: fixed;
                     top: rem(1000);
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background-color: white;
-                    .gnb-top{
+                    background-color: rgb(238, 238, 238);
+                    .wgnb-top{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        color: black;
                         padding: rem(20);
                         box-sizing: border-box;
+                        background-color: rgb(245, 245, 245);
+                        .top-menu{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            box-sizing: border-box;
+                            margin-bottom: rem(5);
+                            width: 100%;
+                            .two-menu{
+                                display: flex;
+                                justify-content:space-between;
+                                min-width: rem(90);
+                                position: relative;
+                                a{
+                                    color: gray;
+                                    font-weight: 700;
+                                    &.selected{
+                                        color: black;
+                                    }
+                                }
+                                .underline{
+                                    position: absolute;
+                                    border: 1px solid black;
+                                    width: rem(30);
+                                    top: rem(23);
+                                }
+                            }
+                        }
                         .xbutton{
                             position: absolute;
                             left: rem(20);
+                            border: 1px solid lightgray;
+                            padding: rem(5) rem(8);
+                            border-radius: rem(50);
+                            background-color: white;
                         }
                         
+                    }
+                    
+                    .wwwbox{
+                        margin-top: rem(10);
+                        background-color: white;
+                        padding: rem(20);
+                        border-radius: rem(20);
+                        margin: rem(10);
+                        box-shadow: rem(1) rem(3) rem(20) rem(1)lightgray;
+                        .title{
+                            font-size: rem(20);
+                            font-weight: 700;
+                            margin-bottom: rem(15);
+                        }
+                        &.where{
+                            color: black;
+                            display: block;
+                            padding-bottom: rem(35);
+                            height: 0;
+                            overflow: hidden;
+                            &.selected{
+                                height: auto;
+                            }
+                            input[type=text]{
+                                width: 100%;
+                                padding: rem(15);
+                                box-sizing: border-box;
+                                border-radius: rem(10);
+                                border: 1px solid lightgray;
+                                margin-bottom: rem(15);
+                            }
+                            .continents{
+                                display: flex;
+                                flex-wrap: nowrap;
+                                font-size: rem(14);
+                                overflow: scroll;
+                                overflow-y: hidden;
+                                &::-webkit-scrollbar{
+                                    display: none;
+                                }
+                                .continent{
+                                    margin-right: rem(12);
+                                    .continent-img{
+                                        width: rem(122);
+                                        height: rem(122);
+                                        background-repeat: no-repeat;
+                                        background-position: 50%;
+                                        border-radius: rem(20);
+                                        margin-bottom: rem(5);
+                                        box-sizing: border-box;
+                                    }
+                                }
+                            }
+                        }
+                        &.when{
+                            color: black;
+                            display: block;
+                            padding-bottom: rem(35);
+                            height: 0;
+                            overflow: hidden;
+                            &.selected{
+                                height: auto;
+                            }
+                            .two-option-wrap{
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: rem(20);
+                                .two-option{
+                                    display: flex;
+                                    min-width: rem(300);
+                                    width: rem(300);
+                                    justify-content: center;
+                                    flex-wrap: nowrap;
+                                    background-color: lightgray;
+                                    border-radius: rem(20);
+                                    padding: rem(5);
+                                    .option-item{
+                                        flex: 1 1 50%;
+                                        color: black;
+                                        font-size: rem(14);
+                                        padding: rem(10) rem(30);
+                                        background-color: lightgray;
+                                        border-radius: rem(20);
+                                        text-align: center;
+                                        &.selected{
+                                            background-color: white;
+                                        }
+                                    }
+                                }
+                            }
+                            .first-option{
+
+                            }
+                            .second-option{
+                                .option-wrap{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    border-top: 1px solid lightgray;
+                                    padding: rem(20) 0 rem(30) 0;
+                                    .title{
+                                        width: 100%;
+                                        font-size: rem(16);
+                                        font-size: 700;
+                                        margin-bottom: rem(20);
+                                    }
+                                    .option-box{
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        .option{
+                                            padding: rem(10);
+                                            border: 1px solid lightgray;
+                                            border-radius: rem(20);
+                                            color: black;
+                                            margin-right: rem(10);
+                                        }
+                                        &.selected{
+                                            border: 2px solid black;
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                        &.who{
+                            color: black;
+                            display: block;
+                            padding-bottom: rem(35);
+                            height: 0;
+                            overflow: hidden;
+                            &.selected{
+                                height: auto;
+                            }
+                            .age{
+                                .age-item{
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    justify-content: space-between;
+                                    padding: rem(20) 0;
+                                    border-bottom: 1px solid lightgray;
+                                    .age-left{
+                                        .sub{
+                                            color: gray;
+                                            font-size: rem(14);
+                                            margin-top: rem(5);
+                                        }
+                                        a{
+                                            display: block;
+                                            font-size: rem(14);
+                                            margin-top: rem(5);
+                                            color: gray;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .age-right{
+                                        .minus{
+                                            padding: rem(5) rem(7);
+                                            border: 1px solid lightgray;
+                                            border-radius: rem(20);
+                                            margin-right: rem(10);
+                                            &:hover{
+                                                border: 1px solid gray;
+                                            }
+                                        }
+                                        .plus{
+                                            padding: rem(5) rem(10);
+                                            border: 1px solid lightgray;
+                                            border-radius: rem(20);
+                                            margin-left: rem(10);
+                                            &:hover{
+                                                border: 1px solid gray;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
