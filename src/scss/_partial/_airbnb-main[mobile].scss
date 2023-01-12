@@ -1,0 +1,841 @@
+@media (max-width : $mobile-max) {
+    .airbnb-main{
+        .gnb-top{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            position: fixed;
+            width: 100vw;
+            background-color: white;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: rem(10);
+            .search-bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid lightgray;
+                border-radius: rem(40);
+                width: 100%;
+                min-width: rem(300);
+                margin: rem(15) rem(30);
+                padding: rem(10);
+                background-color: white;
+                box-shadow: rem(1) rem(3) rem(20) rem(1)lightgray;
+                .bar-left{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    .search-icon{
+                        width: rem(25);
+                        height: rem(25);
+                        background: url('../../src/img/airbnb/search_icon.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        border-radius: rem(20);
+                        padding: rem(5)
+                    }
+                    .center-phrase{
+                        margin-left: rem(10);
+                        font-size: rem(14);
+                        font-weight: 700;
+                        line-height: rem(20);
+                        div{
+                            &:last-child{
+                                font-size: rem(12);
+                                font-weight: 400;
+                                color: gray;
+                            }
+                        }
+                    }
+                    .where-when-who-wrap{
+                        position: fixed;
+                        top: rem(1000);
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgb(238, 238, 238);
+                        overflow: scroll;
+                        .wgnb-top{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: rem(20);
+                            box-sizing: border-box;
+                            background-color: rgb(245, 245, 245);
+                            .top-menu{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                box-sizing: border-box;
+                                margin-bottom: rem(5);
+                                width: 100%;
+                                .two-menu{
+                                    display: flex;
+                                    justify-content:space-between;
+                                    min-width: rem(90);
+                                    position: relative;
+                                    a{
+                                        color: gray;
+                                        font-weight: 700;
+                                        &.selected{
+                                            color: black;
+                                        }
+                                    }
+                                    .underline{
+                                        position: absolute;
+                                        border: 1px solid black;
+                                        width: rem(30);
+                                        top: rem(23);
+                                    }
+                                }
+                            }
+                            .xbutton{
+                                position: absolute;
+                                left: rem(20);
+                                border: 1px solid gray;
+                                padding: rem(5) rem(8);
+                                border-radius: rem(50);
+                                background-color: rgb(248, 248, 248);
+                                &:hover{
+                                    border: 0;
+                                    background-color: white;
+                                    box-shadow: rem(1) rem(3) rem(20) rem(5)lightgray;
+                                }
+                            }
+                            
+                        }
+                        
+                        .wwwbox{
+                            margin-top: rem(10);
+                            background-color: white;
+                            padding: rem(20);
+                            border-radius: rem(20);
+                            margin: rem(10);
+                            .title{
+                                font-size: rem(20);
+                                font-weight: 700;
+                                margin-bottom: rem(15);
+                            }
+                            &.where{
+                                color: black;
+                                display: block;
+                                padding-bottom: rem(35);
+                                height: 0;
+                                overflow: hidden;
+                                &.selected{
+                                    height: auto;
+                                    box-shadow: rem(1) rem(3) rem(20) rem(1)lightgray;
+                                }
+                                input[type=text]{
+                                    width: 100%;
+                                    padding: rem(15);
+                                    box-sizing: border-box;
+                                    border-radius: rem(10);
+                                    border: 1px solid lightgray;
+                                    margin-bottom: rem(15);
+                                }
+                                .continents{
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    font-size: rem(14);
+                                    overflow: scroll;
+                                    overflow-y: hidden;
+                                    &::-webkit-scrollbar{
+                                        display: none;
+                                    }
+                                    .continent{
+                                        margin-right: rem(12);
+                                        .continent-img{
+                                            width: rem(122);
+                                            height: rem(122);
+                                            background-repeat: no-repeat;
+                                            background-position: 50%;
+                                            border-radius: rem(20);
+                                            margin-bottom: rem(5);
+                                            box-sizing: border-box;
+                                        }
+                                    }
+                                }
+                            }
+                            &.when{
+                                color: black;
+                                display: block;
+                                padding-bottom: rem(35);
+                                height: 0;
+                                overflow: hidden;
+                                &.selected{
+                                    height: auto;
+                                    box-shadow: rem(1) rem(3) rem(20) rem(1)lightgray;
+                                }
+                                .two-option-wrap{
+                                    display: flex;
+                                    justify-content: center;
+                                    margin-bottom: rem(20);
+                                    .two-option{
+                                        display: flex;
+                                        min-width: rem(300);
+                                        width: rem(300);
+                                        justify-content: center;
+                                        flex-wrap: nowrap;
+                                        background-color: lightgray;
+                                        border-radius: rem(20);
+                                        padding: rem(5);
+                                        .option-item{
+                                            flex: 1 1 50%;
+                                            color: black;
+                                            font-size: rem(14);
+                                            padding: rem(10) rem(30);
+                                            background-color: lightgray;
+                                            border-radius: rem(20);
+                                            text-align: center;
+                                            &.selected{
+                                                background-color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                                .pick-option{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    .days-wrap{
+                                        border-bottom: 1px solid lightgray;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        .days-display{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            flex-wrap: nowrap;
+                                            min-width: rem(440);
+                                            padding: rem(5) 0;
+                                            font-size: rem(12);
+                                        }
+                                    }
+                                    .date-table{
+                                        width: rem(440);
+                                        caption{
+                                            text-align: left;
+                                            font-weight: 700;
+                                            font-size: rem(14);
+                                            margin: rem(20) 0;
+                                        }
+                                        tr{
+                                            width: rem(440);
+                                            height: rem(60);
+                                            padding: rem(10) 0;
+                                            td{
+                                                &.hover{
+                                                    border: 1px solid black;
+                                                    border-radius: rem(20);
+                                                    padding: rem(20);
+                                                }
+                                            }
+                                        }
+    
+                                    }
+                                }
+                                .flex-option{
+                                    display: none;
+                                    flex-wrap: wrap;
+                                    .option-wrap{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        border-top: 1px solid lightgray;
+                                        padding: rem(20) 0 rem(30) 0;
+                                        .title{
+                                            width: 100%;
+                                            font-size: rem(16);
+                                            font-size: 700;
+                                            margin-bottom: rem(20);
+                                        }
+                                        &.travel-duration{
+                                            .option-box{
+                                                display: flex;
+                                                flex-wrap: nowrap;
+                                                .option-item{
+                                                    margin-right: rem(10);
+                                                    .option{
+                                                        border: 1px solid lightgray;
+                                                        border-radius: rem(20);
+                                                        padding: rem(5) rem(10);
+                                                        color: black;
+                                                        font-size: rem(14);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.travel-date{
+                                            .option-box{
+                                                display: flex;
+                                                flex-wrap: nowrap;
+                                                overflow: scroll;
+                                                overflow-y: hidden;
+                                                &::-webkit-scrollbar{
+                                                    display: none;
+                                                }
+                                                .option-item{
+                                                    border: 1px solid lightgray;
+                                                    border-radius: rem(20);
+                                                    font-size: rem(14);
+                                                    margin-right: rem(10);
+                                                    box-sizing: border-box;
+                                                    &:hover{
+                                                        border: 1px solid black;
+                                                    }
+                                                    .option{
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        flex-wrap: wrap;
+                                                        color: black;
+                                                        width: rem(110);
+                                                        height: rem(70);
+                                                        padding: rem(20) 0;
+                                                        .calendar-image{
+                                                            background: url('../../src/img/airbnb/calendar.png');
+                                                            background-repeat: no-repeat;
+                                                            background-position: 50%;
+                                                            width: 100%;
+                                                            height: rem(35);
+                                                            margin-bottom: rem(5);
+                                                        }
+                                                        .month{
+                                                            text-align: center;
+                                                            width: 100%;
+                                                            margin-bottom: rem(5);
+                                                        }
+                                                    }
+                                                    &.selected{
+                                                        border: 2px solid black;
+                                                    }
+                                                    &.animated{
+                                                        transform: scale(0.9);
+                                                        transition-duration: 0.3s;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            } 
+                            &.who{
+                                color: black;
+                                display: block;
+                                padding-bottom: rem(35);
+                                height: 0;
+                                overflow: hidden;
+                                &.selected{
+                                    height: auto;
+                                    box-shadow: rem(1) rem(3) rem(20) rem(1)lightgray;
+                                }
+                                .age{
+                                    .age-item{
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        justify-content: space-between;
+                                        padding: rem(20) 0;
+                                        border-bottom: 1px solid lightgray;
+                                        .age-left{
+                                            font-size: rem(14);
+                                            font-weight: 700;
+                                            .sub{
+                                                color: gray;
+                                                font-size: rem(14);
+                                                margin-top: rem(5);
+                                                font-weight: 400;
+                                            }
+                                            a{
+                                                display: block;
+                                                font-size: rem(14);
+                                                font-weight: 400;
+                                                margin-top: rem(5);
+                                                color: gray;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        .age-right{
+                                            .minus{
+                                                padding: rem(5) rem(7);
+                                                border: 1px solid lightgray;
+                                                border-radius: rem(20);
+                                                margin-right: rem(10);
+                                                &:hover{
+                                                    border: 1px solid gray;
+                                                }
+                                            }
+                                            .plus{
+                                                padding: rem(5) rem(10);
+                                                border: 1px solid lightgray;
+                                                border-radius: rem(20);
+                                                margin-left: rem(10);
+                                                &:hover{
+                                                    border: 1px solid gray;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bar-right{
+                    .dim{
+                        display: none;
+                    }
+                    .filter-icon{
+                        display: block;
+                        width: rem(25);
+                        height: rem(25);
+                        background: url('../../src/img/airbnb/filter_icon.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        border: 1px solid lightgray;
+                        border-radius: rem(20);
+                        padding: rem(5)
+                    }
+                    .filter-wrap{
+                        display: none;
+                        position: fixed;
+                        background-color: white;
+                        left: 0;
+                        top: rem(1000);
+                        width: 100%;
+                        height: 100%;
+                        border-radius: rem(15);
+                        box-sizing: border-box;
+                        .filter-gnb-top{
+                            top:rem(15);
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            padding: rem(20) 0;
+                            background-color: white;
+                            border-bottom: 1px solid lightgray;
+                            border-radius: rem(20) rem(20) 0 0;
+                            .xbutton{
+                                position: absolute;
+                                left: rem(30);
+                                color: black;
+                            }
+                        }
+                        .filter-content{
+                            position: relative;
+                            box-sizing: border-box;
+                            width: calc(100%);
+                            height: calc((100%) - rem(100));
+                            padding: 0 rem(25) rem(25) rem(25);
+                            background-color: white;
+                            overflow: scroll;
+                            padding-bottom: rem(100);
+                            .filter-content-item{
+                                border-bottom: 1px solid lightgray;
+                                padding-bottom: rem(20);
+                                .title{
+                                    font-size: rem(18);
+                                    font-weight: 700;
+                                    margin: rem(20) 0;
+                                    width: 100%;
+                                }
+                                &.price-range{
+                                    .sub-title{
+                                        font-size: rem(16);
+                                        color: gray;
+                                        margin-bottom: rem(10);
+                                    }
+                                    .range-box{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                        .range-bars{
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            margin: rem(30) rem(30) 0 rem(30);
+                                            width: 90%;
+                                            height: rem(100);
+                                            align-items: flex-end;
+                                            .range-bar{
+                                                border: 1px solid white;
+                                                border-bottom: 1px solid gray;
+                                                width: 2%;
+                                                background-color: gray;
+                                            }
+                                        }
+                                        .range-buttons{
+                                            position: absolute;
+                                            top: rem(200);
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            justify-content: space-between;
+                                            width: calc(100% - rem(80));
+                                            .range-button{
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: rem(30);
+                                                height: rem(30);
+                                                background-color: white;
+                                                border: 1px solid lightgray;
+                                                border-radius: rem(20);
+                                            }   
+                                         
+                                        }
+                                        .price-show{
+                                            width: 90%;
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            margin-top: rem(25);
+                                            .top-text{
+                                                font-size: rem(14);
+                                                color: gray;
+                                                margin-bottom: rem(5);
+                                            }
+                                            .minimum-price-wrap{
+                                                border: 1px solid lightgray;
+                                                padding: rem(10);
+                                                border-radius: rem(10);
+                                                width: 40%;
+                                            }
+                                            .maximum-price-wrap{
+                                                border: 1px solid lightgray;
+                                                padding: rem(10);
+                                                border-radius: rem(10);
+                                                width: 40%;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.house-type{
+                                    .type-content{
+                                        .type-option{
+                                            width: 100%;
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            justify-content: space-between;
+                                            .option-description{
+                                                margin-bottom: rem(20);
+                                                .description-title{
+                                                    margin-bottom: rem(10);
+                                                }
+                                                .description-sub-title{
+                                                    color: gray;
+                                                    font-size: rem(14);
+                                                }
+                                            }
+                                            .option-checkbox{
+                                                width: rem(20);
+                                                border: 1px solid lightgray;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.bed-room{
+                                    .bed-room-content{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        width: rem(100%);
+                                        .bed-room-item{
+                                            width: 100%;
+                                            margin-bottom: rem(30);
+                                            .item-name{
+                                                margin-bottom: rem(30);
+                                                font-weight: 700;
+                                            }
+                                            .choose-number{
+                                                &::-webkit-scrollbar{
+                                                    display: none;
+                                                }
+                                                display: flex;
+                                                overflow: scroll;
+                                                width: rem(100%);
+                                                font-weight: rem(12);
+                                                a{
+                                                    color: black;
+                                                    flex-shrink: 0;
+                                                    flex-grow: 0;
+                                                    border: 1px solid lightgray;
+                                                    border-radius: rem(30);
+                                                    margin-right: rem(10);
+                                                    padding: rem(15) rem(25);
+                                                    font-size: rem(14);
+                                                    &:hover{
+                                                        border: 1px solid black;
+                                                    }
+                                                    &.selected{
+                                                        color: white;
+                                                        background-color: black;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.building-type{
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                    font-weight: 700;
+                                    .building-option{
+                                        display: block;
+                                        border: 1px solid lightgray;
+                                        border-radius: rem(20);
+                                        padding: rem(20);
+                                        color: black;
+                                        margin: rem(15) rem(15) 0 0;
+                                        flex: 0 1 calc(50% - rem(60));
+                                        &.clicked{
+                                            border: 2px solid black;
+                                        }
+                                        &.animated{
+                                            transform: scale(0.9);
+                                            transition-duration: 0.3s;
+                                        }
+                                        .bname{
+                                            margin-top: rem(35);
+                                        }
+                                    }
+                                }
+                                &.convenience{
+                                    height: rem(220);
+                                    overflow: hidden;
+                                    position: relative;
+                                    &.clicked{
+                                        height: 200%;
+                                    }
+                                    .convenience-category{
+                                        .category-title{
+                                            font-weight: 700;
+                                            margin: rem(30) 0;
+                                        }
+                                        .category-item{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            margin: rem(18) 0;
+                                            .chkbox{
+                                                width: rem(25);
+                                                height: rem(25);
+                                            }
+                                        }
+                                    }
+                                    .showmore{
+                                        text-decoration: underline;
+                                        color: black;
+                                        font-weight: 700;
+                                        position: absolute;
+                                        bottom: 0;
+                                        background-color: white;
+                                        width: 100%;
+                                        height: rem(40);
+                                        line-height: rem(20);
+                                       
+                                    }
+                                }
+                                &.reservation{
+                                    .reservation-content{
+                                        .option-item{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            margin-bottom: rem(20);
+                                            .option-description{
+                                                font-size: rem(14);
+                                                color: gray;
+                                                .option-title{
+                                                    font-size: rem(16);
+                                                    color: black;
+                                                    margin-bottom: rem(10);
+                                                    font-weight: 400;
+                                                }
+                                            }
+                                            .button-background{
+                                                margin-left: rem(20);
+                                                flex: 0 0 rem(50);
+                                                height: rem(30);
+                                                background-color: lightgray;
+                                                border-radius: rem(20);
+                                                position: relative;
+                                                display: flex;
+                                                align-items: center;
+                                                .button{
+                                                    position: absolute;
+                                                    width: rem(25);
+                                                    height: rem(25);
+                                                    background-color: white;
+                                                    border-radius: rem(20);
+                                                    margin-left: rem(3);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .filter-gnb-bottom{
+                            position: fixed;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            bottom: 0;
+                            box-sizing: border-box;
+                            width: calc(100% - rem(1));
+                            border-top: 1px solid lightgray;
+                            background-color: white;
+                            padding: rem(20) rem(25);
+                            .deselect-all-option{
+                                text-decoration: underline;
+                                color: black;
+                                font-weight: 700;
+                            }
+                            .show-all-option{
+                                background-color: black;
+                                padding: rem(15) rem(20);
+                                color: white;
+                                border-radius: rem(10);
+                            }
+                        }
+                    }
+                }
+            }
+            .option-bar{
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: auto;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                .option-icon{
+                    .option-link{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        height: rem(60);
+                        color: black;
+                        .option-image{
+                            width: 100%;
+                            height: rem(25);
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                        }
+                        .option-phrase{
+                            text-align: center;
+                            min-width: rem(90);
+                            font-size: rem(12);
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: rem(160);
+            .content-item{
+                margin: rem(20);
+                .content-item-link{
+                    .item-images{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        overflow: scroll;
+                        border-radius: rem(20);
+                        height: calc(100vw - rem(40));
+                        &::-webkit-scrollbar{
+                            display: none;
+                        }
+                        .item-image{
+                            width: 100%;
+                            object-fit: cover; 
+                            object-position: center; 
+                        }
+                    }
+                    .item-description{
+                        margin-top: rem(15);
+                        div{
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            margin-bottom: rem(5);
+                            font-size: rem(15);
+                            &.item-title{
+                                font-weight: 700;
+                                color: black;
+                            }
+                            &.item-option{
+                                color: gray;
+                            }
+                            &.item-date{
+                                color: gray;
+                            }
+                            &.item-price{
+                                margin-top: rem(10);
+                                font-weight: 700;
+                                color: black;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+        .gnb-bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+            min-width: rem(205);
+            height: rem(60);
+            font-size: rem(12);
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            padding: rem(10) 0;
+            box-sizing: border-box;
+            border-top: 1px solid lightgray;
+            a{
+                color: black;
+            }
+            .bottom-items{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                width: 50%;
+                max-width: rem(290);
+                min-width: rem(205);
+                .bottom-item{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 0 rem(10);
+                    .default-img{
+                        width: 100%;
+                        height: rem(24);
+                        background: url('../../src/img/airbnb/search_icon_clicked.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        background-size: 45%;
+                        margin-bottom: rem(5);
+                    }
+                    .wish-list-img{
+                        width: 100%;
+                        height: rem(24);
+                        background: url('../../src/img/airbnb/wish_list.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        margin-bottom: rem(5);
+                    }
+                    .login-img{
+                        width: 100%;
+                        height: rem(24);
+                        background: url('../../src/img/airbnb/login.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        margin-bottom: rem(5);
+                    }
+                }
+            }
+        }
+    }    
+}

@@ -20,7 +20,9 @@
 @import './_partial/apple';
 @import './_partial/hometax';
 @import './_partial/tablePractice';
-@import './_partial/airbnb-main';
+@import './_partial/airbnb-main[mobile]';
+@import './_partial/airbnb-main[tablet]';
+@import './_partial/airbnb-main[pc]';
 @import './_partial/airbnb-wishlist';
 @import './_partial/airbnb-login';
 @import './_partial/airbnb-login-apple';

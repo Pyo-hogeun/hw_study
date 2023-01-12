@@ -1,140 +1,142 @@
-.airbnb-wishlist{
-    padding: 0 rem(25);
-    min-width: rem(190);
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    .header{
-        font-size: rem(32);
-        font-weight: 700;
-        margin: rem(40) 0 ;
-    }
-    .content{
-        .please-login{
-            font-size: rem(22);
+@media (max-width : 550px){
+    .airbnb-wishlist{
+        padding: 0 rem(25);
+        min-width: rem(190);
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        .header{
+            font-size: rem(32);
             font-weight: 700;
-            margin-bottom: rem(15);
+            margin: rem(40) 0 ;
         }
-        .please-login-sub{
-            font-size: rem(14);
-            margin-bottom: rem(50);
-        }
-        .login-button{
-            color: white;
-            background-color: rgb(197, 0, 99);
-            padding: rem(15) rem(25);
-            border-radius: rem(10);
-        }
-    }
-    .load-login{
-        position: absolute;
-        width: 100%;
-        height: 90%;
-        left: 0;
-        bottom: rem(-1000);
-        display: none;
-        margin-top: rem(700);
-        background-color: white;
-        overflow: scroll;
-        border-radius: rem(20) rem(20) 0 0;
-        .airbnb-login{
-            position: absolute;
-            top: rem(0);
-            bottom: rem(0);
-            padding: 0;
-            border-radius: rem(15);
-            background-color: white;
-            height: 100%;
-            border-radius: rem(20) rem(20) 0 0;
-            .header{
-                position: fixed;
-                display: flex;
-                justify-content: center;
-                width: calc(100% - rem(30));
-                margin: 0;
-                padding: rem(15);
+        .content{
+            .please-login{
+                font-size: rem(22);
+                font-weight: 700;
+                margin-bottom: rem(15);
+            }
+            .please-login-sub{
                 font-size: rem(14);
-                background-color: white;
-                border-radius: rem(20) rem(20) 0 0;
-                z-index: 100;
-                .xbutton{
-                    position: absolute;
-                    left: rem(30);
-                }
+                margin-bottom: rem(50);
             }
-            .content{
-                border-radius: rem(20) rem(20) 0 0;
-                margin-top: rem(75);
-                padding-top: 0;
-                bottom: rem(0);
-                height: (100% - rem(800));
-                .title{
-                    margin: rem(30) 0;
-                }
-                .button{
-                    height: rem(45);
-                }
+            .login-button{
+                color: white;
+                background-color: rgb(197, 0, 99);
+                padding: rem(15) rem(25);
+                border-radius: rem(10);
             }
         }
-    }
-    .gnb-bottom{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        min-width: rem(205);
-        height: rem(60);
-        font-size: rem(12);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: white;
-        padding: rem(10) 0;
-        box-sizing: border-box;
-        border-top: 1px solid lightgray;
-        &.hide{
+        .load-login{
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            left: 0;
+            bottom: rem(-1000);
             display: none;
+            margin-top: rem(700);
+            background-color: white;
+            overflow: scroll;
+            border-radius: rem(20) rem(20) 0 0;
+            .airbnb-login{
+                position: absolute;
+                top: rem(0);
+                bottom: rem(0);
+                padding: 0;
+                border-radius: rem(15);
+                background-color: white;
+                height: 100%;
+                border-radius: rem(20) rem(20) 0 0;
+                .header{
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    width: calc(100% - rem(30));
+                    margin: 0;
+                    padding: rem(15);
+                    font-size: rem(14);
+                    background-color: white;
+                    border-radius: rem(20) rem(20) 0 0;
+                    z-index: 100;
+                    .xbutton{
+                        position: absolute;
+                        left: rem(30);
+                    }
+                }
+                .content{
+                    border-radius: rem(20) rem(20) 0 0;
+                    margin-top: rem(75);
+                    padding-top: 0;
+                    bottom: rem(0);
+                    height: (100% - rem(800));
+                    .title{
+                        margin: rem(30) 0;
+                    }
+                    .button{
+                        height: rem(45);
+                    }
+                }
+            }
         }
-        a{
-            color: black;
-        }
-        .bottom-items{
+        .gnb-bottom{
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: nowrap;
-            justify-content: space-between;
-            width: 50%;
-            max-width: rem(290);
+            width: 100%;
             min-width: rem(205);
-            .bottom-item{
+            height: rem(60);
+            font-size: rem(12);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            padding: rem(10) 0;
+            box-sizing: border-box;
+            border-top: 1px solid lightgray;
+            &.hide{
+                display: none;
+            }
+            a{
+                color: black;
+            }
+            .bottom-items{
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 0 rem(10);
-                .default-img{
-                    width: 100%;
-                    height: rem(24);
-                    background: url('../../src/img/airbnb/default.png');
-                    background-repeat: no-repeat;
-                    background-position: 50%;
-                    background-size: 45%;
-                    margin-bottom: rem(5);
-                }
-                .wish-list-img{
-                    width: 100%;
-                    height: rem(24);
-                    background: url('../../src/img/airbnb/wish_list_clicked.png');
-                    background-repeat: no-repeat;
-                    background-position: 50%;
-                    margin-bottom: rem(5);
-                }
-                .login-img{
-                    width: 100%;
-                    height: rem(24);
-                    background: url('../../src/img/airbnb/login.png');
-                    background-repeat: no-repeat;
-                    background-position: 50%;
-                    margin-bottom: rem(5);
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                width: 50%;
+                max-width: rem(290);
+                min-width: rem(205);
+                .bottom-item{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 0 rem(10);
+                    .default-img{
+                        width: 100%;
+                        height: rem(24);
+                        background: url('../../src/img/airbnb/default.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        background-size: 45%;
+                        margin-bottom: rem(5);
+                    }
+                    .wish-list-img{
+                        width: 100%;
+                        height: rem(24);
+                        background: url('../../src/img/airbnb/wish_list_clicked.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        margin-bottom: rem(5);
+                    }
+                    .login-img{
+                        width: 100%;
+                        height: rem(24);
+                        background: url('../../src/img/airbnb/login.png');
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        margin-bottom: rem(5);
+                    }
                 }
             }
         }

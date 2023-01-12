@@ -7,6 +7,7 @@ $(document).ready(function(){
     })
     $('.airbnb-main .where-when-who-wrap .xbutton').click(function(){
         $('.where-when-who-wrap').animate({'top':'1000px'})
+        $('.airbnb-main .gnb-bottom').show()
     })
     
     //www top menu
@@ -180,6 +181,7 @@ $(document).ready(function(){
     //필터아이콘 클릭 여닫기
     $('.filter-icon').click(function(){
         $('.filter-wrap').show()
+        $('.airbnb-main .filter-gnb-bottom').show()
         $('.filter-wrap').animate({'top' : '15px'})
         $('.airbnb-main .bar-right .dim').show()
         $('.airbnb-main .gnb-bottom').hide()
@@ -188,6 +190,7 @@ $(document).ready(function(){
         $('.filter-wrap').animate({'top' : '1000px'})
         $('.airbnb-main .bar-right .dim').hide()
         $('.airbnb-main .gnb-bottom').show()
+        $('.airbnb-main .filter-gnb-bottom').hide()
     })
 
     //필터내 range-bar 50개 생성
@@ -322,8 +325,13 @@ $(document).ready(function(){
     //option-bar 이미지 넣기
     var optionImageArr = document.querySelectorAll('.option-image');
     for(var i = 0; i < optionImageArr.length; i++){
-        optionImageArr[i].style.backgroundImage = 
-        `url('./src/img/airbnb/option_bar_${i}.png')`
+        if(i < 10){
+            optionImageArr[i].style.backgroundImage = 
+            `url('./src/img/airbnb/option_bar_${i}.png')`
+        }else if(i >= 10){
+            optionImageArr[i].style.backgroundImage = 
+            `url('./src/img/airbnb/option_bar_${i - 10}.png')`
+        }
     };
 
     
