@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style_scss.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> 
     </script>
     <script src="./src/js/airbnb.js"></script>
+    <link rel="stylesheet" href="./src/css/style_scss.css">
     <title>airbnb-main</title>
 </head>
 <body>
@@ -82,37 +82,50 @@
                                     <a href="#" class="option-item select-option2">유연한 일정</a>
                                 </div>
                             </div>
-                            <div class="first-option">
+                            <div class="pick-option">
+                                <div class="days-wrap">
+                                    <ul class="days-display">
+                                    <li>일</li>
+                                    <li>월</li>
+                                    <li>화</li>
+                                    <li>수</li>
+                                    <li>목</li>
+                                    <li>금</li>
+                                    <li>토</li> 
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="second-option">
-                                <div class="option-wrap">
+                            <div class="flex-option">
+                                <div class="option-wrap travel-duration">
                                     <div class="title">숙박 기간을 선택하세요.</div>
                                     <ul class="option-box">
-                                        <li>
+                                        <li class="option-item">
                                             <a href="#" class="option">
                                             주말
                                             </a>
                                         </li>
-                                        <li>
+                                        <li class="option-item">
                                             <a href="#" class="option">
                                                 일주일
                                             </a> 
                                         </li>
-                                        <li>
+                                        <li class="option-item">
                                             <a href="#" class="option">
                                                 한 달
                                             </a>
                                         </li> 
                                     </ul>
                                 </div>
-                                <div class="option-wrap">
+                                <div class="option-wrap travel-date">
                                     <div class="title">여행 날짜를 선택하세요.</div>
                                     <ul class="option-box">
-                                       <a href="#" class="option">
-                                            <div class="calendar-image"></div>
-                                            <div class="month">1월</div>
-                                            <div>2023</div>
-                                       </a> 
+                                        <!-- <li class="option-item">
+                                            <a href="#" class="option">
+                                                <div class="calendar-image"></div>
+                                                <div class="month">1월</div>
+                                                <div class="year">2023</div>
+                                            </a> 
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>

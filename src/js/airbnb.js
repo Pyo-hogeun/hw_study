@@ -3,6 +3,7 @@ $(document).ready(function(){
     //where-when-who
     $('.airbnb-main .bar-left .search-icon').click(function(){
         $('.where-when-who-wrap').animate({'top':'0'})
+        $('.airbnb-main .gnb-bottom').hide()
     })
     $('.airbnb-main .where-when-who-wrap .xbutton').click(function(){
         $('.where-when-who-wrap').animate({'top':'1000px'})
@@ -59,14 +60,99 @@ $(document).ready(function(){
         })
     })
 
-    //when 날짜선택/유연한 일정
-    var twoOptionArr = $('.airbnb-main .option-item')
+    //when 날짜선택,유연한 일정 / 선택활성화
+    var twoOptionArr = $('.airbnb-main .two-option .option-item')
     $.each(twoOptionArr, function(i, object){
         $(object).click(function(){
             $(twoOptionArr).removeClass('selected')
             $(object).addClass('selected')
+            if(i == 0){
+                $('.airbnb-main .when .pick-option').css('display','block')
+                $('.airbnb-main .when .flex-option').css('display','none')
+            }else{
+                $('.airbnb-main .when .pick-option').css('display','none')
+                $('.airbnb-main .when .flex-option').css('display','block')
+            }
         })
     })
+
+
+    //when 유연한일정 숙박기간
+    var optionDurationArr = $('.airbnb-main .travel-duration .option-box .option-item .option')
+    $.each(optionDurationArr, function(idx, obj){
+        $(obj).click(function(){
+            $(optionDurationArr).css({'border' : '1px solid lightgray'})
+            $(this).css({'border' : '2px solid black'})
+        })
+    })
+
+    //when 유연한일정 여행날짜 1~12월 html 만들기
+    var optionDateBox = $('.airbnb-main .travel-date .option-box')
+    var optionHtml = `<l1 class="option-item">
+    <a href="#" class="option">
+    <div class="calendar-image"></div>
+    <div class="month"></div>
+    <div class="year">2023</div>
+    </a>
+    </li>`
+    for(let i = 0; i < 12; i++){
+        $(optionDateBox).append(optionHtml)
+    }
+
+    let now = new Date()
+    let nowMonth =  7;
+    let nowYear = now.getFullYear();
+    let monthArr = [];
+    let yearArr = [];
+
+    for(let i = 0; i < 12; i ++){
+        if(nowMonth <= 12){
+            monthArr.push(nowMonth)
+            yearArr.push(nowYear)
+            nowMonth++;
+        }else{
+            nowMonth -= 12;
+            monthArr.push(nowMonth)
+            nowMonth++
+            nowYear += 1;
+            yearArr.push(nowYear)
+        }
+    }
+ 
+    var optionMonthArr = $(optionDateBox).find('.month')
+    $.each(optionMonthArr, function(idx, obj){
+        $(obj).text(monthArr[idx] + '월')
+    })
+    var optionYearArr = $(optionDateBox).find('.year')
+    $.each(optionYearArr, function(idx, obj){
+        $(obj).text(yearArr[idx])
+    })
+
+
+    //when 유연한일정 여행날짜 1~12월 클릭 border 굵기 이벤트
+    var optionItemArr = $(optionDateBox).find('.option-item')
+    var optionImgArr = $(optionDateBox).find('.calendar-image')
+    $.each(optionItemArr, function(idx, obj){
+        $(obj).click(function(){
+            $(this).toggleClass('selected')
+            if($(this).hasClass('selected')){
+                $(optionImgArr[idx]).css({'background': "url('./src/img/airbnb/calendar_picked.png')"})
+                $(optionImgArr[idx]).css({'background-repeat': "no-repeat"})
+                $(optionImgArr[idx]).css({'background-position': "50%"})
+            }else{
+                $(optionImgArr[idx]).css({'background': "url('./src/img/airbnb/calendar.png')"})
+                $(optionImgArr[idx]).css({'background-repeat': "no-repeat"})
+                $(optionImgArr[idx]).css({'background-position': "50%"})
+            }
+        })
+        $(obj).mousedown(function(){
+            $(this).addClass('animated');
+        })
+        $(obj).mouseup(function(){
+            $(this).removeClass('animated');
+        })
+    })
+
 
     //who + - 더하기 빼기
     let minus = $('.airbnb-main .age .minus')
@@ -246,14 +332,14 @@ $(document).ready(function(){
 //airbnb-wishlist start--------------------------------------------
     $('.login-button').click(function(){
         $('.load-login').css('display', 'block')
-        $('.load-login').animate({'margin-top': '-100px'})
+        $('.load-login').animate({'bottom': '0px'})
         $('.airbnb-wishlist .dim-class').addClass('dim')
         $('.gnb-bottom').addClass('hide')
         
     });
     $('.load-login .xbutton').click(function(){
         $('.load-login').css('display', 'none')
-        $('.load-login').animate({'margin-top': '700'})
+        $('.load-login').animate({'bottom': '-1000px'})
         $('.airbnb-wishlist .dim-class').removeClass('dim')
         $('.gnb-bottom').removeClass('hide')
     })
