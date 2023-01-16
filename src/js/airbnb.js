@@ -1,6 +1,6 @@
 $(document).ready(function(){
 //airbnb-main start--------------------------------------------
-    //where-when-who
+    //where-when-who 슬라이드업
     $('.airbnb-main .bar-left .search-icon').click(function(){
         $('.where-when-who-wrap').animate({'top':'0'})
         $('.airbnb-main .gnb-bottom').hide()
@@ -10,7 +10,7 @@ $(document).ready(function(){
         $('.airbnb-main .gnb-bottom').show()
     })
     
-    //www top menu
+    //www top menu 밑줄 좌우 움직이기
     var topMenuArr = $('.airbnb-main .where-when-who-wrap .top-menu a');
     for(let i = 0; i < topMenuArr.length; i++){
         $(topMenuArr[i]).click(function(){
@@ -30,6 +30,51 @@ $(document).ready(function(){
             //position 값 활용하기-------------------------
         })
     }
+
+    //pc버전 gnb-top 로그인버튼
+    var pcLoginProfile = $('.airbnb-main .pc-bar .top-right .profile')
+    $(pcLoginProfile).on('click', function(e){
+        $('.airbnb-main .pc-bar .top-right .login-menu').toggleClass('selected')
+    })
+    $('.airbnb-main').click(function(e){
+        if($(e.target).parents().hasClass('profile-wrap') == false){
+            $('.airbnb-main .pc-bar .top-right .login-menu').removeClass('selected')
+        }
+    })
+    
+
+    //pc버전 gnb-top language버튼 language-wrap 띄우기
+    var pcLanguageButton = $('.airbnb-main .pc-bar .language-icon')
+    $(pcLanguageButton).click(function(){
+        $('.language-wrap').show()
+        $('.dim').show()
+        $('.airbnb-main .filter-icon-wrap-pc').hide()
+    })
+    $('.airbnb-main .top-right .language-wrap .close-language').click(function(){
+        $('.language-wrap').hide()
+        $('.dim').hide()
+        $('.airbnb-main .filter-icon-wrap-pc').show()
+    });
+    
+    //language-wrap 내에 언어와지역 통화 선택
+    var languageSelect = '.airbnb-main .top-right .language-currency .language'
+    var currencySelect = '.airbnb-main .top-right .language-currency .currency'
+    $(languageSelect).click(function(){
+        $(languageSelect).removeClass('selected')
+        $(currencySelect).removeClass('selected')
+        $(this).addClass('selected')
+    })
+    $(currencySelect).click(function(){
+        $(languageSelect).removeClass('selected')
+        $(currencySelect).removeClass('selected')
+        $(this).addClass('selected')
+    })
+
+    //language-wrap 내에 번역버튼 좌우이동
+    var languageCheckButton = $('.airbnb-main .check-button-wrap')
+    $(languageCheckButton).click(function(){
+        $(this).children().toggleClass('checked')
+    })
 
     //where 펼치기
     $('.airbnb-main .where').click(function(){
@@ -177,7 +222,7 @@ $(document).ready(function(){
             }
         })
     })
-    
+
     //필터아이콘 클릭 여닫기
     $('.filter-icon').click(function(){
         $('.filter-wrap').show()
@@ -185,12 +230,15 @@ $(document).ready(function(){
         $('.filter-wrap').animate({'top' : '15px'})
         $('.airbnb-main .bar-right .dim').show()
         $('.airbnb-main .gnb-bottom').hide()
+        $('.airbnb-main .filter-icon-wrap-pc').hide()
     })
     $('.filter-wrap .xbutton').click(function(){
         $('.filter-wrap').animate({'top' : '1000px'})
         $('.airbnb-main .bar-right .dim').hide()
         $('.airbnb-main .gnb-bottom').show()
         $('.airbnb-main .filter-gnb-bottom').hide()
+        $('.airbnb-main .filter-icon-wrap-pc').show()
+
     })
 
     //필터내 range-bar 50개 생성

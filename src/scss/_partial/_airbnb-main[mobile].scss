@@ -698,6 +698,9 @@
                     }
                 }
             }
+            .pc-bar{
+                display: none;
+            }
             .option-bar{
                 display: flex;
                 flex-wrap: nowrap;
@@ -724,6 +727,9 @@
                             font-size: rem(12);
                         }
                     }
+                }
+                .filter-wrap-pc{
+                    display: none;
                 }
             }
         }
@@ -836,6 +842,9 @@
                     }
                 }
             }
+        }
+        .gnb-bottom-pc{
+            display: none;
         }
     }    
 }
