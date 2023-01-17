@@ -236,12 +236,12 @@
                                     <div class="price-show">
                                         <div class="minimum-price-wrap">
                                             <div class="top-text">최저 요금</div>
-                                            <div class="minimum-price">￦</div>
+                                            <input type = 'text' class="minimum-price">￦</inpput>
                                         </div>
                                         <div>ㅡ</div>
                                         <div class="maximum-price-wrap">
                                             <div class="top-text">최고 요금</div>
-                                            <div class="maximum-price">￦</div>
+                                            <input type = 'text' class="maximum-price">￦</input>
                                         </div>
                                     </div>
                                 </div>
@@ -252,25 +252,25 @@
                                 </div>
                                 <ul class="type-content">
                                     <li class="type-option">
-                                        <div class="option-description">
+                                        <label class="option-description" for="option-1">
                                             <div class="description-title">집 전체</div>
                                             <div class="description-sub-title">단독으로 사용하는 공간 전체</div>
-                                        </div>
-                                        <input class="option-checkbox" type="checkbox">
+                                        </label>
+                                        <input class="option-checkbox" type="checkbox" id="option-1">
                                     </li>
                                     <li class="type-option">
-                                        <div class="option-description">
+                                        <label class="option-description" for="option-2">
                                             <div class="description-title">개인실</div>
                                             <div class="description-sub-title">집 또는 호텔의 개인실과 일부 공용 공간</div>
-                                        </div>
-                                        <input class="option-checkbox" type="checkbox">
+                                        </label>
+                                        <input class="option-checkbox" type="checkbox" id="option-2">
                                     </li>
                                     <li class="type-option">
-                                        <div class="option-description">
+                                        <label class="option-description" for="option-3">
                                             <div class="description-title">다인실</div>
                                             <div class="description-sub-title">다른 사람들과 함께 사용하는 다인실 및 공용 공간</div>
-                                        </div>
-                                        <input class="option-checkbox" type="checkbox">
+                                        </label>
+                                        <input class="option-checkbox" type="checkbox" id="option-3">
                                     </li>
                                 </ul>
                             </li>
@@ -348,120 +348,168 @@
                                 <div class="title">
                                     편의시설
                                 </div>
+                                <div class="category-title">
+                                    필수
+                                </div>
                                 <ul class="convenience-category">
-                                    <li class="category-title">
-                                        필수
+                                    <li>
+                                        <label class="category-item" for="item-1">
+                                            무선 인터넷
+                                            <input type="checkbox" class="chkbox" id="item-1">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        무선 인터넷
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-2">
+                                            주방
+                                            <input type="checkbox" class="chkbox" id="item-2">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        주방
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-3">
+                                            세탁기
+                                            <input type="checkbox" class="chkbox" id="item-3">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        세탁기
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-4">
+                                            건조기
+                                            <input type="checkbox" class="chkbox" id="item-4">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        건조기
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-5">
+                                            에어컨
+                                            <input type="checkbox" class="chkbox" id="item-5">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        에어컨
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-6">
+                                            난방
+                                            <input type="checkbox" class="chkbox" id="item-6">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        난방
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-7">
+                                            업무 전용 공간
+                                            <input type="checkbox" class="chkbox" id="item-7">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        업무 전용 공간
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-8">
+                                            TV
+                                            <input type="checkbox" class="chkbox" id="item-8">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        TV
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-9">
+                                            헤어드라이어
+                                            <input type="checkbox" class="chkbox" id="item-9">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        헤어드라이어
-                                        <input type="checkbox" class="chkbox">
-                                    </li>
-                                    <li class="category-item">
-                                        다리미
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-10">
+                                            다리미
+                                            <input type="checkbox" class="chkbox" id="item-10">
+                                        </label>
                                     </li>
                                 </ul>
+                                <div class="category-title">
+                                    특징
+                                </div>
                                 <ul class="convenience-category">
-                                    <li class="category-title">
-                                        특징
+                                    <li>
+                                        <label class="category-item" for="item-11">
+                                            수영장
+                                            <input type="checkbox" class="chkbox" id="item-11">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        수영장
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-12">
+                                            온수 욕조
+                                            <input type="checkbox" class="chkbox" id="item-12">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        온수 욕조
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-13">
+                                            건물 내 무료 주차
+                                            <input type="checkbox" class="chkbox" id="item-13">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        건물 내 무료 주차
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-14">
+                                            전기차 충전시설
+                                            <input type="checkbox" class="chkbox" id="item-14">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        전기차 충전시설
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-15">
+                                            아기침대
+                                            <input type="checkbox" class="chkbox" id="item-15">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        아기침대
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-16">
+                                            헬스장
+                                            <input type="checkbox" class="chkbox" id="item-16">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        헬스장
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-17">
+                                            바비큐 그릴
+                                            <input type="checkbox" class="chkbox" id="item-17">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        바비큐 그릴
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-18">
+                                            아침식사
+                                            <input type="checkbox" class="chkbox" id="item-18">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        아침식사
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-19">
+                                            실내 벽난로
+                                            <input type="checkbox" class="chkbox" id="item-19">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        실내 벽난로
-                                        <input type="checkbox" class="chkbox">
-                                    </li>
-                                    <li class="category-item">
-                                        흡연 가능
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-20">
+                                            흡연 가능
+                                            <input type="checkbox" class="chkbox" id="item-20">
+                                        </label>
                                     </li>
                                 </ul>
+                                <div class="category-title">
+                                    위치
+                                </div>
                                 <ul class="convenience-category">
-                                    <li class="category-title">
-                                        위치
+                                    <li>
+                                        <label class="category-item" for="item-21">
+                                            해변에 인접
+                                            <input type="checkbox" class="chkbox" id="item-21">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        해변에 인접
-                                        <input type="checkbox" class="chkbox">
-                                    </li>
-                                    <li class="category-item">
-                                        수변에 인접
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-22">
+                                            수변에 인접
+                                            <input type="checkbox" class="chkbox" id="item-22">
+                                        </label>
                                     </li>
                                 </ul>
+                                <div class="category-title">
+                                    안전
+                                </div>
                                 <ul class="convenience-category">
-                                    <li class="category-title">
-                                        안전
+                                    <li>
+                                        <label class="category-item" for="item-23">
+                                            화재경보기
+                                            <input type="checkbox" class="chkbox" id="item-23">
+                                        </label>
                                     </li>
-                                    <li class="category-item">
-                                        화재경보기
-                                        <input type="checkbox" class="chkbox">
-                                    </li>
-                                    <li class="category-item">
-                                        일산화탄소 경보기
-                                        <input type="checkbox" class="chkbox">
+                                    <li>
+                                        <label class="category-item" for="item-24">
+                                            일산화탄소 경보기
+                                            <input type="checkbox" class="chkbox" id="item-24">
+                                        </label>
                                     </li>
                                 </ul>
                                 <a href="#" class="showmore">더 표시</a>
@@ -1437,7 +1485,7 @@
                 </a>
             </div>
         </div>
-        <div class="gnb-bottom-pc">
+        <div class="footer-pc">
             <div class="bottom-top">
                 <ul class="top-left">
                     <li class="item">

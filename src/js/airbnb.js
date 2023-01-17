@@ -1,12 +1,15 @@
 $(document).ready(function(){
 //airbnb-main start--------------------------------------------
     //where-when-who 슬라이드업
+    let filterWrapHeight = $('.airbnb-main').outerHeight()
+    
     $('.airbnb-main .bar-left .search-icon').click(function(){
         $('.where-when-who-wrap').animate({'top':'0'})
         $('.airbnb-main .gnb-bottom').hide()
     })
+    $('.airbnb-main .where-when-who-wrap').css('top', filterWrapHeight)
     $('.airbnb-main .where-when-who-wrap .xbutton').click(function(){
-        $('.where-when-who-wrap').animate({'top':'1000px'})
+        $('.where-when-who-wrap').animate({'top':filterWrapHeight})
         $('.airbnb-main .gnb-bottom').show()
     })
     
@@ -117,8 +120,7 @@ $(document).ready(function(){
             $('.airbnb-main .pc-bar .top-right .login-menu').removeClass('selected')
         }
     })
-    
-
+   
     //pc-filter-wrap열기
     $('.airbnb-main .filter-icon-wrap-pc .icon-wrap .filter-icon').click(function(){
         $('.airbnb-main .filter-wrap').show()
@@ -276,6 +278,9 @@ $(document).ready(function(){
     })
 
     //필터아이콘 클릭 여닫기
+   
+    $('.airbnb-main .filter-wrap').css('top', filterWrapHeight)
+
     $('.filter-icon').click(function(){
         $('.filter-wrap').show()
         $('.airbnb-main .gnb-bottom').hide()
@@ -285,7 +290,7 @@ $(document).ready(function(){
         $('.airbnb-main .filter-icon-wrap-pc').hide()
     })
     $('.filter-wrap .xbutton').click(function(){
-        $('.filter-wrap').animate({'top' : '1000px'})
+        $('.filter-wrap').animate({'top' : filterWrapHeight})
         $('.airbnb-main .bar-right .dim').hide()
         $('.airbnb-main .gnb-bottom').css({'display':'flex'})
         $('.airbnb-main .filter-gnb-bottom').hide()
@@ -310,8 +315,8 @@ $(document).ready(function(){
     //필터내 range-bar 최저가 최고가 출력
     var mini = Math.floor(Math.random()*10001);
     var max = Math.floor(Math.random()*100001 + 10000);
-    $('.airbnb-main .minimum-price').text('￦' + mini);
-    $('.airbnb-main .maximum-price').text('￦' + max);
+    $('.airbnb-main .minimum-price').attr('value', mini);
+    $('.airbnb-main .maximum-price').attr('value', max);
 
     //필터내 침실과침대 색깔바꾸기
     var bedRoomIcons = $('.airbnb-main .bedroom a')
@@ -420,7 +425,7 @@ $(document).ready(function(){
     var showAllOption = $('.airbnb-main .show-all-option');
     $(showAllOption).click(function(){
         $('.dim').css('display', 'none')
-        $('.filter-wrap').animate({'top' : '1000px'})
+        $('.filter-wrap').animate({'top' : filterWrapHeight})
 
     })
 
@@ -449,7 +454,7 @@ $(document).ready(function(){
     });
     $('.load-login .xbutton').click(function(){
         $('.load-login').css('display', 'none')
-        $('.load-login').animate({'bottom': '-1000px'})
+        $('.load-login').animate({'bottom': filterWrapHeight})
         $('.airbnb-wishlist .dim-class').removeClass('dim')
         $('.gnb-bottom').removeClass('hide')
     })

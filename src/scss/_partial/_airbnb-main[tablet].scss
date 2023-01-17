@@ -497,12 +497,18 @@
                                                 padding: rem(10);
                                                 border-radius: rem(10);
                                                 width: 40%;
+                                                .minimum-price{
+                                                    width: rem(50)
+                                                }
                                             }
                                             .maximum-price-wrap{
                                                 border: 1px solid lightgray;
                                                 padding: rem(10);
                                                 border-radius: rem(10);
                                                 width: 40%;
+                                                .maximum-price{
+                                                    width: rem(50)
+                                                }
                                             }
                                         }
                                     }
@@ -604,11 +610,11 @@
                                     &.clicked{
                                         height: 200%;
                                     }
+                                    .category-title{
+                                        font-weight: 700;
+                                        margin: rem(30) 0;
+                                    }
                                     .convenience-category{
-                                        .category-title{
-                                            font-weight: 700;
-                                            margin: rem(30) 0;
-                                        }
                                         .category-item{
                                             display: flex;
                                             justify-content: space-between;

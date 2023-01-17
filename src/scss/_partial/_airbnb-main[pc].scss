@@ -50,12 +50,11 @@
                     }
                     .where-when-who-wrap{
                         position: fixed;
-                        top: rem(1000);
                         left: 0;
                         right: 0;
                         bottom: 0;
                         background-color: rgb(238, 238, 238);
-                        overflow: scroll;
+                        overflow-y: auto;
                         .wgnb-top{
                             display: flex;
                             justify-content: center;
@@ -140,7 +139,6 @@
                                     flex-wrap: nowrap;
                                     font-size: rem(14);
                                     overflow: scroll;
-                                    overflow-y: hidden;
                                     &::-webkit-scrollbar{
                                         display: none;
                                     }
@@ -400,7 +398,6 @@
                         position: fixed;
                         background-color: white;
                         left: 0;
-                        top: rem(1000);
                         width: 100%;
                         height: 100%;
                         border-radius: rem(15);
@@ -435,7 +432,7 @@
                             height: calc((100%) - rem(100));
                             padding: 0 rem(25) rem(25) rem(25);
                             background-color: white;
-                            overflow: scroll;
+                            overflow-y: auto;
                             padding-bottom: rem(100);
                             .filter-content-item{
                                 border-bottom: 1px solid lightgray;
@@ -487,7 +484,6 @@
                                                 border: 1px solid lightgray;
                                                 border-radius: rem(20);
                                             }   
-                                         
                                         }
                                         .price-show{
                                             width: 90%;
@@ -519,6 +515,7 @@
                                 &.house-type{
                                     .type-content{
                                         .type-option{
+                                            cursor: pointer;
                                             width: 100%;
                                             display: flex;
                                             flex-wrap: nowrap;
@@ -876,7 +873,7 @@
                         margin: rem(40) rem(70);
                         background-color: white;
                         border-radius: rem(20);
-                        overflow: scroll;
+                        overflow-y: auto;
                         top: 0;
                         left: 0;
                         right: 0;
@@ -1180,7 +1177,7 @@
             padding: rem(200) rem(40) rem(40) rem(40);
             gap: rem(20);
             .content-item{
-                flex: 1 1 calc((100vw - rem(40) - rem(100))/ 6);
+                flex: 0 1 calc((100vw - rem(40) - rem(100))/ 6);
                 .content-item-link{
                     .item-images{
                         display: flex;
@@ -1284,7 +1281,7 @@
                 }
             }
         }
-        .gnb-bottom-pc{
+        .footer-pc{
             border-top: 1px solid lightgray;
             padding: rem(15) rem(40);
             box-sizing: border-box;
