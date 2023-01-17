@@ -31,6 +31,82 @@ $(document).ready(function(){
         })
     }
 
+    //pc pc-bar top-center 확장
+    $('.airbnb-main .pc-bar .top-center').click(function(){
+        $('.airbnb-main .pc-bar .top-center-detail').css('display','flex')
+        $('.airbnb-main .pc-bar .top-center').hide()
+        $('.airbnb-main .option-bar').hide()
+        $('.airbnb-main .pc-bar').css('height','170px')
+        $('.airbnb-main .pc-bar').css('align-items','flex-start')
+        $('.airbnb-main .pc-bar .top-right').css('margin-top','20px')
+    })
+    $('.airbnb-main').click(function(e){
+        if($(e.target).parents().hasClass('pc-bar') == false){
+            $('.airbnb-main .pc-bar .top-center-detail').css('display','none')
+            $('.airbnb-main .pc-bar .top-center').show()
+            $('.airbnb-main .option-bar').show()
+            $('.airbnb-main .pc-bar').css('height','auto')
+            $('.airbnb-main .pc-bar').css('align-items','center')
+            $('.airbnb-main .pc-bar .top-right').css('margin-top','0')
+        }
+    })
+
+    //pc pc-bar 숙소 체험 온라인체험
+    $('.airbnb-main .top-center-detail .title').click(function(){
+        $('.airbnb-main .top-center-detail .title').removeClass('selected')
+        $(this).addClass('selected')
+    })
+    $('.airbnb-main .top-center-detail .house-wrap .title').click(function(){
+        $('.airbnb-main .top-center-detail .house').css('display', 'flex')
+        $('.airbnb-main .top-center-detail .try').css('display', 'none')
+    })
+    $('.airbnb-main .top-center-detail .try-wrap .title').click(function(){
+        $('.airbnb-main .top-center-detail .house').css('display', 'none')
+        $('.airbnb-main .top-center-detail .try').css('display', 'flex')
+    })
+
+
+    //pc버전 gnb-top language버튼 language-wrap 띄우기
+    var pcLanguageButton = $('.airbnb-main .pc-bar .language-icon')
+    $(pcLanguageButton).click(function(){
+        $('.language-wrap').show()
+        $('.dim').show()
+        $('.airbnb-main .filter-icon-wrap-pc').hide()
+    })
+    $('.airbnb-main .top-right .close-language').click(function(){
+        $('.language-wrap').hide()
+        $('.currency-wrap').hide()
+        $(currencySelect).removeClass('selected')
+        $(languageSelect).addClass('selected')
+        $('.dim').hide()
+        $('.airbnb-main .filter-icon-wrap-pc').show()
+    });
+    
+    //pc- language-wrap 내에 언어와지역 통화 선택
+    var languageSelect = '.airbnb-main .top-right .language-currency .language'
+    var currencySelect = '.airbnb-main .top-right .language-currency .currency'
+    $(languageSelect).click(function(){
+        $(languageSelect).removeClass('selected')
+        $(currencySelect).removeClass('selected')
+        $(languageSelect).addClass('selected')
+        $('.airbnb-main .top-right .language-wrap').show()
+        $('.airbnb-main .top-right .currency-wrap').hide()
+    })
+    $(currencySelect).click(function(){
+        $(languageSelect).removeClass('selected')
+        $(currencySelect).removeClass('selected')
+        $(currencySelect).addClass('selected')
+        $('.airbnb-main .top-right .language-wrap').hide()
+        $('.airbnb-main .top-right .currency-wrap').show()
+    })
+
+    //pc-language-wrap 내에 번역버튼 좌우이동
+    var languageCheckButton = $('.airbnb-main .check-button-wrap')
+    $(languageCheckButton).click(function(){
+        $(this).toggleClass('checked')
+        $(this).children().toggleClass('checked')
+    })
+
     //pc버전 gnb-top 로그인버튼
     var pcLoginProfile = $('.airbnb-main .pc-bar .top-right .profile')
     $(pcLoginProfile).on('click', function(e){
@@ -43,37 +119,13 @@ $(document).ready(function(){
     })
     
 
-    //pc버전 gnb-top language버튼 language-wrap 띄우기
-    var pcLanguageButton = $('.airbnb-main .pc-bar .language-icon')
-    $(pcLanguageButton).click(function(){
-        $('.language-wrap').show()
-        $('.dim').show()
-        $('.airbnb-main .filter-icon-wrap-pc').hide()
-    })
-    $('.airbnb-main .top-right .language-wrap .close-language').click(function(){
-        $('.language-wrap').hide()
-        $('.dim').hide()
-        $('.airbnb-main .filter-icon-wrap-pc').show()
-    });
-    
-    //language-wrap 내에 언어와지역 통화 선택
-    var languageSelect = '.airbnb-main .top-right .language-currency .language'
-    var currencySelect = '.airbnb-main .top-right .language-currency .currency'
-    $(languageSelect).click(function(){
-        $(languageSelect).removeClass('selected')
-        $(currencySelect).removeClass('selected')
-        $(this).addClass('selected')
-    })
-    $(currencySelect).click(function(){
-        $(languageSelect).removeClass('selected')
-        $(currencySelect).removeClass('selected')
-        $(this).addClass('selected')
-    })
-
-    //language-wrap 내에 번역버튼 좌우이동
-    var languageCheckButton = $('.airbnb-main .check-button-wrap')
-    $(languageCheckButton).click(function(){
-        $(this).children().toggleClass('checked')
+    //pc-filter-wrap열기
+    $('.airbnb-main .filter-icon-wrap-pc .icon-wrap .filter-icon').click(function(){
+        $('.airbnb-main .filter-wrap').show()
+        $('.filter-wrap').animate({'top' : '10%'})
+        $('.airbnb-main .bar-right .dim').show()
+        $('.airbnb-main .filter-wrap').addClass('pc-versioned')
+        $('.airbnb-main .filter-gnb-bottom').addClass('pc-versioned')
     })
 
     //where 펼치기
@@ -226,18 +278,20 @@ $(document).ready(function(){
     //필터아이콘 클릭 여닫기
     $('.filter-icon').click(function(){
         $('.filter-wrap').show()
-        $('.airbnb-main .filter-gnb-bottom').show()
-        $('.filter-wrap').animate({'top' : '15px'})
-        $('.airbnb-main .bar-right .dim').show()
         $('.airbnb-main .gnb-bottom').hide()
+        $('.airbnb-main .filter-gnb-bottom').show()
+        $('.airbnb-main .bar-right .dim').show()
+        $('.filter-wrap').animate({'top' : '15px'})
         $('.airbnb-main .filter-icon-wrap-pc').hide()
     })
     $('.filter-wrap .xbutton').click(function(){
         $('.filter-wrap').animate({'top' : '1000px'})
         $('.airbnb-main .bar-right .dim').hide()
-        $('.airbnb-main .gnb-bottom').show()
+        $('.airbnb-main .gnb-bottom').css({'display':'flex'})
         $('.airbnb-main .filter-gnb-bottom').hide()
         $('.airbnb-main .filter-icon-wrap-pc').show()
+        $('.filter-wrap').removeClass('pc-versioned')
+        $('.airbnb-main .filter-gnb-bottom').removeClass('pc-versioned')
 
     })
 

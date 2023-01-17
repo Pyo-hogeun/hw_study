@@ -405,6 +405,14 @@
                         height: 100%;
                         border-radius: rem(15);
                         box-sizing: border-box;
+                        &.pc-versioned{
+                            left:auto;
+                            right: auto;
+                            bottom: auto;
+                            top: auto;
+                            width: 90%;
+                            height: 80%;
+                        }
                         .filter-gnb-top{
                             top:rem(15);
                             width: 100%;
@@ -684,6 +692,11 @@
                             border-top: 1px solid lightgray;
                             background-color: white;
                             padding: rem(20) rem(25);
+                            &.pc-versioned{
+                                width: 90%;
+                                bottom: 10%;
+                                border-radius: 0 0 rem(20) rem(20);
+                            }
                             .deselect-all-option{
                                 text-decoration: underline;
                                 color: black;
@@ -701,7 +714,7 @@
             }
             .pc-bar{
                 display: flex;
-                align-items: center;
+                align-items:center;
                 justify-content: space-between;
                 width: 100vw;
                 border-bottom: 1px solid lightgray;
@@ -734,6 +747,97 @@
                             color: lightgray;
                         }
                     }
+                }
+                .top-center-detail{
+                    display: none;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content:flex-end;
+                    position: absolute;
+                    left: calc((100vw - rem(80))/4);
+                    right: calc((100vw - rem(80))/3);
+                    height: rem(80);
+                    padding-right: 10%;
+                    .reservation-type{
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        flex: 0 1 20%;
+                        .title{
+                            flex: 0 0 auto;
+                            color: black;
+                            font-size: rem(14);
+                            font-weight: 700;
+                            padding: rem(15) 0;
+                            &.selected{
+                                border-bottom: 2px solid black;
+                            }
+                        }
+                        .reservation-bar{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: fixed;
+                            top: rem(80);
+                            left: calc((100% - rem(850))/2);
+                            width: rem(850);
+                            height: rem(75);
+                            background-color: white;
+                            border: 1px solid lightgray;
+                            border-radius: rem(50);
+                            z-index: 99999999;
+                            &.try{
+                                display: none;
+                            }
+                            .reserve-option-wrap{
+                                width: 33%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: rem(50);
+                                padding: 0 rem(40);
+                                &:hover{
+                                    background-color: lightgray;
+                                }
+                                &.option-last{
+                                    padding-right: rem(10);
+                                    min-width: 25%
+                                }
+                                .reserve-option{
+                                    height: 100%;
+                                    width: 100%;
+                                    font-size: rem(14);
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    .option{
+                                        width: 100%;
+                                        color: black;
+                                        font-weight: 700;
+                                    }
+                                    .sub{
+                                        color: gray;
+                                    }
+                                }
+                                .pc-search-icon-wrap{
+                                    background-color: rgb(255, 53, 87);
+                                    border-radius: rem(50);
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    height: rem(60);
+                                    width: 100%;
+                                    padding: 0 rem(10);
+                                    color: white;
+                                    img{
+                                        border-radius: rem(50);
+                                    }
+                                }
+                            }
+                        }
+                   }
                 }
                 .top-right{
                     display: flex;
@@ -772,6 +876,7 @@
                         margin: rem(40) rem(70);
                         background-color: white;
                         border-radius: rem(20);
+                        overflow: scroll;
                         top: 0;
                         left: 0;
                         right: 0;
@@ -820,9 +925,12 @@
                                 align-items: center;
                                 width: rem(50);
                                 height: rem(30);
-                                background-color: black;
+                                background-color: lightgray;
                                 border-radius: rem(20);
                                 margin-left: rem(25);
+                                &.checked{
+                                    background-color: black
+                                }
                                 .check-button{
                                     background-color: white;
                                     width: rem(25);
@@ -917,7 +1025,7 @@
                             }
                         }
                         .choose-language-wrap{
-                            margin-bottom: rem(50);
+                            margin: rem(50) 0;
                             display: flex;
                             flex-wrap: wrap;
                             .title{
