@@ -496,18 +496,20 @@
                                                 border: 1px solid lightgray;
                                                 padding: rem(10);
                                                 border-radius: rem(10);
-                                                width: 40%;
+                                                flex: 1 1 40%;
                                                 .minimum-price{
-                                                    width: rem(50)
+                                                    border: 0;
+                                                    width: rem(90);
                                                 }
                                             }
                                             .maximum-price-wrap{
                                                 border: 1px solid lightgray;
                                                 padding: rem(10);
                                                 border-radius: rem(10);
-                                                width: 40%;
+                                                flex: 1 1 40%;
                                                 .maximum-price{
-                                                    width: rem(50)
+                                                    border: 0;
+                                                    width: rem(90);
                                                 }
                                             }
                                         }
@@ -852,7 +854,7 @@
                 }
             }
         }
-        .gnb-bottom-pc{
+        .footer-pc{
             display: none;
         }
     }  

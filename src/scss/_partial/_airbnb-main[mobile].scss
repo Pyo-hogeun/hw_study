@@ -207,31 +207,13 @@
                                             display: flex;
                                             justify-content: space-between;
                                             flex-wrap: nowrap;
-                                            min-width: rem(440);
+                                            min-width: rem(240);
                                             padding: rem(5) 0;
                                             font-size: rem(12);
                                         }
                                     }
                                     .date-table{
                                         width: rem(440);
-                                        caption{
-                                            text-align: left;
-                                            font-weight: 700;
-                                            font-size: rem(14);
-                                            margin: rem(20) 0;
-                                        }
-                                        tr{
-                                            width: rem(440);
-                                            height: rem(60);
-                                            padding: rem(10) 0;
-                                            td{
-                                                &.hover{
-                                                    border: 1px solid black;
-                                                    border-radius: rem(20);
-                                                    padding: rem(20);
-                                                }
-                                            }
-                                        }
     
                                     }
                                 }
@@ -496,18 +478,20 @@
                                                 border: 1px solid lightgray;
                                                 padding: rem(10);
                                                 border-radius: rem(10);
-                                                width: 40%;
+                                                flex: 1 1 40%;
                                                 .minimum-price{
-                                                    width: rem(50);
+                                                    border: 0;
+                                                    width: rem(90);
                                                 }
                                             }
                                             .maximum-price-wrap{
                                                 border: 1px solid lightgray;
                                                 padding: rem(10);
                                                 border-radius: rem(10);
-                                                width: 40%;
+                                                flex: 1 1 40%;
                                                 .maximum-price{
-                                                    width: rem(50);
+                                                    border: 0;
+                                                    width: rem(90);
                                                 }
                                             }
                                         }
@@ -746,6 +730,7 @@
             padding-top: rem(160);
             .content-item{
                 margin: rem(20);
+                flex: 0 1 calc(100vw - rem(60));
                 .content-item-link{
                     .item-images{
                         display: flex;
@@ -849,7 +834,7 @@
                 }
             }
         }
-        .gnb-bottom-pc{
+        .footer-pc{
             display: none;
         }
     }    

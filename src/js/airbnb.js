@@ -129,6 +129,9 @@ $(document).ready(function(){
         $('.airbnb-main .filter-wrap').addClass('pc-versioned')
         $('.airbnb-main .filter-gnb-bottom').addClass('pc-versioned')
     })
+    
+
+
 
     //where 펼치기
     $('.airbnb-main .where').click(function(){
@@ -174,6 +177,9 @@ $(document).ready(function(){
                 $('.airbnb-main .when .flex-option').css('display','block')
             }
         })
+    })
+
+    $('.airbnb-main .when .pick-option .date-table').datepicker({
     })
 
 
@@ -315,8 +321,11 @@ $(document).ready(function(){
     //필터내 range-bar 최저가 최고가 출력
     var mini = Math.floor(Math.random()*10001);
     var max = Math.floor(Math.random()*100001 + 10000);
-    $('.airbnb-main .minimum-price').attr('value', mini);
-    $('.airbnb-main .maximum-price').attr('value', max);
+    $('.airbnb-main .minimum-price').attr('value', ('￦ ' + mini));
+    $('.airbnb-main .maximum-price').attr('value', ('￦ ' + max));
+
+    //필터내 range-button 드래그
+    $('.airbnb-main .range-buttons .range-button').draggable({containment: 'parent'});
 
     //필터내 침실과침대 색깔바꾸기
     var bedRoomIcons = $('.airbnb-main .bedroom a')
@@ -421,12 +430,13 @@ $(document).ready(function(){
         
     })
 
-    //필터내 선택된 숙소표시버튼
+    //필터내 선택된숙소 표시버튼
     var showAllOption = $('.airbnb-main .show-all-option');
     $(showAllOption).click(function(){
         $('.dim').css('display', 'none')
         $('.filter-wrap').animate({'top' : filterWrapHeight})
-
+        $('.filter-gnb-bottom').hide()
+        $('.filter-icon-wrap-pc').show()
     })
 
     //option-bar 이미지 넣기
@@ -441,7 +451,6 @@ $(document).ready(function(){
         }
     };
 
-    
 //airbnb-main end--------------------------------------------
 
 //airbnb-wishlist start--------------------------------------------
